@@ -6,7 +6,6 @@ public class Movimento : MonoBehaviour
 {
     CharacterController controller;
 
-
     private void Start()
     {
         controller = GetComponent<CharacterController>();
