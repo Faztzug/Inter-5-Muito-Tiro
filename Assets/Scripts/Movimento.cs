@@ -6,6 +6,7 @@ public class Movimento : MonoBehaviour
 {
     [Header("Character Values")]
     [SerializeField]  private float speed = 5f;
+    [SerializeField] private float jumpForce = 10f;
     private CharacterController controller;
     private Camera cam;
 
@@ -36,12 +37,15 @@ public class Movimento : MonoBehaviour
         // }
         if(controller.isGrounded)
         {
-            gravityAcceleration = 0f;
+            if(Input.GetButtonDown("Jump")) gravityAcceleration = jumpForce;
+            else gravityAcceleration = 0f;
         }
         else
         {
             gravityAcceleration -= gravity * Time.deltaTime;
         }
+
+        
 
         Vector3 movement = (vertical + horizontal) * Time.deltaTime;
         movement.y = gravityAcceleration * Time.deltaTime;
