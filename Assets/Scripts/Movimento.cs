@@ -78,5 +78,7 @@ public class Movimento : MonoBehaviour
         movement.y = gravityAcceleration * Time.deltaTime;
 
         controller.Move(movement * speed);
+
+        anim.SetFloat("Velocidade", Mathf.Abs(vertical.magnitude));
     }
 }
