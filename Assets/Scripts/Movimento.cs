@@ -45,8 +45,19 @@ public class Movimento : MonoBehaviour
 
     void OnAnimatorIK()
     {
-        anim.SetLookAtPosition(lookAtObj.position);
-        anim.SetLookAtWeight(1);
+        //limitando a rotacao da cabeca
+        Vector3 frente = transform.forward;
+        Vector3 direcaoAlvo = lookAtObj.transform.position - transform.position;
+        float angulo = Vector3.Angle(frente, direcaoAlvo);
+        if (angulo < 70 )
+        {
+            anim.SetLookAtPosition(lookAtObj.position);
+            anim.SetLookAtWeight(1);
+        }
+        else
+        {
+            anim.SetLookAtWeight(0);
+        }
     }
 
     private void MoveRotation()
