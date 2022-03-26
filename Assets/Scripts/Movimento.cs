@@ -7,7 +7,7 @@ public class Movimento : MonoBehaviour
     [Header("Character Values")]
     [SerializeField]  private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private Transform lookAtObj;
+    private Transform lookAtObj;
     private CharacterController controller;
     private Camera cam;
     private Animator anim;
@@ -21,8 +21,7 @@ public class Movimento : MonoBehaviour
         controller = GetComponent<CharacterController>();
         cam = Camera.main;
         anim = GetComponent<Animator>();
-        
-        if(lookAtObj == null && cam.transform.GetChild(0) != null) lookAtObj = cam.transform.GetChild(0);
+        lookAtObj = cam.transform.GetChild(0);
     }
 
     private void Update()
@@ -49,14 +48,16 @@ public class Movimento : MonoBehaviour
         Vector3 frente = transform.forward;
         Vector3 direcaoAlvo = lookAtObj.transform.position - transform.position;
         float angulo = Vector3.Angle(frente, direcaoAlvo);
+
+        anim.SetLookAtPosition(lookAtObj.position);
+
         if (angulo < 70 )
         {
-            anim.SetLookAtPosition(lookAtObj.position);
             anim.SetLookAtWeight(1);
         }
         else
         {
-            anim.SetLookAtWeight(0);
+            anim.SetLookAtWeight(1);
         }
     }
 
@@ -66,7 +67,6 @@ public class Movimento : MonoBehaviour
         var objRotation = transform.rotation;
         Vector3 setRotation = new Vector3(objRotation.eulerAngles.x, camRotation.eulerAngles.y, objRotation.eulerAngles.z);
         transform.eulerAngles = setRotation;
-        Debug.Log(camRotation.y);
     }
 
     private void MoveInput()

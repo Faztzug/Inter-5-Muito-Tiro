@@ -5,6 +5,8 @@ using UnityEngine;
 public class SlowMotion : MonoBehaviour
 { 
     public float slowMotionTimeScale;
+    public float lerpTimeChange = 0.1f;
+    public bool focusActive = false;
     private float startTimeScale;
     private float startFixedDeltaTime;
 
@@ -16,26 +18,45 @@ public class SlowMotion : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetButtonDown("Focus"))
         {
-            StartSlowMotion();
+            focusActive = !focusActive;
+            Debug.Log(focusActive);
         }
 
-        if (Input.GetKeyUp(KeyCode.F))
-        {
-            StopSlowMotion();
-        }
+        if(focusActive) StartSlowMotion();
+        else StopSlowMotion();
+        Debug.Log(Time.timeScale);
     }
 
     private void StartSlowMotion()
     {
-        Time.timeScale = slowMotionTimeScale;
-        Time.fixedDeltaTime = startFixedDeltaTime * slowMotionTimeScale;
+        float currentTime = Time.timeScale;
+        
+        if(currentTime != slowMotionTimeScale)
+        {
+            
+            if(currentTime > slowMotionTimeScale) currentTime -= lerpTimeChange * Time.unscaledDeltaTime;
+            if(currentTime < slowMotionTimeScale) currentTime = slowMotionTimeScale;
+
+        Time.timeScale = currentTime;
+        Time.fixedDeltaTime = startFixedDeltaTime * currentTime;
+        }
+
     }
 
     private void StopSlowMotion()
     {
-        Time.timeScale = startTimeScale;
-        Time.fixedDeltaTime = startFixedDeltaTime;
+        float currentTime = Time.timeScale;
+        
+        if(currentTime != startTimeScale)
+        {
+            
+            if(currentTime < startTimeScale) currentTime += lerpTimeChange * Time.unscaledDeltaTime;
+            if(currentTime > startTimeScale) currentTime = startTimeScale;
+
+        Time.timeScale = currentTime;
+        Time.fixedDeltaTime = startFixedDeltaTime * currentTime;
+        }
     }
 }
