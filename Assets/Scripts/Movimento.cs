@@ -5,8 +5,9 @@ using UnityEngine;
 public class Movimento : MonoBehaviour
 {
     [Header("Character Values")]
-    [SerializeField]  private float speed = 5f;
+    [SerializeField] private float speed = 5f;
     [SerializeField] private float jumpForce = 10f;
+    [SerializeField] [Range(0,1)] private float weightIKhand;
     private Transform lookAtObj;
     private CharacterController controller;
     private Camera cam;
@@ -50,14 +51,17 @@ public class Movimento : MonoBehaviour
         float angulo = Vector3.Angle(frente, direcaoAlvo);
 
         anim.SetLookAtPosition(lookAtObj.position);
+        anim.SetIKPosition(AvatarIKGoal.RightHand, lookAtObj.position);
 
         if (angulo < 70 )
         {
             anim.SetLookAtWeight(1);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weightIKhand);
         }
         else
         {
             anim.SetLookAtWeight(1);
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weightIKhand);
         }
     }
 

@@ -26,7 +26,6 @@ public class SlowMotion : MonoBehaviour
 
         if(focusActive) StartSlowMotion();
         else StopSlowMotion();
-        Debug.Log(Time.timeScale);
     }
 
     private void StartSlowMotion()
