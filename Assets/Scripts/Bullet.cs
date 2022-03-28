@@ -4,23 +4,53 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] private Vector3 speed;
+    [SerializeField] private Vector3 moveVector;
+    [SerializeField] private float speed;
+    [SerializeField] private float gravity;
+    [SerializeField] private Rigidbody rgbd;
     public bool isActive;
-    // Start is called before the first frame update
+
     void Start()
     {
-        
+        speed = moveVector.z;
+        gravity = moveVector.y;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime);
+        Vector3 move = transform.position + ((transform.forward * speed) * Time.deltaTime);
+        move.y += gravity * Time.deltaTime;
+        
+        rgbd.MovePosition(move);
+        //transform.Translate(speed * Time.deltaTime);
+        gravity += moveVector.y * Time.deltaTime;
     }
 
     void OnCollisionEnter(Collision collisionInfo)
     {
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
         Debug.Log("bye bye lemon");
+    }
+
+    public void Respawn()
+    {
+        gravity = moveVector.y;
+        speed = moveVector.z;
+        transform.position = Vector3.zero;
+        transform.SetPositionAndRotation(Vector3.zero, new Quaternion(0,0,0,0));
+        rgbd.angularVelocity = Vector3.zero;
+        rgbd.velocity = Vector3.zero;
+    }
+    
+    public void DisableBullet(float time)
+    {
+        StartCoroutine(DisableTimer(time));
+    }
+
+    IEnumerator DisableTimer(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        gameObject.SetActive(false);
     }
 }
