@@ -5,10 +5,10 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private Vector3 moveVector;
-    [SerializeField] private float speed;
-    [SerializeField] private float gravity;
+    private float speed;
+    private float gravity;
     [SerializeField] private Rigidbody rgbd;
-    public bool isActive;
+    [SerializeField] private float damage;
 
     void Start()
     {
@@ -28,7 +28,14 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        
         gameObject.SetActive(false);
+
+        if(collisionInfo.gameObject.GetComponent<Health>())
+        {
+            collisionInfo.gameObject.GetComponent<Health>().UpdateHealth(damage);
+        }
+
         Debug.Log("bye bye lemon");
     }
 
