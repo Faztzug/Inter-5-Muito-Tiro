@@ -16,7 +16,7 @@ public class SlowMotion : MonoBehaviour
     {
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
-        anim = GetComponent<Animator>();
+        anim = PostProcess.GetComponent<Animator>();
     }
 
     void Update()
