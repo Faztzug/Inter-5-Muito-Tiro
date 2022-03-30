@@ -9,11 +9,14 @@ public class SlowMotion : MonoBehaviour
     public bool focusActive = false;
     private float startTimeScale;
     private float startFixedDeltaTime;
+    [SerializeField] private GameObject PostProcess;
+    private Animator anim;
 
     void Start()
     {
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -30,9 +33,13 @@ public class SlowMotion : MonoBehaviour
 
     private void StartSlowMotion()
     {
+      
+        anim.SetBool("Foco", true);
         float currentTime = Time.timeScale;
-        
-        if(currentTime != slowMotionTimeScale)
+       
+
+
+        if (currentTime != slowMotionTimeScale)
         {
             
             if(currentTime > slowMotionTimeScale) currentTime -= lerpTimeChange * Time.unscaledDeltaTime;
@@ -46,9 +53,11 @@ public class SlowMotion : MonoBehaviour
 
     private void StopSlowMotion()
     {
-        float currentTime = Time.timeScale;
         
-        if(currentTime != startTimeScale)
+        anim.SetBool("Foco", false);
+        float currentTime = Time.timeScale;
+
+        if (currentTime != startTimeScale)
         {
             
             if(currentTime < startTimeScale) currentTime += lerpTimeChange * Time.unscaledDeltaTime;
