@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SlowMotion : MonoBehaviour
 { 
@@ -12,11 +13,19 @@ public class SlowMotion : MonoBehaviour
     [SerializeField] private GameObject PostProcess;
     private Animator anim;
 
+    public Slider Barra;
+    public Slider Cooldown;
+    private bool stopTimer;
+
     void Start()
     {
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
         anim = PostProcess.GetComponent<Animator>();
+
+        stopTimer = true;
+        Barra.maxValue = 4;
+        Cooldown.maxValue = 10;
     }
 
     void Update()
@@ -25,10 +34,29 @@ public class SlowMotion : MonoBehaviour
         {
             focusActive = !focusActive;
             Debug.Log(focusActive);
+            stopTimer = false;
         }
 
         if(focusActive) StartSlowMotion();
         else StopSlowMotion();
+
+        if (Barra.value == 0) //Quando chegar em 0 vai parar
+        {
+            if (Cooldown.value == 0)
+            {
+                stopTimer = true;
+                Barra.value = 4;
+                Cooldown.value = 10;
+            }
+            Cooldown.value -= Time.deltaTime;
+            focusActive = false;
+            StopSlowMotion();
+        }
+
+        if (stopTimer == false) //Conta que desce a barra
+        {
+            Barra.value -= Time.deltaTime;
+        }
     }
 
     private void StartSlowMotion()
