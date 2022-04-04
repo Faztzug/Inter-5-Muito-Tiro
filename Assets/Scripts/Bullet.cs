@@ -14,14 +14,26 @@ public class Bullet : MonoBehaviour
     {
         speed = moveVector.z;
         gravity = moveVector.y;
+        
     }
 
     void Update()
     {
-        Vector3 move = transform.position + ((transform.forward * speed) * Time.deltaTime);
-        move.y += gravity * Time.deltaTime;
+        //Vector3 move = transform.position + ((transform.forward * speed) * Time.deltaTime);
+        //move.y += gravity * Time.deltaTime;
+
+        //rgbd.MovePosition(move);
+
+        // Vector3 move = transform.forward * speed;
+        // move.y = gravity;
         
+        //rgbd.velocity = move;
+
+        rgbd.AddForce(transform.forward * speed);
+        Vector3 move = rgbd.position;
+        move.y += gravity * Time.deltaTime;
         rgbd.MovePosition(move);
+
         //transform.Translate(speed * Time.deltaTime);
         gravity += moveVector.y * Time.deltaTime;
     }
@@ -45,12 +57,12 @@ public class Bullet : MonoBehaviour
 
     public void Respawn()
     {
+        rgbd.velocity = Vector3.zero;
         gravity = moveVector.y;
         speed = moveVector.z;
         transform.position = Vector3.zero;
         transform.SetPositionAndRotation(Vector3.zero, new Quaternion(0,0,0,0));
         rgbd.angularVelocity = Vector3.zero;
-        rgbd.velocity = Vector3.zero;
     }
     
     public void DisableBullet(float time)

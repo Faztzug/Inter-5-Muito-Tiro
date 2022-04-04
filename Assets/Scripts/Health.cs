@@ -11,13 +11,18 @@ public class Health : MonoBehaviour
         health = maxHealth;
     }
 
-    public virtual void UpdateHealth(float value = 0)
+    public virtual void UpdateHealth(float value = 0, Item item = null)
     {
         health += value;
 
         if(health > maxHealth) health = maxHealth;
-        if(health <= 0) Destroy(this.gameObject);
+        if(health <= 0) DestroyCharacter();
 
         Debug.Log(name+" Health: " + value);
+    }
+
+    public void DestroyCharacter()
+    {
+        Destroy(this.gameObject);
     }
 }

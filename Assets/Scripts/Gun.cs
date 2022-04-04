@@ -103,4 +103,14 @@ public class Gun : MonoBehaviour
     {
         ammoText.text = loadedAmmo + " / " + extraAmmo;
     }
+
+    public void GainAmmo(int ammount, Item item)
+    {
+        if(extraAmmo < maxExtraAmmo)
+        {
+            extraAmmo += ammount;
+            UpdateAmmoText();
+            item.DestroyItem();
+        }
+    }
 }

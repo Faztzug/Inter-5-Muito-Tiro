@@ -14,8 +14,10 @@ public class PlayerHealth : Health
         UpdateHealth();
     }
 
-    public override void UpdateHealth(float value = 0)
+    public override void UpdateHealth(float value = 0, Item item = null)
     {
+        if(health < maxHealth && item != null) item.DestroyItem();
+         
         base.UpdateHealth(value);
         bar.value = health;
     }

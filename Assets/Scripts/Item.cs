@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 { 
-    public int ammount;
+    [SerializeField] protected int ammount;
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player")) CollectItem(other);
     }
 
-    public void CollectItem(Collider info)
+    public virtual void CollectItem(Collider info)
     {
-        Destroy(this.gameObject);
+        
+    }
+
+    public virtual void DestroyItem()
+    {
+        this.gameObject.SetActive(false);
     }
 }
