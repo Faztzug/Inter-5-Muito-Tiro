@@ -28,7 +28,11 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        BulletHit(collisionInfo);
         
+    }
+    public void BulletHit(Collision collisionInfo)
+    {
         gameObject.SetActive(false);
 
         if(collisionInfo.gameObject.GetComponent<Health>())

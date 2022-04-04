@@ -15,7 +15,10 @@ public class SlowMotion : MonoBehaviour
 
     public Slider Barra;
     public Slider Cooldown;
-    private bool stopTimer;
+    //private bool stopTimer;
+    [SerializeField] private float maxFocusBar = 10f;
+    [SerializeField] private float currentFocusBar;
+    [SerializeField] private float regenFocusBar;
 
     void Start()
     {
@@ -23,9 +26,9 @@ public class SlowMotion : MonoBehaviour
         startFixedDeltaTime = Time.fixedDeltaTime;
         anim = PostProcess.GetComponent<Animator>();
 
-        stopTimer = true;
-        Barra.maxValue = 4;
-        Cooldown.maxValue = 10;
+        //stopTimer = true;
+        currentFocusBar = maxFocusBar;
+        Barra.maxValue = maxFocusBar;
     }
 
     void Update()
@@ -33,30 +36,23 @@ public class SlowMotion : MonoBehaviour
         if (Input.GetButtonDown("Focus"))
         {
             focusActive = !focusActive;
-            Debug.Log(focusActive);
-            stopTimer = false;
+            //stopTimer = !stopTimer;
         }
+        
+        UpdateBar();
 
         if(focusActive) StartSlowMotion();
         else StopSlowMotion();
+    }
+    private void UpdateBar()
+    {
+        if(focusActive == false) currentFocusBar += regenFocusBar * Time.deltaTime;
+        else if (focusActive) currentFocusBar -= Time.unscaledDeltaTime;
+        
+        if(currentFocusBar > maxFocusBar) currentFocusBar = maxFocusBar;
+        if(currentFocusBar <= 0) focusActive = false;
 
-        if (Barra.value == 0) //Quando chegar em 0 vai parar
-        {
-            if (Cooldown.value == 0)
-            {
-                stopTimer = true;
-                Barra.value = 4;
-                Cooldown.value = 10;
-            }
-            Cooldown.value -= Time.deltaTime;
-            focusActive = false;
-            StopSlowMotion();
-        }
-
-        if (stopTimer == false) //Conta que desce a barra
-        {
-            Barra.value -= Time.deltaTime;
-        }
+        Barra.value = currentFocusBar;
     }
 
     private void StartSlowMotion()

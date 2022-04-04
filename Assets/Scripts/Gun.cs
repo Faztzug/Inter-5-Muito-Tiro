@@ -27,6 +27,7 @@ public class Gun : MonoBehaviour
         }
 
         UpdateAmmoText();
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     void Update()
