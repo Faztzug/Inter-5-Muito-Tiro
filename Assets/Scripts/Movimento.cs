@@ -9,6 +9,7 @@ public class Movimento : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     private Transform lookAtObj;
+    private Vector3 lookAtRayHit;
     private CharacterController controller;
     private Camera cam;
     private Animator anim;
@@ -29,6 +30,7 @@ public class Movimento : MonoBehaviour
     {
         Movement();
         Animations();
+        lookAtRayHit = GetRayCastMiddle();
     }
 
     private void Movement()
@@ -42,6 +44,26 @@ public class Movimento : MonoBehaviour
     {
         
     }
+    private Vector3 GetRayCastMiddle()
+    {
+        var layer = 1 << 3;
+        layer = ~layer;
+        
+        RaycastHit rayHit;
+
+        if(Physics.Raycast(cam.transform.position, cam.transform.forward, out rayHit, 500f, layer))
+        {
+            Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.red);
+            return rayHit.point;
+        }
+        else
+        {
+            Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.white);
+            return Vector3.zero;
+        }
+
+        
+    }
 
     void OnAnimatorIK()
     {
@@ -50,8 +72,20 @@ public class Movimento : MonoBehaviour
         Vector3 direcaoAlvo = lookAtObj.transform.position - transform.position;
         float angulo = Vector3.Angle(frente, direcaoAlvo);
 
-        anim.SetLookAtPosition(lookAtObj.position);
-        anim.SetIKPosition(AvatarIKGoal.RightHand, lookAtObj.position);
+        Debug.Log(lookAtRayHit);
+
+        if(lookAtRayHit != Vector3.zero)
+        {
+            Debug.Log("look Ray");
+            anim.SetLookAtPosition(lookAtRayHit);
+            anim.SetIKPosition(AvatarIKGoal.RightHand, lookAtRayHit);
+        }
+        else
+        {
+            anim.SetLookAtPosition(lookAtObj.position);
+            anim.SetIKPosition(AvatarIKGoal.RightHand, lookAtObj.position);
+        }
+        
 
         if (angulo < 70 )
         {

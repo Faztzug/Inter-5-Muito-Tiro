@@ -9,12 +9,15 @@ public class Bullet : MonoBehaviour
     private float gravity;
     [SerializeField] private Rigidbody rgbd;
     [SerializeField] private float damage;
+    private Vector3 move;
+    private bool setedVelocity = false;
 
     void Start()
     {
         speed = moveVector.z;
         gravity = moveVector.y;
         
+        setedVelocity = false;
     }
 
     void Update()
@@ -28,14 +31,25 @@ public class Bullet : MonoBehaviour
         // move.y = gravity;
         
         //rgbd.velocity = move;
+        //rgbd.AddForce(transform.forward * speed, ForceMode.Impulse);
+        //if(rgbd.velocity.z < gravity && rgbd.velocity.x < gravity && rgbd.velocity.y < gravity) rgbd.AddForce(transform.forward * speed, ForceMode.Impulse);
 
-        rgbd.AddForce(transform.forward * speed);
-        Vector3 move = rgbd.position;
+        if(!setedVelocity)
+        {
+            move = rgbd.velocity + transform.forward * speed;
+            setedVelocity = true;
+        }
+        
         move.y += gravity * Time.deltaTime;
-        rgbd.MovePosition(move);
+        rgbd.velocity = move;
 
         //transform.Translate(speed * Time.deltaTime);
         gravity += moveVector.y * Time.deltaTime;
+    }
+
+    void FixedUpdate() 
+    {
+        
     }
 
     void OnCollisionEnter(Collision collisionInfo)
@@ -63,6 +77,7 @@ public class Bullet : MonoBehaviour
         transform.position = Vector3.zero;
         transform.SetPositionAndRotation(Vector3.zero, new Quaternion(0,0,0,0));
         rgbd.angularVelocity = Vector3.zero;
+        setedVelocity = false;
     }
     
     public void DisableBullet(float time)
@@ -73,6 +88,7 @@ public class Bullet : MonoBehaviour
     IEnumerator DisableTimer(float time)
     {
         yield return new WaitForSeconds(time);
+        setedVelocity = false;
 
         gameObject.SetActive(false);
     }

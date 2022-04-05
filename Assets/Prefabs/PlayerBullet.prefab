@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1032db7c5b85c94d9e834ddf994a519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveVector: {x: 0, y: -3, z: 300}
+  moveVector: {x: 0, y: -3, z: 200}
   rgbd: {fileID: 1249908958281552529}
   damage: -1
 --- !u!136 &1827840143159621393
@@ -127,5 +127,5 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 2
