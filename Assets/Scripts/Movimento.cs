@@ -9,7 +9,7 @@ public class Movimento : MonoBehaviour
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     private Transform lookAtObj;
-    private Vector3 lookAtRayHit;
+    public Vector3 LookAtRayHit{get; private set;}
     private CharacterController controller;
     private Camera cam;
     private Animator anim;
@@ -30,7 +30,7 @@ public class Movimento : MonoBehaviour
     {
         Movement();
         Animations();
-        lookAtRayHit = GetRayCastMiddle();
+        LookAtRayHit = GetRayCastMiddle();
     }
 
     private void Movement()
@@ -58,7 +58,7 @@ public class Movimento : MonoBehaviour
         }
         else
         {
-            Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.white);
+            Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.gray);
             return Vector3.zero;
         }
 
@@ -72,13 +72,13 @@ public class Movimento : MonoBehaviour
         Vector3 direcaoAlvo = lookAtObj.transform.position - transform.position;
         float angulo = Vector3.Angle(frente, direcaoAlvo);
 
-        Debug.Log(lookAtRayHit);
+        Debug.Log(LookAtRayHit);
 
-        if(lookAtRayHit != Vector3.zero)
+        if(LookAtRayHit != Vector3.zero)
         {
             Debug.Log("look Ray");
-            anim.SetLookAtPosition(lookAtRayHit);
-            anim.SetIKPosition(AvatarIKGoal.RightHand, lookAtRayHit);
+            anim.SetLookAtPosition(LookAtRayHit);
+            anim.SetIKPosition(AvatarIKGoal.RightHand, LookAtRayHit);
         }
         else
         {

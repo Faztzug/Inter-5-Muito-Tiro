@@ -16,6 +16,7 @@ public class Gun : MonoBehaviour
     private Camera cam;
     [SerializeField] private bool trigger = false;
     [SerializeField] private TextMeshProUGUI ammoText;
+    private Movimento moveScript;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class Gun : MonoBehaviour
 
         UpdateAmmoText();
         Cursor.lockState = CursorLockMode.Locked;
+        moveScript = GetComponent<Movimento>();
     }
 
     void Update()
@@ -65,8 +67,8 @@ public class Gun : MonoBehaviour
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;
-            Debug.DrawRay(shootPosition.position, cam.transform.forward * 100f, Color.green, 10f);
-            Physics.Raycast(shootPosition.position, cam.transform.forward * 100f, 100f);
+            
+            //Physics.Raycast(shootPosition.position, cam.transform.forward * 100f, 100f);
             
 
             foreach (Bullet bullet in bullets)
@@ -75,6 +77,14 @@ public class Gun : MonoBehaviour
                 {
                     SpawnBullet(bullet);
 
+                    var target = moveScript.LookAtRayHit;
+                    if(target != Vector3.zero)
+                    {
+                        bullet.transform.LookAt(target);
+                        Debug.DrawLine(shootPosition.position, target, Color.blue, 10f);
+                        return;
+                    }
+                    Debug.DrawRay(shootPosition.position, cam.transform.forward * 100f, Color.green, 10f);
                     return;
                 }
             }
