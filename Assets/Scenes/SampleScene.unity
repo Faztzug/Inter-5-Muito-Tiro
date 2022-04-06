@@ -11038,6 +11038,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1285070583, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285070583, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1285070583, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315663065, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315663065, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1315663065, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0.10000403
@@ -11049,6 +11073,18 @@ PrefabInstance:
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.z
       value: -4.3017684e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254068865128181899, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_XDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254068865128181899, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_YDamping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4254068865128181899, guid: 321283957314dc147bdb58371804062c, type: 3}
+      propertyPath: m_ZDamping
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4838391959915411271, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_Name
