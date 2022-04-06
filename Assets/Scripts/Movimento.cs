@@ -72,11 +72,8 @@ public class Movimento : MonoBehaviour
         Vector3 direcaoAlvo = lookAtObj.transform.position - transform.position;
         float angulo = Vector3.Angle(frente, direcaoAlvo);
 
-        Debug.Log(LookAtRayHit);
-
         if(LookAtRayHit != Vector3.zero)
         {
-            Debug.Log("look Ray");
             anim.SetLookAtPosition(LookAtRayHit);
             anim.SetIKPosition(AvatarIKGoal.RightHand, LookAtRayHit);
         }

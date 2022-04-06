@@ -121,6 +121,8 @@ public class Gun : MonoBehaviour
             extraAmmo += ammount;
             UpdateAmmoText();
             item.DestroyItem();
+
+            if(extraAmmo > maxExtraAmmo) extraAmmo = maxExtraAmmo;
         }
     }
 }
