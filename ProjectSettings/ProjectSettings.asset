@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: GameRush
-  productName: 'Silverado: Aim, Trigger, Shoot!'
+  productName: Silverado - Aim, Trigger, Shoot!
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12626688, b: 0.12156863, a: 1}
@@ -40,7 +40,7 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 21300000, guid: 7f4c10c712afe4648a6e6c28f49e9dcd, type: 3}
+  - logo: {fileID: 21300000, guid: 5ecdda6c04f19b74087396d35e85ca1d, type: 3}
     duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.1
+  bundleVersion: 0.1.2
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Standalone: com.GameRush.Silverado--Aim--Trigger--Shoot-
+    Standalone: com.GameRush.Silverado---Aim--Trigger--Shoot-
   buildNumber:
     Standalone: 0
     iPhone: 0
