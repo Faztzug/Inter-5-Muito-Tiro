@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -2730776576653054649}
   - component: {fileID: -8339657122700748898}
   - component: {fileID: 8196875390101039511}
+  - component: {fileID: 581919231121409682}
   m_Layer: 0
   m_Name: HealthItem
   m_TagString: Untagged
@@ -140,3 +141,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ammount: 3
+--- !u!114 &581919231121409682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8726437213420126598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0.98039216, g: 0.83137524, b: 0, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
