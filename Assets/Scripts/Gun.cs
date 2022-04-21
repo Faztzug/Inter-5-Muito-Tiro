@@ -14,12 +14,13 @@ public class Gun : MonoBehaviour
     [SerializeField] private float bulletTimer = 3f;
     [SerializeField] private Transform shootPosition;
     private Camera cam;
-    [SerializeField] private bool trigger = false;
+    protected bool trigger = false;
     [SerializeField] private TextMeshProUGUI ammoText;
     private Movimento moveScript;
-
+   
     void Start()
     {
+       
         cam = Camera.main;
         foreach (Bullet bullet in bullets)
         {
@@ -44,6 +45,7 @@ public class Gun : MonoBehaviour
         if(!trigger && loadedAmmo > 0)
         {
             trigger = true;
+           
             Debug.Log("TRIGGER");
         }
          
@@ -67,9 +69,10 @@ public class Gun : MonoBehaviour
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;
-            
+        
+
             //Physics.Raycast(shootPosition.position, cam.transform.forward * 100f, 100f);
-            
+
 
             foreach (Bullet bullet in bullets)
             {
