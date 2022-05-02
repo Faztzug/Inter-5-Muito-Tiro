@@ -33,16 +33,19 @@ public class SlowMotion : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Focus"))
+        if (!MenuPause.isPaused)
         {
-            focusActive = !focusActive;
-            //stopTimer = !stopTimer;
-        }
-        
-        UpdateBar();
+            if (Input.GetButtonDown("Focus"))
+            {
+                focusActive = !focusActive;
+                //stopTimer = !stopTimer;
+            }
 
-        if(focusActive) StartSlowMotion();
-        else StopSlowMotion();
+            UpdateBar();
+
+            if (focusActive) StartSlowMotion();
+            else StopSlowMotion();
+        }
     }
     private void UpdateBar()
     {

@@ -35,9 +35,12 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire")) Fire();
-        if(Input.GetButtonDown("Trigger")) Trigger();
-        if(Input.GetButtonDown("Reload")) Reload();
+        if (!MenuPause.isPaused)
+        {
+            if (Input.GetButtonDown("Fire")) Fire();
+            if (Input.GetButtonDown("Trigger")) Trigger();
+            if (Input.GetButtonDown("Reload")) Reload();
+        }
     }
 
     public void Trigger()

@@ -28,9 +28,12 @@ public class Movimento : MonoBehaviour
 
     private void Update()
     {
-        Movement();
-        Animations();
-        LookAtRayHit = GetRayCastMiddle();
+        if (!MenuPause.isPaused)
+        {
+            Movement();
+            Animations();
+            LookAtRayHit = GetRayCastMiddle();
+        }
     }
 
     private void Movement()
