@@ -23,10 +23,12 @@ public class MenuPause : MonoBehaviour
             if (state.TimeS == SpeedState.Paused)
             {
                 ResumeGame();
+                Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
                 PauseGame();
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
