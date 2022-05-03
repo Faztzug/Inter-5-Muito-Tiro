@@ -21,10 +21,12 @@ public class MenuPause : MonoBehaviour
             if (isPaused)
             {
                 ResumeGame();
+                Cursor.lockState = CursorLockMode.Locked;
             }
             else
             {
                 PauseGame();
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
