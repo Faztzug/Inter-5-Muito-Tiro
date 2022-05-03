@@ -12,12 +12,14 @@ public class EnemyDrop : MonoBehaviour
 
     void OnDestroy()
     {
+        Vector3 dropPos = transform.position;
+        Quaternion dropRot = transform.rotation;
         for (int i = 0; i < itens.Length; i++)
         {
             float rng = Random.Range(0,100);
             if(rng <= dropChance[i])
             {
-                Instantiate(itens[i], transform.position, transform.rotation);
+                Instantiate(itens[i], dropPos, dropRot);
                 if(i >= maxDrops) return;
             } 
         }

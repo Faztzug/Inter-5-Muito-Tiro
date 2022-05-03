@@ -19,9 +19,11 @@ public class SlowMotion : MonoBehaviour
     [SerializeField] private float maxFocusBar = 10f;
     [SerializeField] private float currentFocusBar;
     [SerializeField] private float regenFocusBar;
+    private GameState state;
 
     void Start()
     {
+        state = GetComponent<GameState>();
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
         anim = PostProcess.GetComponent<Animator>();
@@ -33,12 +35,14 @@ public class SlowMotion : MonoBehaviour
 
     void Update()
     {
-        if (!MenuPause.isPaused)
+        if (state.TimeS != SpeedState.Paused)
         {
             if (Input.GetButtonDown("Focus"))
             {
                 focusActive = !focusActive;
                 //stopTimer = !stopTimer;
+                if(focusActive) state.TimeS = SpeedState.Slowed;
+                else state.TimeS = SpeedState.Running;
             }
 
             UpdateBar();

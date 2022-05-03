@@ -17,10 +17,11 @@ public class Gun : MonoBehaviour
     protected bool trigger = false;
     [SerializeField] private TextMeshProUGUI ammoText;
     private Movimento moveScript;
+    private GameState state;
    
     void Start()
     {
-       
+       state = GetComponent<GameState>();
         cam = Camera.main;
         foreach (Bullet bullet in bullets)
         {
@@ -35,7 +36,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        if (!MenuPause.isPaused)
+        if (state.TimeS != SpeedState.Paused)
         {
             if (Input.GetButtonDown("Fire")) Fire();
             if (Input.GetButtonDown("Trigger")) Trigger();

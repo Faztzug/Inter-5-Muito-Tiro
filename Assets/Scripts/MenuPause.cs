@@ -6,19 +6,21 @@ using UnityEngine.SceneManagement;
 public class MenuPause : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public static bool isPaused;
+    private GameState state;
+    private SpeedState timeState;
 
     void Start()
     {
+        state = GetComponent<GameState>();
         pauseMenu.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetButtonDown("Pause"))
         {
-            if (isPaused)
+            if (state.TimeS == SpeedState.Paused)
             {
                 ResumeGame();
             }
@@ -31,16 +33,18 @@ public class MenuPause : MonoBehaviour
 
     public void PauseGame()
     {
+        state.TimeS = SpeedState.Paused;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        isPaused = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     public void ResumeGame()
     {
+        state.TimeS = SpeedState.Running;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        isPaused = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     /*public void LoadMenu() Caso seja feito um menu de pause

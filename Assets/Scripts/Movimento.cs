@@ -17,9 +17,11 @@ public class Movimento : MonoBehaviour
     [Header("Gravity Values")]
     [SerializeField] private float gravity = 1f;
     private float gravityAcceleration;
+    private GameState state;
 
     private void Start()
     {
+        state = GetComponent<GameState>();
         controller = GetComponent<CharacterController>();
         cam = Camera.main;
         anim = GetComponent<Animator>();
@@ -28,7 +30,7 @@ public class Movimento : MonoBehaviour
 
     private void Update()
     {
-        if (!MenuPause.isPaused)
+        if (state.TimeS != SpeedState.Paused)
         {
             Movement();
             Animations();

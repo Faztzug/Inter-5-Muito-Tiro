@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5769004496336228141}
   - component: {fileID: 1713461680454596526}
   - component: {fileID: 4493046067819267298}
+  - component: {fileID: -8497729647095384396}
   m_Layer: 0
   m_Name: Cact1
-  m_TagString: Untagged
+  m_TagString: Cactu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,3 +112,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: -1
   m_Mesh: {fileID: -5076798556035486163, guid: 3a525ad8302b61e499a51fefab6f7aed, type: 3}
+--- !u!114 &-8497729647095384396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5408651036647698168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7baf527944b16469762f3e207b559d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: -0.5

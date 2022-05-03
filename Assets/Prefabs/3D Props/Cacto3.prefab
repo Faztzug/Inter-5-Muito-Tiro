@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3234962090505380737}
   - component: {fileID: 792655148043032395}
   - component: {fileID: 5169592666756116582}
+  - component: {fileID: 6420237462152548340}
   m_Layer: 0
   m_Name: Cacto3
-  m_TagString: Untagged
+  m_TagString: Cactu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,3 +98,16 @@ CapsuleCollider:
   m_Height: 1.6106715
   m_Direction: 1
   m_Center: {x: -0.0018139854, y: 0.79285145, z: -0.0005556643}
+--- !u!114 &6420237462152548340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153185217323923102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b7baf527944b16469762f3e207b559d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: -0.5

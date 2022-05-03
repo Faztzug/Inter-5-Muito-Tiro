@@ -22,11 +22,18 @@ public class EnemyTouch : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        Debug.Log(hit.gameObject.name);
-        if(hit.gameObject.CompareTag("Enemy") && time < 0)
+        //Debug.Log(hit.gameObject.name);
+        if((hit.gameObject.CompareTag("Enemy") 
+        || hit.gameObject.CompareTag("Cactu")) 
+        && time < 0)
         {
-            Debug.Log("T ouch!");
-            hp.UpdateHealth(contactDamage);
+            var damage = contactDamage;
+            if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+            {
+                damage = contact.Damage;
+            }
+            Debug.Log("T Ouch!");
+            hp.UpdateHealth(damage);
             time = invicibilityTime;
         }
     }
