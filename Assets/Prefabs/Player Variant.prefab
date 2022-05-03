@@ -1803,6 +1803,18 @@ MonoBehaviour:
   jumpForce: 1.7
   weightIKhand: 0.89
   gravity: 3
+--- !u!114 &3918855055870029578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838391959915411271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11d377c53369d4549ae7136092256bc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5756728473388942049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1839,6 +1851,10 @@ MonoBehaviour:
   maxHealth: 10
   health: 10
   bar: {fileID: 0}
+  damageEffect: {fileID: 0}
+  effectTimeMultplier: 10
+  effectGainMultplier: 2
+  effectDownMultplier: 0.5
 --- !u!114 &8319056843243428947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1866,18 +1882,6 @@ MonoBehaviour:
   bulletTimer: 3
   shootPosition: {fileID: 4627655324554726319}
   ammoText: {fileID: 0}
---- !u!114 &3918855055870029578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838391959915411271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11d377c53369d4549ae7136092256bc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &5756728472944799866
 PrefabInstance:
   m_ObjectHideFlags: 0
