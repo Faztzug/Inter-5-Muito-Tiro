@@ -49,19 +49,19 @@ public class MenuPause : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
     }
 
-    /*public void LoadMenu() Caso seja feito um menu de pause
+    public void LoadMenu()
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
-    }*/
+    }
 
     public void Options()  
     {
         
     }
 
-    public void QuitGame()
+    public void VoltarMenu()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 }

@@ -4026,7 +4026,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.11803808, y: -4.341761e-10, z: -5.1654448e-11, w: 0.9930091}
+  m_LocalRotation: {x: 0.11803808, y: 3.7095654e-10, z: 4.413971e-11, w: 0.9930091}
   m_LocalPosition: {x: 63.72, y: 8.4800005, z: 10.51}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9406,15 +9406,15 @@ PrefabInstance:
       objectReference: {fileID: 1731953296}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10000403
+      value: 0.100004025
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000042800314
+      value: -0.000000004280032
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -4.3017684e-10
+      value: 4.301769e-10
       objectReference: {fileID: 0}
     - target: {fileID: 4838391959915411271, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_Name
@@ -9921,6 +9921,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 219840616, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
+      propertyPath: m_Name
+      value: VoltarMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 219840617, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -9936,6 +9940,14 @@ PrefabInstance:
     - target: {fileID: 219840617, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -615
+      objectReference: {fileID: 0}
+    - target: {fileID: 219840618, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 656382233, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
+      propertyPath: m_text
+      value: Voltar para o menu
       objectReference: {fileID: 0}
     - target: {fileID: 768939015, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_AnchorMax.y
@@ -9980,6 +9992,10 @@ PrefabInstance:
     - target: {fileID: 1731953296, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4729278428550680644, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
+      propertyPath: m_Name
+      value: "Boto\xF5es"
       objectReference: {fileID: 0}
     - target: {fileID: 5316433964159148629, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_AnchorMax.x
