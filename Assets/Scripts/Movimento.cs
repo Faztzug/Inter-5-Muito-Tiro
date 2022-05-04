@@ -117,8 +117,16 @@ public class Movimento : MonoBehaviour
         if(controller.isGrounded)
         {
             gravityAcceleration = 0f;
-            if(Input.GetButtonDown("Jump")) gravityAcceleration = jumpForce;
+            anim.SetBool("isJumping", false);
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                gravityAcceleration = jumpForce;
+                anim.SetBool("isJumping", true);
+            }
+
             else gravityAcceleration = -gravity * 10f * Time.deltaTime;
+
         }
         else
         {
