@@ -22,18 +22,6 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
-        //Vector3 move = transform.position + ((transform.forward * speed) * Time.deltaTime);
-        //move.y += gravity * Time.deltaTime;
-
-        //rgbd.MovePosition(move);
-
-        // Vector3 move = transform.forward * speed;
-        // move.y = gravity;
-        
-        //rgbd.velocity = move;
-        //rgbd.AddForce(transform.forward * speed, ForceMode.Impulse);
-        //if(rgbd.velocity.z < gravity && rgbd.velocity.x < gravity && rgbd.velocity.y < gravity) rgbd.AddForce(transform.forward * speed, ForceMode.Impulse);
-
         if(!setedVelocity)
         {
             move = rgbd.velocity + transform.forward * speed;
@@ -43,7 +31,6 @@ public class Bullet : MonoBehaviour
         move.y += gravity * Time.deltaTime;
         rgbd.velocity = move;
 
-        //transform.Translate(speed * Time.deltaTime);
         gravity += moveVector.y * Time.deltaTime;
     }
 
@@ -64,6 +51,7 @@ public class Bullet : MonoBehaviour
         if(collisionInfo.gameObject.GetComponent<Health>())
         {
             collisionInfo.gameObject.GetComponent<Health>().UpdateHealth(damage);
+            Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
         }
 
         Debug.Log("bye bye lemon");

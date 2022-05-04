@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - Cactu
+  - NPC
+  - Coletavel
   layers:
   - Default
   - TransparentFX
@@ -15,7 +17,7 @@ TagManager:
   - UI
   - Bullet
   - Post Processing
-  - 
+  - Enemy
   - 
   - 
   - 
