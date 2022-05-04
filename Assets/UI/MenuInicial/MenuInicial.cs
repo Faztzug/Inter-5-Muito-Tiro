@@ -10,7 +10,16 @@ public class MenuInicial : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void PlayFase1()
+    {
+        SceneManager.LoadScene(2);
+    }
 
+    public void PlayFase2()
+    {
+        SceneManager.LoadScene(3);
+    }
+    
     public void QuitGame()
     {
         Application.Quit();
