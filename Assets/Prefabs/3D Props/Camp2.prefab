@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2547315607016997442}
   - component: {fileID: 1510458054741691879}
   - component: {fileID: 3680231242341644589}
+  - component: {fileID: 6485623650987342985}
   m_Layer: 0
   m_Name: Camp2
   m_TagString: Untagged
@@ -84,3 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6485623650987342985
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2887425977191684344}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.8711264, y: 2.7721694, z: 4.2399793}
+  m_Center: {x: 0.0000000049697477, y: 1.3340565, z: 0.0000000099394954}

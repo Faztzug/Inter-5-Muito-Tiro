@@ -21,7 +21,7 @@ public class Health : MonoBehaviour
         Debug.Log(name+" Health: " + value);
     }
 
-    public void DestroyCharacter()
+    public virtual void DestroyCharacter()
     {
         Destroy(this.gameObject);
     }

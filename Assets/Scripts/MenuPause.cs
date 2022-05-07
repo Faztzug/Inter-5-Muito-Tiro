@@ -5,13 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MenuPause : MonoBehaviour
 {
+    public GameObject player;
     public GameObject pauseMenu;
     private GameState state;
     private SpeedState timeState;
 
     void Start()
     {
-        state = GetComponent<GameState>();
+        if(player == null) Debug.LogError("COLOCAR PLAYER NO CANVAS PARA O PAUSE FUNCIONAR");
+        state = player.GetComponent<GameState>();
         pauseMenu.SetActive(false);
     }
 

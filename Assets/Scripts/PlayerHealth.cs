@@ -54,6 +54,10 @@ public class PlayerHealth : Health
             damageEffect.weight += chgPorcentage * effectGainMultplier;
             damageTime += chgPorcentage * effectTimeMultplier;
         }
-        
+    }
+
+    public override void DestroyCharacter()
+    {
+        this.gameObject.SetActive(false);
     }
 }

@@ -2760,7 +2760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d682abd01ddcec448fd9ba146eef764, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuPause: {fileID: 0}
+  menuPause: {fileID: 4410191262373122599}
 --- !u!1 &1878424106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3844,6 +3844,7 @@ GameObject:
   - component: {fileID: 9115828669201904497}
   - component: {fileID: 9115828669201904496}
   - component: {fileID: 9115828669201904499}
+  - component: {fileID: 4410191262373122599}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3939,3 +3940,17 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &4410191262373122599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9115828669201904498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 015e3cad58ed5754c82ba13d5a91f8bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  pauseMenu: {fileID: 1731953296}

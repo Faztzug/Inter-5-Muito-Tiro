@@ -23,7 +23,7 @@ public class EnemyTouch : MonoBehaviour
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         //Debug.Log(hit.gameObject.name);
-        if((hit.gameObject.CompareTag("Enemy") 
+        if((hit.gameObject.CompareTag("Melle") 
         || hit.gameObject.CompareTag("Cactu")) 
         && time < 0)
         {
@@ -37,11 +37,36 @@ public class EnemyTouch : MonoBehaviour
             time = invicibilityTime;
         }
     }
-    void OnCollisionEnter(Collision collisionInfo)
+    void OnCollisionEnter(Collision hit)
     {
-        Debug.Log(collisionInfo.gameObject.name);
-        if(collisionInfo.gameObject.CompareTag("Player"))
+        if((hit.gameObject.CompareTag("Melle") 
+        || hit.gameObject.CompareTag("Cactu")) 
+        && time < 0)
         {
+            var damage = contactDamage;
+            if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+            {
+                damage = contact.Damage;
+            }
+            Debug.Log("T Ouch!");
+            hp.UpdateHealth(damage);
+            time = invicibilityTime;
+        }
+    }
+    void OnTriggerEnter(Collider hit)
+    {
+        if((hit.gameObject.CompareTag("Melle") 
+        || hit.gameObject.CompareTag("Cactu")) 
+        && time < 0)
+        {
+            var damage = contactDamage;
+            if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+            {
+                damage = contact.Damage;
+            }
+            Debug.Log("T Ouch!");
+            hp.UpdateHealth(damage);
+            time = invicibilityTime;
         }
     }
 }
