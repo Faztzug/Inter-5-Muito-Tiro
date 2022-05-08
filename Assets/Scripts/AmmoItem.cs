@@ -12,6 +12,9 @@ public class AmmoItem : Item
     public override void CollectItem(Collider info)
     {
         base.CollectItem(info);
-        info.GetComponent<Gun>().GainAmmo(ammount,this);
+        if(info.gameObject.TryGetComponent<Gun>(out Gun gun))
+        {
+            gun.GainAmmo(ammount,this);
+        }
     }
 }

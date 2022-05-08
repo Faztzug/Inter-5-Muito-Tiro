@@ -23,6 +23,10 @@ public class Health : MonoBehaviour
 
     public virtual void DestroyCharacter()
     {
+        if(TryGetComponent<EnemyDrop>(out EnemyDrop drop))
+        {
+            drop.Drop(); 
+        }
         Destroy(this.gameObject);
     }
 }

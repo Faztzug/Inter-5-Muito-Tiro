@@ -6,17 +6,20 @@ using UnityEngine.AI;
 [RequireComponent(typeof(Rigidbody), typeof(NavMeshAgent))] 
 public class EnemyIA : MonoBehaviour
 {
-    [SerializeField] protected Transform player;
+    [SerializeField] [Range(0,1)] protected float[] updateRateRNG = new float[2];
+    [HideInInspector] public Transform player;
     protected Vector3 pos;
     protected Vector3 playerPos;
     protected NavMeshAgent agent;
     protected Rigidbody rgbd;
     [SerializeField] protected float findPlayerDistance = 100f;
     [SerializeField] protected float minPlayerDistance = 10f;
-    [SerializeField] [Range(0,1)] protected float updateRate;
+    [Range(0,1)] protected float updateRate;
+    protected float distance;
 
     protected virtual void Start() 
     {
+        updateRate = Random.Range(updateRateRNG[0], updateRateRNG[1]);
         var players = GameObject.FindGameObjectsWithTag("Player");
         foreach (var p in players)
         {
@@ -29,6 +32,7 @@ public class EnemyIA : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         rgbd = GetComponent<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
+        distance = Mathf.Infinity;
         StartCoroutine(CourotineAsyncUpdateIA());
     }
 
@@ -39,7 +43,9 @@ public class EnemyIA : MonoBehaviour
 
     protected IEnumerator CourotineAsyncUpdateIA()
     {
-        yield return new WaitForSecondsRealtime(updateRate);
+        updateRate = Random.Range(updateRateRNG[0], updateRateRNG[1]);
+
+        yield return new WaitForSeconds(updateRate);
 
         rgbd.velocity = Vector3.zero;
         

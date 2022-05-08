@@ -9,7 +9,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private int maxLoadedAmmo = 6;
     [SerializeField] [Range(0, 72)] private int extraAmmo = 12;
     [SerializeField] private int maxExtraAmmo = 72;
-    [SerializeField] private Bullet[] bullets;
+    [SerializeField] private List<Bullet> bullets;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float bulletTimer = 3f;
     [SerializeField] private Transform shootPosition;
@@ -49,21 +49,19 @@ public class Gun : MonoBehaviour
         if(!trigger && loadedAmmo > 0)
         {
             trigger = true;
-           
-            Debug.Log("TRIGGER");
         }
          
     }
     public void Reload()
     {
+        if(state.GodMode) extraAmmo = maxExtraAmmo;
+        
         if(loadedAmmo < maxLoadedAmmo && extraAmmo > 0)
         {
             loadedAmmo++;
             extraAmmo--;
-            Debug.Log("RELOAD");
             UpdateAmmoText();
         }
-         
     }
 
     public void Fire()
@@ -73,37 +71,38 @@ public class Gun : MonoBehaviour
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;
-        
-
-            //Physics.Raycast(shootPosition.position, cam.transform.forward * 100f, 100f);
 
 
             foreach (Bullet bullet in bullets)
             {
                 if(bullet.gameObject.activeSelf == false)
                 {
-                    SpawnBullet(bullet);
-
-                    var target = moveScript.LookAtRayHit;
-                    if(target != Vector3.zero)
-                    {
-                        bullet.transform.LookAt(target);
-                        Debug.DrawLine(shootPosition.position, target, Color.blue, 10f);
-                        return;
-                    }
-                    Debug.DrawRay(shootPosition.position, cam.transform.forward * 100f, Color.green, 10f);
+                    ShootingBullet(bullet);
                     return;
                 }
             }
-
+            
             Debug.Log("all bullets active");
-            SpawnBullet(bullets[0]);
-            
-            //Instantiate(bulletPrefab, shootPosition.position, cam.transform.rotation);
 
-            
+            var newBullet = Instantiate(bulletPrefab.GetComponent<Bullet>());
+            newBullet.transform.SetParent(null);
+            bullets.Add(newBullet);
+            ShootingBullet(newBullet);
         }
         
+    }
+    private void ShootingBullet(Bullet bullet)
+    {
+        SpawnBullet(bullet);
+
+        var target = moveScript.LookAtRayHit;
+        if(target != Vector3.zero)
+        {
+            bullet.transform.LookAt(target);
+            Debug.DrawLine(shootPosition.position, target, Color.blue, 10f);
+            return;
+        }
+        Debug.DrawRay(shootPosition.position, cam.transform.forward * 100f, Color.green, 10f);
     }
 
     private void SpawnBullet(Bullet bullet)

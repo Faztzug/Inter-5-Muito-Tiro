@@ -3,23 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyDummy : EnemyIA
+public class EnemyMelle : EnemyIA
 {
+    [SerializeField] private GameObject BonkBox;
+    [SerializeField] private float attackCooldown;
     protected override void Update() 
     {
         base.Update();
-        
-        //RunAway();
     }
 
     protected override void AsyncUpdateIA()
     {
         base.AsyncUpdateIA();
-
-        RunAway();
+        GoToPlayer();
     }
 
-    private void RunAway()
+    private void GoToPlayer()
     {
         if(IsPlayerAlive())
         {
@@ -29,9 +28,8 @@ public class EnemyDummy : EnemyIA
 
         pos = transform.position;
         pos.y = 0;
-        
-        var distance = Vector3.Distance(pos, playerPos);
 
+        distance = Vector3.Distance(pos, playerPos);
 
         if(agent.isOnNavMesh)
         {
@@ -40,20 +38,28 @@ public class EnemyDummy : EnemyIA
                 playerPos = player.position;
                 agent.SetDestination(playerPos);
             }
+            else if(distance <= minPlayerDistance && IsPlayerAlive())
+            {
+                StartCoroutine(AttackPlayer());
+            }
             else 
             {
                 pos = transform.position;
                 agent.SetDestination(pos);
-                rgbd.velocity = Vector3.zero;
-                rgbd.angularVelocity = Vector3.zero;
             }
         }
         else
         {
-            Debug.LogError(gameObject.name + " OUT OF NAV MESH!");
+            Debug.LogError(gameObject.name + " MELLE AI OUT OF NAV MESH!");
         }
         
+    }
+    private IEnumerator AttackPlayer()
+    {
+        BonkBox.SetActive(true);
 
+        yield return new WaitForSeconds(attackCooldown);
         
+        BonkBox.SetActive(false);
     }
 }

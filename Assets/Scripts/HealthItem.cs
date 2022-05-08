@@ -7,6 +7,9 @@ public class HealthItem : Item
     public override void CollectItem(Collider info)
     {
         base.CollectItem(info);
-        info.GetComponent<PlayerHealth>().UpdateHealth(ammount,this);
+        if(info.gameObject.TryGetComponent<PlayerHealth>(out PlayerHealth hp))
+        {
+            hp.UpdateHealth(ammount,this);
+        }
     }
 }

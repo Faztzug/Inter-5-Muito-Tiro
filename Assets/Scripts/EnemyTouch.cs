@@ -22,41 +22,61 @@ public class EnemyTouch : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+        TouchDamage(hit.gameObject);
         //Debug.Log(hit.gameObject.name);
-        if((hit.gameObject.CompareTag("Melle") 
-        || hit.gameObject.CompareTag("Cactu")) 
-        && time < 0)
-        {
-            var damage = contactDamage;
-            if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
-            {
-                damage = contact.Damage;
-            }
-            Debug.Log("T Ouch!");
-            hp.UpdateHealth(damage);
-            time = invicibilityTime;
-        }
+        // if((hit.gameObject.CompareTag("Melle") 
+        // || hit.gameObject.CompareTag("Cactu")) 
+        // && time < 0)
+        // {
+        //     var damage = contactDamage;
+        //     if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+        //     {
+        //         damage = contact.Damage;
+        //     }
+        //     Debug.Log("T Ouch!");
+        //     hp.UpdateHealth(damage);
+        //     time = invicibilityTime;
+        // }
     }
     void OnCollisionEnter(Collision hit)
     {
-        if((hit.gameObject.CompareTag("Melle") 
-        || hit.gameObject.CompareTag("Cactu")) 
-        && time < 0)
-        {
-            var damage = contactDamage;
-            if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
-            {
-                damage = contact.Damage;
-            }
-            Debug.Log("T Ouch!");
-            hp.UpdateHealth(damage);
-            time = invicibilityTime;
-        }
+        TouchDamage(hit.gameObject);
+        // if((hit.gameObject.CompareTag("Melle") 
+        // || hit.gameObject.CompareTag("Cactu")) 
+        // && time < 0)
+        // {
+        //     var damage = contactDamage;
+        //     if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+        //     {
+        //         damage = contact.Damage;
+        //     }
+        //     Debug.Log("T Ouch!");
+        //     hp.UpdateHealth(damage);
+        //     time = invicibilityTime;
+        // }
     }
     void OnTriggerEnter(Collider hit)
     {
-        if((hit.gameObject.CompareTag("Melle") 
-        || hit.gameObject.CompareTag("Cactu")) 
+        TouchDamage(hit.gameObject);
+        // if((hit.gameObject.CompareTag("Melle") 
+        // || hit.gameObject.CompareTag("Cactu")) 
+        // && time < 0)
+        // {
+        //     var damage = contactDamage;
+        //     if(hit.gameObject.TryGetComponent<ContactDamage>(out ContactDamage contact))
+        //     {
+        //         damage = contact.Damage;
+        //     }
+        //     Debug.Log("T Ouch!");
+        //     hp.UpdateHealth(damage);
+        //     time = invicibilityTime;
+        // }
+    }
+
+    private void TouchDamage(GameObject hit)
+    {
+        if((hit.CompareTag("Melle") 
+        || hit.CompareTag("Cactu")) 
         && time < 0)
         {
             var damage = contactDamage;
@@ -64,6 +84,10 @@ public class EnemyTouch : MonoBehaviour
             {
                 damage = contact.Damage;
             }
+            // else if(hit.gameObject.TryGetComponent<Bullet>(out Bullet bullet))
+            // {
+            //     damage = bullet.damage;
+            // }
             Debug.Log("T Ouch!");
             hp.UpdateHealth(damage);
             time = invicibilityTime;

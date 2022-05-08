@@ -804,12 +804,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b19c906571480c4ebc1c15ba69ecad1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  updateRateRNG:
+  - 0.219
+  - 0.487
   player: {fileID: 0}
   findPlayerDistance: 50
   minPlayerDistance: 2
-  updateRate: 0.061
   BonkBox: {fileID: 5486076636943409744}
-  attackCooldown: 0.3
+  attackCooldown: 0.5
 --- !u!114 &6559754804980699722
 MonoBehaviour:
   m_ObjectHideFlags: 0

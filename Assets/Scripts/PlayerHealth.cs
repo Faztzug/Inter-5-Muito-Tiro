@@ -12,6 +12,7 @@ public class PlayerHealth : Health
     [SerializeField] float effectTimeMultplier = 10;
     [SerializeField] float effectGainMultplier = 2f;
     [SerializeField] float effectDownMultplier = 0.5f;
+    private GameState state;
     
 
     public override void Start()
@@ -19,10 +20,13 @@ public class PlayerHealth : Health
         base.Start();
         bar.maxValue = maxHealth;
         UpdateHealth();
+        state = GetComponent<GameState>();
     }
 
     void Update()
     {
+        if(state.GodMode) health = maxHealth;
+
         if(damageEffect.weight > 0)
         {
             if(damageTime < 0)

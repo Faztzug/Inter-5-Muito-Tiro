@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4579819707db2c34d9660b4847f339c9, type: 2}
+  - {fileID: 2100000, guid: c70d94a20d6c2f744965aab56c2f86ca, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -339,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Name
-      value: EnemyDummy
+      value: EnemyGunner
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Layer
@@ -508,7 +508,7 @@ PrefabInstance:
     - target: {fileID: 5822821947120931875, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c70d94a20d6c2f744965aab56c2f86ca, type: 2}
+      objectReference: {fileID: 2100000, guid: caf6ad3f48e7fbb43927776498e84d37, type: 2}
     - target: {fileID: 6000407479487422213, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.12655112
@@ -670,24 +670,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &370190570951281126
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838391959915411271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2dc90378b7523224baab33982c859fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  updateRateRNG:
-  - 0.106
-  - 0.293
-  player: {fileID: 0}
-  findPlayerDistance: 100
-  minPlayerDistance: 10
 --- !u!195 &2637595895784916062
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -710,6 +692,48 @@ NavMeshAgent:
   m_BaseOffset: -0.11
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 2
+--- !u!114 &3670520878185922451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838391959915411271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9fa5681e9c5a67f4ca71574bf34384a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  updateRateRNG:
+  - 0.287
+  - 0.683
+  player: {fileID: 0}
+  findPlayerDistance: 100
+  minPlayerDistance: 10
+  gun: {fileID: 4045244561494325113}
+  weightIKhand: 0.849
+--- !u!114 &4045244561494325113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838391959915411271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b951d8f52f7084c909c9e7ab7bd797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 3670520878185922451}
+  extraAmmo: 72
+  maxExtraAmmo: 72
+  enemyBullets: []
+  bulletPrefab: {fileID: 8630929994482422934, guid: a2c93b39e189175459a9fad8bebee6ad, type: 3}
+  bulletTimer: 3
+  shootPosition: {fileID: 4627655324554726319}
+  trigger: 0
+  rng: 10
+  damage: -1
 --- !u!114 &6559754804980699722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -722,7 +746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e39ecc9131b71054785fa342334f1cf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 15
+  maxHealth: 3
   health: 30
 --- !u!114 &7274393062452009097
 MonoBehaviour:
@@ -742,4 +766,4 @@ MonoBehaviour:
   - {fileID: 8726437213420126598, guid: 1c65ee53b555c824ca2de2fe052f24c8, type: 3}
   dropChance:
   - 100
-  - 100
+  - 10

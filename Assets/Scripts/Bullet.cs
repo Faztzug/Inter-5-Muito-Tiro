@@ -8,7 +8,7 @@ public class Bullet : MonoBehaviour
     private float speed;
     private float gravity;
     [SerializeField] private Rigidbody rgbd;
-    [SerializeField] private float damage;
+    public float damage;
     private Vector3 move;
     private bool setedVelocity = false;
 
@@ -44,6 +44,10 @@ public class Bullet : MonoBehaviour
         BulletHit(collisionInfo);
         
     }
+    void OnTriggerEnter(Collider other)
+    {
+        BulletHitTrigger(other);
+    }
     public void BulletHit(Collision collisionInfo)
     {
         gameObject.SetActive(false);
@@ -51,10 +55,17 @@ public class Bullet : MonoBehaviour
         if(collisionInfo.gameObject.GetComponent<Health>())
         {
             collisionInfo.gameObject.GetComponent<Health>().UpdateHealth(damage);
-            Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
+            //Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
         }
-
-        Debug.Log("bye bye lemon");
+    }
+    public void BulletHitTrigger(Collider other)
+    {
+        if(other.gameObject.GetComponent<Health>())
+        {
+            gameObject.SetActive(false);
+            other.gameObject.GetComponent<Health>().UpdateHealth(damage);
+            //Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
+        }
     }
 
     public void Respawn()

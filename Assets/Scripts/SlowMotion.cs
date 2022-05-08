@@ -53,6 +53,8 @@ public class SlowMotion : MonoBehaviour
     }
     private void UpdateBar()
     {
+        if(state.GodMode) currentFocusBar += regenFocusBar * 10f * Time.deltaTime;
+
         if(focusActive == false) currentFocusBar += regenFocusBar * Time.deltaTime;
         else if (focusActive) currentFocusBar -= Time.unscaledDeltaTime;
         
