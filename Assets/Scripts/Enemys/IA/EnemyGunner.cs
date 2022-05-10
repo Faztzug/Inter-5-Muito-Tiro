@@ -51,6 +51,10 @@ public class EnemyGunner : EnemyIA
     protected override void AsyncUpdateIA()
     {
         base.AsyncUpdateIA();
+        GunnerBehavior();
+    }
+    protected virtual void GunnerBehavior()
+    {
         GoToPlayer();
         ReadyFire();
     }
@@ -90,7 +94,7 @@ public class EnemyGunner : EnemyIA
 
     protected void ReadyFire()
     {
-        if(!IsPlayerAlive()) return;
+        if(!IsPlayerAlive() || distance > findPlayerDistance) return;
         if(reloading == false)
         {
             if(gun.trigger)

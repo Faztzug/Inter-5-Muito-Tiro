@@ -6,7 +6,7 @@ public class EnemyGun : MonoBehaviour
 {
     [SerializeField] private EnemyGunner enemy;
     public int loadedAmmo {get; private set;} = 6;
-    public int maxLoadedAmmo {get; private set;} = 6;
+    public int maxLoadedAmmo = 6;
     [SerializeField] [Range(0, 72)] private int extraAmmo = 12;
     [SerializeField] private int maxExtraAmmo = 720;
     [SerializeField] private List<Bullet> enemyBullets;
@@ -21,6 +21,7 @@ public class EnemyGun : MonoBehaviour
     void Start()
     {
         StartCoroutine(LateStart());
+        loadedAmmo = maxLoadedAmmo;
     }
     IEnumerator LateStart()
     {
