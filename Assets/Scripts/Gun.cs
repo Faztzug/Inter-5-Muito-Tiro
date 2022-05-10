@@ -18,6 +18,8 @@ public class Gun : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ammoText;
     private Movimento moveScript;
     private GameState state;
+    public AudioSource source;
+    public AudioClip clip;
    
     void Start()
     {
@@ -68,6 +70,8 @@ public class Gun : MonoBehaviour
     {
         if(trigger)
         {
+            source.PlayOneShot(clip);
+
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;

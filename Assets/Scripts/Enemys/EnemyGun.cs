@@ -17,7 +17,10 @@ public class EnemyGun : MonoBehaviour
     private GameState state;
     [SerializeField] [Range(0,180)] protected float rng;
     [SerializeField] private float damage =1f;
-   
+
+    public AudioSource source;
+    public AudioClip clip;
+
     void Start()
     {
         StartCoroutine(LateStart());
@@ -52,6 +55,7 @@ public class EnemyGun : MonoBehaviour
     {
         if(trigger)
         {
+            source.PlayOneShot(clip);
             loadedAmmo --;
             trigger = false;
 
