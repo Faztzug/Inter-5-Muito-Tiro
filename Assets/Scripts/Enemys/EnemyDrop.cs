@@ -21,7 +21,7 @@ public class EnemyDrop : MonoBehaviour
             if(rng <= dropChance[i])
             {
                 var item = Instantiate(itens[i], dropPos, dropRot);
-                item.GetComponent<Rigidbody>().AddForce(item.transform.up * 2f, ForceMode.Impulse);
+                item.GetComponent<Rigidbody>().AddForce(item.transform.up * 5f, ForceMode.Impulse);
                 if(i >= maxDrops) return;
             } 
         }
