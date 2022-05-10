@@ -100,6 +100,7 @@ MonoBehaviour:
   moveVector: {x: 0, y: -3, z: 200}
   rgbd: {fileID: 1249908958281552529}
   damage: -1
+  sangue: {fileID: 0}
 --- !u!136 &1827840143159621393
 CapsuleCollider:
   m_ObjectHideFlags: 0

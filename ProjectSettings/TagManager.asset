@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - Coletavel
   - Melle
+  - Bullet
   layers:
   - Default
   - TransparentFX
