@@ -126,72 +126,6 @@ Transform:
   m_Father: {fileID: 367512947}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2825698480738217209
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5219315137347677693}
-    m_Modifications:
-    - target: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_Name
-      value: GotaDeSange_PS
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.019
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.284575
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.006
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8784286392827441739, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
---- !u!1 &6836156521064554189 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
-  m_PrefabInstance: {fileID: 2825698480738217209}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5756728472685775382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -682,11 +616,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 5756728472685775382}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5219315137347677693 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
-  m_PrefabInstance: {fileID: 5756728472685775382}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6219944708282250718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
@@ -795,7 +724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a4c548b023ffe4ebeade73b748c290, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bloodParticle: {fileID: 6836156521064554189}
+  bloodParticle: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
+  timeToDestroy: 3
 --- !u!114 &4045244561494325113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -819,6 +749,8 @@ MonoBehaviour:
   trigger: 0
   rng: 10
   damage: -1
+  source: {fileID: 0}
+  clip: {fileID: 0}
 --- !u!114 &6559754804980699722
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.6
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1463415608}
-  m_IndirectSpecularColor: {r: 0.7076513, g: 0.7809807, b: 0.5901677, a: 0.6}
+  m_IndirectSpecularColor: {r: 0.70765144, g: 0.7809807, b: 0.5901677, a: 0.6}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1112,10 +1112,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 175991663}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (8)
@@ -1164,32 +1160,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &175991662 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 175991661}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &175991663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 175991661}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &177640916
@@ -1818,7 +1793,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20832
+  m_Name: pb_Mesh108822
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -2654,10 +2629,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 352707656}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (2)
@@ -2706,32 +2677,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &352707655 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 352707654}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &352707656 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 352707654}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &361845247
@@ -3334,7 +3284,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411749045}
-  m_LocalRotation: {x: 0.066982485, y: 5.1995447e-10, z: 3.4919793e-11, w: 0.99775416}
+  m_LocalRotation: {x: 0.066982485, y: -5.1995447e-10, z: -3.4919793e-11, w: 0.99775416}
   m_LocalPosition: {x: 160.32384, y: 2.239, z: 20.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3926,10 +3876,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1604317209}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner
@@ -3976,22 +3922,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4065,10 +3995,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 573884407}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (5)
@@ -4117,32 +4043,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &573884406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 573884405}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &573884407 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 573884405}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &574298621
@@ -4399,10 +4304,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 637208203}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (6)
@@ -4451,32 +4352,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &637208202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 637208201}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &637208203 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 637208201}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &674603444
@@ -4747,11 +4627,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 987461319, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017849223
+      value: 0.000000017849224
       objectReference: {fileID: 0}
     - target: {fileID: 987461319, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000015248606
+      value: -0.0000000015248607
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4771,11 +4651,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017319564
+      value: 0.000000017319564
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 8.474329e-10
+      value: -8.474329e-10
       objectReference: {fileID: 0}
     - target: {fileID: 2137942405, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5258,10 +5138,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 854266371}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (4)
@@ -5310,32 +5186,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &854266370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 854266369}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &854266371 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 854266369}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &947695349
@@ -5566,10 +5421,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1002742937}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (11)
@@ -5618,32 +5469,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1002742936 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1002742935}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1002742937 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1002742935}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1005012548
@@ -5776,7 +5606,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20766
+  m_Name: pb_Mesh108752
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6666,7 +6496,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20994
+  m_Name: pb_Mesh108992
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6831,10 +6661,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1132073595}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (9)
@@ -6883,32 +6709,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1132073594 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1132073593}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1132073595 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1132073593}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1159729019
@@ -12990,11 +12795,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
   m_PrefabInstance: {fileID: 1562134355}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1604317209 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 560771266}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1613580310
 GameObject:
   m_ObjectHideFlags: 0
@@ -17580,10 +17380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1666419765}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (7)
@@ -17632,32 +17428,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1666419764 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1666419763}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1666419765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1666419763}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1724327814 stripped
@@ -17911,10 +17686,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1786436898}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (10)
@@ -17963,32 +17734,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1786436897 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1786436896}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1786436898 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1786436896}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1787787028
@@ -18060,10 +17810,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1789388863}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (1)
@@ -18112,32 +17858,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1789388862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1789388861}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1789388863 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1789388861}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1800334304
@@ -18457,10 +18182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1450402166}
     m_Modifications:
-    - target: {fileID: 3798086858874265061, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: bloodParticle
-      value: 
-      objectReference: {fileID: 1919568429}
     - target: {fileID: 4838391959915411271, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
       propertyPath: m_Name
       value: EnemyGunner (3)
@@ -18509,32 +18230,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6836156520619983636, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554163, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: playOnAwake
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
 --- !u!4 &1919568428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5219315137347677693, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
-  m_PrefabInstance: {fileID: 1919568427}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1919568429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6836156521064554189, guid: 61ed854ab5693134bb21d7ff7e768940, type: 3}
   m_PrefabInstance: {fileID: 1919568427}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1926608629
@@ -19027,7 +18727,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20354
+  m_Name: pb_Mesh108342
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

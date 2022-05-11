@@ -5,10 +5,12 @@ using UnityEngine;
 public class PEsangue : MonoBehaviour
 {
     [SerializeField] private GameObject bloodParticle;
+    [SerializeField] private float timeToDestroy = 3f;
 
-    void Start()
+    public void Bleed(Transform bullet)
     {
-        
+        var blood = Instantiate(bloodParticle, bullet.position, bullet.rotation, null);
+        Destroy(blood, timeToDestroy);
     }
 
     // Update is called once per frame
@@ -16,13 +18,9 @@ public class PEsangue : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Bullet"))
         {
-            bloodParticle.SetActive(true);
+            Debug.Log(this.gameObject.name + " Bleed");
+            Bleed(other.transform);
         }
-        else
-            {
-                bloodParticle.SetActive(false);
-            }
-        
     }
 
     

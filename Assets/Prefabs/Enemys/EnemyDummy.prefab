@@ -143,15 +143,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 63.22
+      value: 65.89577
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.28
+      value: 4.0324306
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.01
+      value: 22.64606
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalRotation.w
@@ -159,15 +159,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -339,7 +339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Name
-      value: EnemyDummy
+      value: EnemyDummy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Layer
@@ -743,3 +743,17 @@ MonoBehaviour:
   dropChance:
   - 100
   - 100
+--- !u!114 &6126329231767659023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838391959915411271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1a4c548b023ffe4ebeade73b748c290, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodParticle: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
+  timeToDestroy: 3
