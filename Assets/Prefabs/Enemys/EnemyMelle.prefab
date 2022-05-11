@@ -808,7 +808,7 @@ MonoBehaviour:
   - 0.219
   - 0.487
   player: {fileID: 0}
-  findPlayerDistance: 50
+  findPlayerDistance: 55
   minPlayerDistance: 2
   BonkBox: {fileID: 5486076636943409744}
   attackCooldown: 0.5

@@ -19,9 +19,9 @@ public class Gun : MonoBehaviour
     private Movimento moveScript;
     private GameState state;
     public AudioSource source;
+    public AudioSource engate;
     public AudioClip fireClip;
     public AudioClip triggerClip;
-    public AudioClip triggerFailClip;
     public AudioClip reloadClip;
     public AudioClip reloadFailClip;
    
@@ -44,7 +44,14 @@ public class Gun : MonoBehaviour
     {
         if (state.TimeS != SpeedState.Paused)
         {
-            if (Input.GetButtonDown("Fire")) Fire();
+            if (Input.GetButtonDown("Fire"))
+            {
+                if (loadedAmmo == 0)
+                {
+                    source.PlayOneShot(reloadFailClip);
+                }
+                Fire();
+            }
             if (Input.GetButtonDown("Trigger")) Trigger();
             if (Input.GetButtonDown("Reload")) Reload();
         }

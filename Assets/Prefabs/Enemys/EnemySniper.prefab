@@ -661,7 +661,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -707,7 +707,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.5
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -826,11 +826,11 @@ MonoBehaviour:
   rng: 2
   damage: -2
   source: {fileID: 6666142016363794671}
-  fireClip: {fileID: 8300000, guid: 1c71be1f1dc4c4848994d7db2f0de38c, type: 3}
-  triggerClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
+  fireClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
+  triggerClip: {fileID: 8300000, guid: 60ac69b5928ab2f4d9916cb4867133b4, type: 3}
   triggerFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
-  reloadClip: {fileID: 8300000, guid: b150ce92877dc794cbbf4fafc1226d19, type: 3}
-  reloadFullClip: {fileID: 8300000, guid: b150ce92877dc794cbbf4fafc1226d19, type: 3}
+  reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
+  reloadFullClip: {fileID: 8300000, guid: 913149e0176892c498a5cd60a2460ede, type: 3}
 --- !u!114 &6409684917453500848
 MonoBehaviour:
   m_ObjectHideFlags: 0
