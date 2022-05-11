@@ -19,7 +19,11 @@ public class Gun : MonoBehaviour
     private Movimento moveScript;
     private GameState state;
     public AudioSource source;
-    public AudioClip clip;
+    public AudioClip fireClip;
+    public AudioClip triggerClip;
+    public AudioClip triggerFailClip;
+    public AudioClip reloadClip;
+    public AudioClip reloadFailClip;
    
     void Start()
     {
@@ -51,6 +55,7 @@ public class Gun : MonoBehaviour
         if(!trigger && loadedAmmo > 0)
         {
             trigger = true;
+            source.PlayOneShot(triggerClip);
         }
          
     }
@@ -60,6 +65,7 @@ public class Gun : MonoBehaviour
         
         if(loadedAmmo < maxLoadedAmmo && extraAmmo > 0)
         {
+            source.PlayOneShot(reloadClip);
             loadedAmmo++;
             extraAmmo--;
             UpdateAmmoText();
@@ -70,7 +76,7 @@ public class Gun : MonoBehaviour
     {
         if(trigger)
         {
-            source.PlayOneShot(clip);
+            source.PlayOneShot(fireClip);
 
             loadedAmmo --;
             UpdateAmmoText();
