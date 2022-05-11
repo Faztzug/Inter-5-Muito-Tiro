@@ -18,7 +18,7 @@ public class EnemyGun : MonoBehaviour
     [SerializeField] [Range(0,180)] protected float rng;
     [SerializeField] private float damage =1f;
 
-    public AudioSource source;
+    public AudioSource source, source2, source3, source4;
     public AudioClip fireClip;
     public AudioClip triggerClip;
     public AudioClip triggerFailClip;
