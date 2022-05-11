@@ -18,6 +18,9 @@ public class Movimento : MonoBehaviour
     [SerializeField] private float gravity = 1f;
     private float gravityAcceleration;
     private GameState state;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip passosClip;
+
 
     private void Start()
     {
@@ -139,5 +142,19 @@ public class Movimento : MonoBehaviour
         controller.Move(movement * speed);
 
         anim.SetFloat("Velocidade", Mathf.Abs(vertical.magnitude));
+
+        var velocitylAbs = Mathf.Abs(movement.x) + Mathf.Abs(movement.z);
+
+        if((velocitylAbs > 0) && controller.isGrounded)
+        {
+            if(audioSource.isPlaying == false)
+            {
+                audioSource.PlayOneShot(passosClip);
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+        }
     }
 }
