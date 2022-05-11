@@ -19,7 +19,11 @@ public class EnemyGun : MonoBehaviour
     [SerializeField] private float damage =1f;
 
     public AudioSource source;
-    public AudioClip clip;
+    public AudioClip fireClip;
+    public AudioClip triggerClip;
+    public AudioClip triggerFailClip;
+    public AudioClip reloadClip;
+    public AudioClip reloadFullClip;
 
     void Start()
     {
@@ -37,6 +41,7 @@ public class EnemyGun : MonoBehaviour
     {
         if(!trigger && loadedAmmo > 0)
         {
+            source.PlayOneShot(triggerClip);
             trigger = true;
         }
          
@@ -47,6 +52,8 @@ public class EnemyGun : MonoBehaviour
         {
             loadedAmmo++;
             extraAmmo--;
+            if(loadedAmmo == maxLoadedAmmo) source.PlayOneShot(reloadFullClip);
+            else source.PlayOneShot(reloadClip);
         }
          
     }
@@ -55,7 +62,7 @@ public class EnemyGun : MonoBehaviour
     {
         if(trigger)
         {
-            source.PlayOneShot(clip);
+            source.PlayOneShot(fireClip);
             loadedAmmo --;
             trigger = false;
 
