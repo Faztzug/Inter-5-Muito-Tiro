@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class MenuPause : MonoBehaviour
 {
     public GameObject player;
     public GameObject pauseMenu;
+    public AudioMixer audioMixer;
     private GameState state;
     private SpeedState timeState;
 
@@ -57,9 +59,19 @@ public class MenuPause : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void Options()  
+    public void AjustarVolume(float volume)
     {
-        
+        audioMixer.SetFloat("volume", volume);
+    }
+
+    public void AjustarQualidade(int numeroQualidade)
+    {
+        QualitySettings.SetQualityLevel(numeroQualidade);
+    }
+
+    public void TelaCheia(bool estaCheia)
+    {
+        Screen.fullScreen = estaCheia;
     }
 
     public void VoltarMenu()
