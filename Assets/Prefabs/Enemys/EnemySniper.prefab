@@ -126,6 +126,71 @@ Transform:
   m_Father: {fileID: 1827021890}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2352629330284544173
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2421608907382672786}
+    m_Modifications:
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133116415085190765, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_Name
+      value: EnemySFX (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
 --- !u!1001 &2743238655778368121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,6 +681,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 2743238655778368121}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2421608907382672786 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
+  m_PrefabInstance: {fileID: 2743238655778368121}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4585893466938135985 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
@@ -730,9 +800,6 @@ MonoBehaviour:
   rng: 2
   damage: -2
   source: {fileID: 0}
-  source2: {fileID: 0}
-  source3: {fileID: 0}
-  source4: {fileID: 0}
   fireClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
   triggerClip: {fileID: 8300000, guid: 60ac69b5928ab2f4d9916cb4867133b4, type: 3}
   triggerFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
@@ -754,7 +821,7 @@ MonoBehaviour:
   - 0.286
   - 0.805
   player: {fileID: 0}
-  findPlayerDistance: 60
+  findPlayerDistance: 75
   minPlayerDistance: 5
   gun: {fileID: 4045244559464259144}
   weightIKhand: 0.657

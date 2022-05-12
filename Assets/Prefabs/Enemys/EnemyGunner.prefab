@@ -126,6 +126,76 @@ Transform:
   m_Father: {fileID: 367512947}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1376973464
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5219315137347677693}
+    m_Modifications:
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584751011021936373, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4133116415085190765, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_Name
+      value: EnemySFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+--- !u!82 &6568550723601313778 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+  m_PrefabInstance: {fileID: 1376973464}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5756728472685775382
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,6 +686,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 5756728472685775382}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &5219315137347677693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
+  m_PrefabInstance: {fileID: 5756728472685775382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6219944708282250718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
@@ -749,10 +824,7 @@ MonoBehaviour:
   trigger: 0
   rng: 10
   damage: -1
-  source: {fileID: 0}
-  source2: {fileID: 0}
-  source3: {fileID: 0}
-  source4: {fileID: 0}
+  source: {fileID: 6568550723601313778}
   fireClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
   triggerClip: {fileID: 8300000, guid: 60ac69b5928ab2f4d9916cb4867133b4, type: 3}
   triggerFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
