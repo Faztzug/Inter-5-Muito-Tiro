@@ -20,6 +20,7 @@ public class SlowMotion : MonoBehaviour
     [SerializeField] private float currentFocusBar;
     [SerializeField] private float regenFocusBar;
     private GameState state;
+    [SerializeField] private float gainFocusMultplier = 0.5f;
 
     void Start()
     {
@@ -66,7 +67,7 @@ public class SlowMotion : MonoBehaviour
 
     public void GainFocusPoints(float value)
     {
-        currentFocusBar += value;
+        currentFocusBar += value * gainFocusMultplier;
         if(currentFocusBar > maxFocusBar) currentFocusBar = maxFocusBar;
     }
 
