@@ -16,6 +16,7 @@ public class Gun : MonoBehaviour
     private Camera cam;
     protected bool trigger = false;
     [SerializeField] private TextMeshProUGUI ammoText;
+    [SerializeField] private float damage = -1f;
     private Movimento moveScript;
     private GameState state;
     public AudioSource source;
@@ -132,6 +133,7 @@ public class Gun : MonoBehaviour
         bullet.transform.localRotation = cam.transform.rotation;
         bullet.gameObject.SetActive(true);
         bullet.DisableBullet(bulletTimer);
+        bullet.damage = damage;
     }
 
     public void UpdateAmmoText()

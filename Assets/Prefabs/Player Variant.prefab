@@ -2156,6 +2156,7 @@ MonoBehaviour:
   maxFocusBar: 10
   currentFocusBar: 0
   regenFocusBar: 1
+  gainFocusMultplier: 0.5
 --- !u!114 &7586671689147982066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,6 +2203,7 @@ MonoBehaviour:
   bulletTimer: 3
   shootPosition: {fileID: 4627655324554726319}
   ammoText: {fileID: 0}
+  damage: -1
   source: {fileID: 2200221475779055046}
   engate: {fileID: 0}
   fireClip: {fileID: 8300000, guid: 02a32b530a90a3148a34a1bf7cc0d8b9, type: 3}

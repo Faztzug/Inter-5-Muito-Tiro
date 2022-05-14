@@ -355,6 +355,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: -1781356600409242780, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
+      propertyPath: m_TagString
+      value: EnemyHead
+      objectReference: {fileID: 0}
     - target: {fileID: -1703473491307067327, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -683,6 +687,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 5756728472685775382}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2928284889044175218 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1781356600409242780, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
+  m_PrefabInstance: {fileID: 5756728472685775382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6219944708282250718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
@@ -715,9 +724,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.25
-  m_Height: 1.6
+  m_Height: 1.4
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: 0, y: 0.85, z: 0}
 --- !u!95 &1852410062
 Animator:
   serializedVersion: 3
@@ -777,6 +786,7 @@ MonoBehaviour:
   player: {fileID: 0}
   findPlayerDistance: 30
   minPlayerDistance: 20
+  FocusGainOnDeath: 3
   gun: {fileID: 4045244561494325113}
   weightIKhand: 0.849
 --- !u!114 &3798086858874265061
@@ -855,3 +865,16 @@ MonoBehaviour:
   dropChance:
   - 100
   - 10
+--- !u!135 &8880751040969268538
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928284889044175218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}

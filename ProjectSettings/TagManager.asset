@@ -10,6 +10,7 @@ TagManager:
   - Coletavel
   - Melle
   - Bullet
+  - EnemyHead
   layers:
   - Default
   - TransparentFX

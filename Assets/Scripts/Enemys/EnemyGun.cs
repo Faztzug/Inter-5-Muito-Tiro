@@ -16,7 +16,7 @@ public class EnemyGun : MonoBehaviour
     public bool trigger = false;
     private GameState state;
     [SerializeField] [Range(0,180)] protected float rng;
-    [SerializeField] private float damage =1f;
+    [SerializeField] private float damage = -1f;
 
     public AudioSource source;
     public AudioClip fireClip;

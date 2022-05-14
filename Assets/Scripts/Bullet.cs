@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
     private Vector3 move;
     private bool setedVelocity = false;
     [HideInInspector] public SlowMotion slowMotion;
+    public float headShootMultiplier = 5f;
 
     void Start()
     {
@@ -37,6 +38,12 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collisionInfo)
     {
+        
+        if(slowMotion != null && collisionInfo.collider.gameObject.CompareTag("EnemyHead"))
+        {
+            Debug.Log("HEADSHOT!" + collisionInfo.collider.gameObject);
+            damage = damage * headShootMultiplier;
+        }
         BulletHit(collisionInfo.gameObject);
         
     }
