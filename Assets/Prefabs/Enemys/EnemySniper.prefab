@@ -181,16 +181,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySFX (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
-      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+--- !u!82 &8903082090806926791 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+  m_PrefabInstance: {fileID: 2352629330284544173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2743238655778368121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -799,7 +796,7 @@ MonoBehaviour:
   trigger: 0
   rng: 2
   damage: -2
-  source: {fileID: 0}
+  source: {fileID: 8903082090806926791}
   fireClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
   triggerClip: {fileID: 8300000, guid: 60ac69b5928ab2f4d9916cb4867133b4, type: 3}
   triggerFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}

@@ -16,6 +16,7 @@ public class EnemyIA : MonoBehaviour
     [SerializeField] protected float minPlayerDistance = 10f;
     [Range(0,1)] protected float updateRate;
     protected float distance;
+    [SerializeField] float FocusGainOnDeath = 3f;
 
     protected virtual void Start() 
     {
@@ -62,5 +63,13 @@ public class EnemyIA : MonoBehaviour
     {
         if(player != null && player.gameObject.activeSelf) return true;
         else return false;
+    }
+    public virtual void GivePlayerFocusOnDeath()
+    {
+        if(!IsPlayerAlive()) return;
+        if(player.TryGetComponent<SlowMotion>(out SlowMotion slowMotion))
+        {
+            slowMotion.GainFocusPoints(FocusGainOnDeath);
+        }
     }
 }

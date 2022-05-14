@@ -55,13 +55,19 @@ public class SlowMotion : MonoBehaviour
     {
         if(state.GodMode) currentFocusBar += regenFocusBar * 10f * Time.deltaTime;
 
-        if(focusActive == false) currentFocusBar += regenFocusBar * Time.deltaTime;
-        else if (focusActive) currentFocusBar -= Time.unscaledDeltaTime;
+        //if(focusActive == false) currentFocusBar += regenFocusBar * Time.deltaTime; //regen focus
+        if (focusActive) currentFocusBar -= Time.unscaledDeltaTime;
         
         if(currentFocusBar > maxFocusBar) currentFocusBar = maxFocusBar;
         if(currentFocusBar <= 0) focusActive = false;
 
         Barra.value = currentFocusBar;
+    }
+
+    public void GainFocusPoints(float value)
+    {
+        currentFocusBar += value;
+        if(currentFocusBar > maxFocusBar) currentFocusBar = maxFocusBar;
     }
 
     private void StartSlowMotion()

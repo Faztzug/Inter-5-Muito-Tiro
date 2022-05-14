@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public float damage;
     private Vector3 move;
     private bool setedVelocity = false;
+    [HideInInspector] public SlowMotion slowMotion;
 
     void Start()
     {
@@ -34,36 +35,23 @@ public class Bullet : MonoBehaviour
         gravity += moveVector.y * Time.deltaTime;
     }
 
-    void FixedUpdate() 
-    {
-        
-    }
-
     void OnCollisionEnter(Collision collisionInfo)
     {
-        BulletHit(collisionInfo);
+        BulletHit(collisionInfo.gameObject);
         
     }
     void OnTriggerEnter(Collider other)
     {
-        BulletHitTrigger(other);
+        BulletHit(other.gameObject);
     }
-    public void BulletHit(Collision collisionInfo)
+    public void BulletHit(GameObject collision)
     {
         gameObject.SetActive(false);
 
-        if(collisionInfo.gameObject.GetComponent<Health>())
+        if(collision.GetComponent<Health>())
         {
-            collisionInfo.gameObject.GetComponent<Health>().UpdateHealth(damage);
-            //Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
-        }
-    }
-    public void BulletHitTrigger(Collider other)
-    {
-        if(other.gameObject.GetComponent<Health>())
-        {
-            gameObject.SetActive(false);
-            other.gameObject.GetComponent<Health>().UpdateHealth(damage);
+            collision.GetComponent<Health>().UpdateHealth(damage);
+            if(slowMotion != null) slowMotion.GainFocusPoints(Mathf.Abs(damage));
             //Debug.Log(collisionInfo.gameObject.name + " took " + damage + " of damage!");
         }
     }

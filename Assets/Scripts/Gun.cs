@@ -24,15 +24,17 @@ public class Gun : MonoBehaviour
     public AudioClip triggerClip;
     public AudioClip reloadClip;
     public AudioClip reloadFailClip;
+    [SerializeField] private SlowMotion slowMotion;
    
     void Start()
     {
-       state = GetComponent<GameState>();
+        state = GetComponent<GameState>();
         cam = Camera.main;
         foreach (Bullet bullet in bullets)
         {
             bullet.transform.SetParent(null);
             bullet.gameObject.SetActive(false);
+            bullet.slowMotion = slowMotion;
         }
 
         UpdateAmmoText();

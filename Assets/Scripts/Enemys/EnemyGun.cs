@@ -52,8 +52,8 @@ public class EnemyGun : MonoBehaviour
         {
             loadedAmmo++;
             extraAmmo--;
+            source.PlayOneShot(reloadClip);
             if(loadedAmmo == maxLoadedAmmo) source.PlayOneShot(reloadFullClip);
-            else source.PlayOneShot(reloadClip);
         }
          
     }
