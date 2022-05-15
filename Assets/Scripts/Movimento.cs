@@ -21,6 +21,7 @@ public class Movimento : MonoBehaviour
     private GameState state;
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip passosClip;
+    [HideInInspector] public ReticulaFeedback reticula;
 
 
     private void Start()
@@ -63,15 +64,25 @@ public class Movimento : MonoBehaviour
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out rayHit, 500f, layer))
         {
             Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.red);
+            if(rayHit.rigidbody != null && rayHit.rigidbody.gameObject.CompareTag("Enemy") && reticula != null)
+            {
+                reticula.EnemyState();
+            }
+            else if(reticula != null)
+            {
+                reticula.NeutralState();
+            }
             return rayHit.point;
         }
         else
         {
             Debug.DrawRay(cam.transform.position, cam.transform.forward * 500f, Color.gray);
+            if(reticula != null)
+            {
+                reticula.NeutralState();
+            }
             return Vector3.zero;
         }
-
-        
     }
 
     void OnAnimatorIK()
