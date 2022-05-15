@@ -6,22 +6,32 @@ using UnityEngine.Audio;
 
 public class MenuInicial : MonoBehaviour
 {
+    [SerializeField] private string Teste;
+    [SerializeField] private string Tutorial;
+    [SerializeField] private string Fase1;
+    [SerializeField] private string Fase2;
+    [SerializeField] private string Fase3;
+    
 
     public AudioMixer audioMixer;
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(Teste);
     }
 
     public void PlayFase1()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(Fase1);
     }
 
     public void PlayFase2()
     {
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(Fase2);
     }
 
     public void AjustarVolume(float volume)

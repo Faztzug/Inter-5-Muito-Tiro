@@ -54,7 +54,6 @@ public class PlayerHealth : Health
 
         if(value < 0)
         {
-            Debug.Log("DAMAGE");
             damageEffect.weight += chgPorcentage * effectGainMultplier;
             damageTime += chgPorcentage * effectTimeMultplier;
         }

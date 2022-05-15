@@ -149,10 +149,13 @@ public class Movimento : MonoBehaviour
         }
 
         Vector3 movement = (vertical + horizontal) * Time.deltaTime;
-        movement.y = gravityAcceleration * Time.deltaTime;
+        if(Input.GetButton("Sprint")) movement = movement * runSpeed;
+        else movement = movement * speed;
 
-        if(Input.GetButton("Sprint")) controller.Move(movement * runSpeed);
-        else controller.Move(movement * speed);
+        movement.y = gravityAcceleration * Time.deltaTime * speed;
+        
+        controller.Move(movement);
+
 
         anim.SetFloat("Velocidade", Mathf.Abs(vertical.magnitude));
 

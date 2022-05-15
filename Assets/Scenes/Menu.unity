@@ -3138,6 +3138,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dab039d5ef1e942986e9c557f69275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Teste: SampleScene
+  Tutorial: Tutorial
+  Fase1: Fase1
+  Fase2: Fase2
+  Fase3: Fase3
   audioMixer: {fileID: 0}
 --- !u!1 &1125144439
 GameObject:
@@ -4871,6 +4876,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dab039d5ef1e942986e9c557f69275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Teste: 
+  Tutorial: 
+  Fase1: 
+  Fase2: 
+  Fase3: 
   audioMixer: {fileID: 24100000, guid: 2a25457167e94224ca3de9d3d53d6a7c, type: 2}
 --- !u!1 &1883576924
 GameObject:
