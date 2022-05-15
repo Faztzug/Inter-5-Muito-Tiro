@@ -6,6 +6,7 @@ public class Movimento : MonoBehaviour
 {
     [Header("Character Values")]
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float runSpeed = 10f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     private Transform lookAtObj;
@@ -115,7 +116,8 @@ public class Movimento : MonoBehaviour
     private void MoveInput()
     {
         Vector3 vertical = Input.GetAxis("Vertical") * transform.forward;
-        Vector3 horizontal = Input.GetAxis("Horizontal") * cam.transform.right;
+        if(Input.GetAxis("Vertical") < 0) vertical = Input.GetAxis("Vertical") * transform.forward / 2;
+        Vector3 horizontal = Input.GetAxis("Horizontal") * cam.transform.right * 0.9f;
 
         if(controller.isGrounded)
         {
@@ -127,7 +129,6 @@ public class Movimento : MonoBehaviour
                 gravityAcceleration = jumpForce;
                 anim.SetBool("isJumping", true);
             }
-
             else gravityAcceleration = -gravity * 10f * Time.deltaTime;
 
         }
@@ -139,7 +140,8 @@ public class Movimento : MonoBehaviour
         Vector3 movement = (vertical + horizontal) * Time.deltaTime;
         movement.y = gravityAcceleration * Time.deltaTime;
 
-        controller.Move(movement * speed);
+        if(Input.GetButton("Sprint")) controller.Move(movement * runSpeed);
+        else controller.Move(movement * speed);
 
         anim.SetFloat("Velocidade", Mathf.Abs(vertical.magnitude));
 
