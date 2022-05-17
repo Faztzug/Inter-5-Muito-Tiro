@@ -2211,7 +2211,7 @@ MonoBehaviour:
   fireClip: {fileID: 8300000, guid: 02a32b530a90a3148a34a1bf7cc0d8b9, type: 3}
   triggerClip: {fileID: 8300000, guid: 60ac69b5928ab2f4d9916cb4867133b4, type: 3}
   reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
-  reloadFailClip: {fileID: 8300000, guid: 913149e0176892c498a5cd60a2460ede, type: 3}
+  reloadFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
   slowMotion: {fileID: 5756728473388942049}
 --- !u!1001 &5756728472944799866
 PrefabInstance:
