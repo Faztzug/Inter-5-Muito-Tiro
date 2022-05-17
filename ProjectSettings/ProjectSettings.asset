@@ -13,8 +13,8 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: GameRush
-  productName: Silverado - Aim, Trigger, Shoot!
-  defaultCursor: {fileID: 0}
+  productName: Silverado - Trigger, Target, Shoot!
+  defaultCursor: {fileID: 2800000, guid: 566665f26f7c3f4458754ca82c09d564, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
@@ -136,7 +136,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 0.3.5
+  bundleVersion: 0.3.6
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
@@ -272,7 +272,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 7f4c10c712afe4648a6e6c28f49e9dcd, type: 3}
+      m_Icon: {fileID: 2800000, guid: f24e8b9f9bbc8524c8cb899adcc21fea, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
