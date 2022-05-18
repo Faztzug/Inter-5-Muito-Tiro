@@ -7,6 +7,10 @@ public class Movimento : MonoBehaviour
     [Header("Character Values")]
     [SerializeField] private float speed = 5f;
     [SerializeField] private float runSpeed = 10f;
+    [SerializeField] private float runAccelaration = 3f;
+    private float currentSpeed;
+    [SerializeField] [Range(0.5f,1f)] private float backWardsMultiplier = 0.5f;
+    [SerializeField] [Range(0.5f,1f)] private float strafeMultiplier = 0.9f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     private Transform lookAtObj;
@@ -127,8 +131,8 @@ public class Movimento : MonoBehaviour
     private void MoveInput()
     {
         Vector3 vertical = Input.GetAxis("Vertical") * transform.forward;
-        if(Input.GetAxis("Vertical") < 0) vertical = Input.GetAxis("Vertical") * transform.forward / 2;
-        Vector3 horizontal = Input.GetAxis("Horizontal") * cam.transform.right * 0.9f;
+        if(Input.GetAxis("Vertical") < 0) vertical = Input.GetAxis("Vertical") * transform.forward * backWardsMultiplier;
+        Vector3 horizontal = Input.GetAxis("Horizontal") * cam.transform.right * strafeMultiplier;
 
         if(controller.isGrounded)
         {
@@ -149,15 +153,20 @@ public class Movimento : MonoBehaviour
         }
 
         Vector3 movement = (vertical + horizontal) * Time.deltaTime;
-        if(Input.GetButton("Sprint")) movement = movement * runSpeed;
-        else movement = movement * speed;
+        if(Input.GetButton("Sprint")) currentSpeed += runAccelaration * Time.deltaTime;
+        else currentSpeed -= runAccelaration * Time.deltaTime;
+
+        if(currentSpeed < speed) currentSpeed = speed;
+        else if(currentSpeed > runSpeed) currentSpeed = runSpeed;
+
+        movement = movement * currentSpeed;
 
         movement.y = gravityAcceleration * Time.deltaTime * speed;
         
         controller.Move(movement);
 
-
-        anim.SetFloat("Velocidade", Mathf.Abs(vertical.magnitude));
+        Debug.Log((vertical.magnitude * currentSpeed) / runSpeed);
+        anim.SetFloat("Velocidade", Mathf.Abs((vertical.magnitude * currentSpeed) / runSpeed));
 
         var velocitylAbs = Mathf.Abs(movement.x) + Mathf.Abs(movement.z);
 
