@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
         if(health > maxHealth) health = maxHealth;
         if(health <= 0) DestroyCharacter();
 
-        Debug.Log(name+" Health: " + value);
+        //Debug.Log(name+" Health: " + value);
     }
 
     public virtual void DestroyCharacter()

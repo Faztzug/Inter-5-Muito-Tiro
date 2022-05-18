@@ -13,6 +13,7 @@ public class Bullet : MonoBehaviour
     private bool setedVelocity = false;
     [HideInInspector] public SlowMotion slowMotion;
     public float headShootMultiplier = 5f;
+    [HideInInspector] public bool hit = false;
 
     void Start()
     {
@@ -44,17 +45,22 @@ public class Bullet : MonoBehaviour
             Debug.Log("HEADSHOT!" + collisionInfo.collider.gameObject);
             damage = damage * headShootMultiplier;
         }
-        BulletHit(collisionInfo.gameObject);
-        
+        if(collisionInfo.rigidbody?.gameObject != null) BulletHit(collisionInfo.rigidbody.gameObject);
+        else BulletHit(collisionInfo.gameObject);
     }
     void OnTriggerEnter(Collider other)
     {
-        BulletHit(other.gameObject);
+        if(other.attachedRigidbody?.gameObject != null) BulletHit(other.attachedRigidbody.gameObject);
+        else BulletHit(other.gameObject);
     }
     public void BulletHit(GameObject collision)
     {
         gameObject.SetActive(false);
+        if(hit) return;
+        hit = true;
 
+        Debug.Log("Bullet Hit: " + collision.name);
+        
         if(collision.GetComponent<Health>())
         {
             collision.GetComponent<Health>().UpdateHealth(damage);

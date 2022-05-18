@@ -106,6 +106,7 @@ public class EnemyGun : MonoBehaviour
 
     private void SpawnBullet(Bullet bullet)
     {
+        bullet.hit = false;
         bullet.StopAllCoroutines();
         bullet.Respawn();
         bullet.transform.position = shootPosition.position;

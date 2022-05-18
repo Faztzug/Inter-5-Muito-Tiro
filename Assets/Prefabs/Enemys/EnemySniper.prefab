@@ -859,7 +859,7 @@ MonoBehaviour:
   bulletTimer: 3
   shootPosition: {fileID: 4627655323866784414}
   trigger: 0
-  rng: 2
+  rng: 1.8
   damage: -2
   source: {fileID: 8903082090806926791}
   fireClip: {fileID: 8300000, guid: 0b7e40229fdd61d4c87f489890c6fa44, type: 3}
