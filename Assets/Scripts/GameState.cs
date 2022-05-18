@@ -21,6 +21,7 @@ public class GameState : MonoBehaviour
     public List<Transform> bodyPartsList; 
     public SpeedState TimeS {get; set;} = SpeedState.Running;
     public EnemyBullets enemyBullets;
+    public bool playerDead = false;
     public bool GodMode = false;
 
     void Start()

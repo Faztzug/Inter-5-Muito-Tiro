@@ -13,6 +13,7 @@ public class PlayerHealth : Health
     [SerializeField] float effectGainMultplier = 2f;
     [SerializeField] float effectDownMultplier = 0.5f;
     private GameState state;
+    public bool dead;
     
 
     public override void Start()
@@ -39,6 +40,8 @@ public class PlayerHealth : Health
                 damageTime -= 1f * Time.deltaTime;
             }
         }
+
+        if(state.playerDead) damageEffect.weight += Time.deltaTime;
         
     }
 
@@ -57,10 +60,27 @@ public class PlayerHealth : Health
             damageEffect.weight += chgPorcentage * effectGainMultplier;
             damageTime += chgPorcentage * effectTimeMultplier;
         }
+        else if(value > 0)
+        {
+            damageEffect.weight -= chgPorcentage * effectGainMultplier;
+            damageTime -= chgPorcentage * effectTimeMultplier;
+        }
     }
 
     public override void DestroyCharacter()
     {
-        this.gameObject.SetActive(false);
+        if(state.playerDead) return;
+        GetComponent<Animator>().SetTrigger("Die");
+        state.playerDead = true;
+        foreach (var item in GetComponentsInChildren<Collider>())
+        {
+            item.enabled = false;
+        }
+        foreach (var item in GetComponentsInChildren<MonoBehaviour>())
+        {
+            if(item == this) continue;
+            item.enabled = false;
+        }
+        //this.gameObject.SetActive(false);
     }
 }

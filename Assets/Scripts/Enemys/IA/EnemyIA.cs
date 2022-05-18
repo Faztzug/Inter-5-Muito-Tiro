@@ -17,6 +17,7 @@ public class EnemyIA : MonoBehaviour
     [Range(0,1)] protected float updateRate;
     protected float distance;
     [SerializeField] float FocusGainOnDeath = 3f;
+    private GameState state;
 
     protected virtual void Start() 
     {
@@ -30,6 +31,7 @@ public class EnemyIA : MonoBehaviour
                 break;
             }
         }
+        state = player.GetComponent<GameState>();
         agent = GetComponent<NavMeshAgent>();
         rgbd = GetComponent<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
@@ -61,7 +63,7 @@ public class EnemyIA : MonoBehaviour
     }
     protected bool IsPlayerAlive()
     {
-        if(player != null && player.gameObject.activeSelf) return true;
+        if(player != null && player.gameObject.activeSelf && state.playerDead == false) return true;
         else return false;
     }
     public virtual void GivePlayerFocusOnDeath()
