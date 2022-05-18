@@ -9,22 +9,6 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 09272f07a785bd34d9f77dfafcd2e2e7, type: 3}
-    m_Threshold: 0.3
-    m_Position: {x: 0.1, y: 0.1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Velocidade
-    m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: -203655887218126122, guid: 09272f07a785bd34d9f77dfafcd2e2e7, type: 3}
-    m_Threshold: 1
-    m_Position: {x: 0.1, y: -0.1}
-    m_TimeScale: 1
-    m_CycleOffset: 0
-    m_DirectBlendParameter: Velocidade
-    m_Mirror: 0
-  - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: c1f3f802b0d61ab44a06d9abb80d52f9, type: 3}
     m_Threshold: 1.7
     m_Position: {x: 0.3, y: 0}
@@ -43,7 +27,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: 59a517663387d9d48a6bd9f61de65aa2, type: 3}
     m_Threshold: 3.1000001
-    m_Position: {x: 0, y: -1}
+    m_Position: {x: 0, y: -0.7}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Velocidade
@@ -51,14 +35,14 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: -203655887218126122, guid: 97647f3fc66ad6f45bbcab8709edc36f, type: 3}
     m_Threshold: 3.8000002
-    m_Position: {x: 0, y: 1}
+    m_Position: {x: 0, y: 0.8}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Velocidade
     m_Mirror: 0
   m_BlendParameter: Velocidade
   m_BlendParameterY: Strafe
-  m_MinThreshold: 0.3
+  m_MinThreshold: 1.7
   m_MaxThreshold: 3.8000002
   m_UseAutomaticThresholds: 0
   m_NormalizedBlendValues: 0
@@ -403,7 +387,7 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
+  - m_ConditionMode: 4
     m_ConditionEvent: Movement
     m_EventTreshold: 0.15
   m_DstStateMachine: {fileID: 0}
@@ -415,7 +399,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.25
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
@@ -440,7 +424,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0.25
   m_TransitionOffset: 0
   m_ExitTime: 0.25
-  m_HasExitTime: 1
+  m_HasExitTime: 0
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
