@@ -78,11 +78,13 @@ public class EnemyGunner : EnemyIA
             {
                 playerPos = player.position;
                 agent.SetDestination(playerPos);
+                anim.SetFloat("Movement", 1);
             }
             else 
             {
                 pos = transform.position;
                 agent.SetDestination(pos);
+                anim.SetFloat("Movement", 0);
             }
         }
         else

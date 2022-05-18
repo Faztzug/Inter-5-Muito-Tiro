@@ -7,9 +7,12 @@ public class EnemyMelle : EnemyIA
 {
     [SerializeField] private GameObject BonkBox;
     [SerializeField] private float attackCooldown;
+    protected Animator anim;
+
     protected override void Update() 
     {
         base.Update();
+        anim = GetComponent<Animator>();
     }
 
     protected override void AsyncUpdateIA()
@@ -37,6 +40,8 @@ public class EnemyMelle : EnemyIA
             {
                 playerPos = player.position;
                 agent.SetDestination(playerPos);
+                anim.SetFloat("Movement", 1);
+
             }
             else if(distance <= minPlayerDistance && IsPlayerAlive())
             {
@@ -46,6 +51,7 @@ public class EnemyMelle : EnemyIA
             {
                 pos = transform.position;
                 agent.SetDestination(pos);
+                anim.SetFloat("Movement", 0);
             }
         }
         else
