@@ -132,7 +132,8 @@ public class Movimento : MonoBehaviour
     {
         Vector3 vertical = Input.GetAxis("Vertical") * transform.forward;
         if(Input.GetAxis("Vertical") < 0) vertical = Input.GetAxis("Vertical") * transform.forward * backWardsMultiplier;
-        Vector3 horizontal = Input.GetAxis("Horizontal") * cam.transform.right * strafeMultiplier;
+        Vector3 rawHorizontal = Input.GetAxis("Horizontal") * cam.transform.right;
+        Vector3 horizontal = rawHorizontal * strafeMultiplier;
 
         if(controller.isGrounded)
         {
@@ -164,13 +165,17 @@ public class Movimento : MonoBehaviour
         movement.y = gravityAcceleration * Time.deltaTime * speed;
         
         controller.Move(movement);
+        
+        var velocitylAbs = Mathf.Abs(vertical.magnitude) + Mathf.Abs(horizontal.magnitude);
+        anim.SetFloat("Movement", velocitylAbs);
 
-        Debug.Log((vertical.magnitude * currentSpeed) / runSpeed);
         anim.SetFloat("Velocidade", Mathf.Abs((vertical.magnitude * currentSpeed) / runSpeed));
 
-        var velocitylAbs = Mathf.Abs(movement.x) + Mathf.Abs(movement.z);
+        if(Input.GetAxis("Horizontal") >= 0) anim.SetFloat("Strafe", (horizontal.magnitude * currentSpeed) / runSpeed);
+        else if(Input.GetAxis("Horizontal") < 0) anim.SetFloat("Strafe", (-horizontal.magnitude * currentSpeed) / runSpeed);
 
-        if((velocitylAbs > 0) && controller.isGrounded)
+
+        if((velocitylAbs > 0.1) && controller.isGrounded)
         {
             if(audioSource.isPlaying == false)
             {
