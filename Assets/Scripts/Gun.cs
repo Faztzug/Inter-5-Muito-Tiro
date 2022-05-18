@@ -26,6 +26,7 @@ public class Gun : MonoBehaviour
     public AudioClip reloadClip;
     public AudioClip reloadFailClip;
     [SerializeField] private SlowMotion slowMotion;
+    private Animator anim;
    
     void Start()
     {
@@ -41,6 +42,7 @@ public class Gun : MonoBehaviour
         UpdateAmmoText();
         Cursor.lockState = CursorLockMode.Locked;
         moveScript = GetComponent<Movimento>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -75,6 +77,7 @@ public class Gun : MonoBehaviour
         
         if(loadedAmmo < maxLoadedAmmo && extraAmmo > 0)
         {
+            anim.SetTrigger("Reload");
             source.PlayOneShot(reloadClip);
             loadedAmmo++;
             extraAmmo--;
