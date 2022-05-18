@@ -11,6 +11,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private int maxExtraAmmo = 72;
     [SerializeField] private List<Bullet> bullets;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject Flash;
     [SerializeField] private float bulletTimer = 3f;
     [SerializeField] private Transform shootPosition;
     private Camera cam;
@@ -47,6 +48,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        Flash.SetActive(false);
         if (state.TimeS != SpeedState.Paused)
         {
             if (Input.GetButtonDown("Fire"))
@@ -90,7 +92,7 @@ public class Gun : MonoBehaviour
         if(trigger)
         {
             source.PlayOneShot(fireClip);
-
+            Flash.SetActive(true);
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;
@@ -104,7 +106,7 @@ public class Gun : MonoBehaviour
                     return;
                 }
             }
-            
+           
             Debug.Log("all bullets active");
 
             var newBullet = Instantiate(bulletPrefab.GetComponent<Bullet>());
@@ -130,6 +132,7 @@ public class Gun : MonoBehaviour
 
     private void SpawnBullet(Bullet bullet)
     {
+        
         bullet.hit = false;
         bullet.StopAllCoroutines();
         bullet.Respawn();
