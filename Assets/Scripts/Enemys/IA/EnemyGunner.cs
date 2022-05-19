@@ -35,7 +35,7 @@ public class EnemyGunner : EnemyIA
         anim.SetLookAtPosition(pState.bodyPartChest.position);
         anim.SetIKPosition(AvatarIKGoal.RightHand, pState.bodyPartChest.position);
     
-        if(distance < findPlayerDistance)
+        if(distance < shootingDistance)
         {
             anim.SetLookAtWeight(1);
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weightIKhand);
@@ -96,7 +96,7 @@ public class EnemyGunner : EnemyIA
 
     protected void ReadyFire()
     {
-        if(!IsPlayerAlive() || distance > findPlayerDistance) return;
+        if(!IsPlayerAlive() || distance > shootingDistance) return;
         if(reloading == false)
         {
             if(gun.trigger)

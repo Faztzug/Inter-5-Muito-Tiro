@@ -12,6 +12,7 @@ public class EnemyIA : MonoBehaviour
     protected Vector3 playerPos;
     protected NavMeshAgent agent;
     protected Rigidbody rgbd;
+    [SerializeField] protected float shootingDistance = 100f;
     [SerializeField] protected float findPlayerDistance = 100f;
     [SerializeField] protected float minPlayerDistance = 10f;
     [Range(0,1)] protected float updateRate;
