@@ -48,7 +48,6 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
-        Flash.SetActive(false);
         if (state.TimeS != SpeedState.Paused)
         {
             if (Input.GetButtonDown("Fire"))
@@ -92,7 +91,6 @@ public class Gun : MonoBehaviour
         if(trigger)
         {
             source.PlayOneShot(fireClip);
-            Flash.SetActive(true);
             loadedAmmo --;
             UpdateAmmoText();
             trigger = false;
@@ -125,9 +123,9 @@ public class Gun : MonoBehaviour
         {
             bullet.transform.LookAt(target);
             Debug.DrawLine(shootPosition.position, target, Color.blue, 10f);
-            return;
         }
-        Debug.DrawRay(shootPosition.position, cam.transform.forward * 100f, Color.green, 10f);
+        var flash = Instantiate(Flash, bullet.transform.position, bullet.transform.rotation);
+        Destroy(flash.gameObject, 1f);
     }
 
     private void SpawnBullet(Bullet bullet)

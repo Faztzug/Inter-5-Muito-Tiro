@@ -586,7 +586,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713292023}
-  m_LocalRotation: {x: 0.10000403, y: 0.000000004280032, z: -4.301769e-10, w: 0.9949871}
+  m_LocalRotation: {x: 0.100004025, y: -0.0000000042800314, z: 4.3017684e-10, w: 0.9949871}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1268,7 +1268,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8621708917542604668}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0.434}
+  m_LocalPosition: {x: 0, y: -0, z: 0.597}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 367512947}
@@ -2164,6 +2164,20 @@ CharacterController:
   m_SkinWidth: 0.001
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0.92, z: 0}
+--- !u!136 &7174331365947166794
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4838391959915411271}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.19
+  m_Height: 1.76
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.92, z: 0}
 --- !u!95 &1852410062
 Animator:
   serializedVersion: 3
@@ -2211,6 +2225,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   runSpeed: 8
+  runAccelaration: 3
+  backWardsMultiplier: 0.5
+  strafeMultiplier: 0.9
   jumpForce: 1.7
   weightIKhand: 0.89
   gravity: 3
@@ -2238,6 +2255,7 @@ MonoBehaviour:
   bodyPartRightArm: {fileID: 7815817807612903358}
   bodyPartsList: []
   enemyBullets: {fileID: 0}
+  playerDead: 0
   GodMode: 0
 --- !u!114 &5756728473388942049
 MonoBehaviour:
@@ -2280,6 +2298,7 @@ MonoBehaviour:
   effectTimeMultplier: 10
   effectGainMultplier: 2
   effectDownMultplier: 0.5
+  dead: 0
 --- !u!114 &8319056843243428947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2304,6 +2323,7 @@ MonoBehaviour:
   - {fileID: 338901784171153685}
   - {fileID: 338901784122994429}
   bulletPrefab: {fileID: 8630929994482422934, guid: dcd9686ec613c0c499344c5ef515f011, type: 3}
+  Flash: {fileID: 7147556298264423804, guid: aef67ab2de6da7f428f1d6ba3eb8e0f1, type: 3}
   bulletTimer: 3
   shootPosition: {fileID: 4627655324554726319}
   ammoText: {fileID: 0}
@@ -2315,20 +2335,6 @@ MonoBehaviour:
   reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
   reloadFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
   slowMotion: {fileID: 5756728473388942049}
---- !u!136 &7174331365947166794
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4838391959915411271}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.19
-  m_Height: 1.76
-  m_Direction: 1
-  m_Center: {x: 0, y: 0.92, z: 0}
 --- !u!136 &8039667978180709300
 CapsuleCollider:
   m_ObjectHideFlags: 0
