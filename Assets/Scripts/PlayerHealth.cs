@@ -15,6 +15,8 @@ public class PlayerHealth : Health
     private GameState state;
     public bool dead;
     private Animator anim;
+
+    public GameObject gameOver;
     
 
     public override void Start()
@@ -75,6 +77,8 @@ public class PlayerHealth : Health
         if(state.playerDead) return;
         anim.SetTrigger("Die");
         state.playerDead = true;
+        gameOver.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
         foreach (var item in GetComponentsInChildren<Collider>())
         {
             item.enabled = false;
