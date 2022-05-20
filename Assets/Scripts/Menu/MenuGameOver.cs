@@ -14,7 +14,7 @@ public class MenuGameOver : MonoBehaviour
 
     public void Restart()
     {
-        Debug.Log("Resetou");
+        SceneManager.LoadScene(gameObject.scene.name);
     }
 
     public void LoadMenu()
