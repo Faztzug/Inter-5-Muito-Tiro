@@ -8,6 +8,7 @@ public class EnemyMelle : EnemyIA
     [SerializeField] private GameObject BonkBox;
     [SerializeField] private float attackCooldown;
     protected Animator anim;
+    protected bool atacking = false;
 
     protected override void Update() 
     {
@@ -18,7 +19,7 @@ public class EnemyMelle : EnemyIA
     protected override void AsyncUpdateIA()
     {
         base.AsyncUpdateIA();
-        GoToPlayer();
+        if(!atacking) GoToPlayer();
     }
 
     private void GoToPlayer()
@@ -62,10 +63,15 @@ public class EnemyMelle : EnemyIA
     }
     private IEnumerator AttackPlayer()
     {
-        BonkBox.SetActive(true);
+        if(!atacking) anim.SetTrigger("Melle");
+        atacking = true;
 
         yield return new WaitForSeconds(attackCooldown);
+        //BonkBox.SetActive(true);
+
         
-        BonkBox.SetActive(false);
+        //yield return new WaitForSeconds(attackCooldown);
+        //BonkBox.SetActive(false);
+        atacking = false;
     }
 }
