@@ -109,4 +109,8 @@ public class EnemyIA : MonoBehaviour
     {
         tauntTimerAsync = damageTauntAsync;
     }
+    public virtual void UpdateHealth(float health, float maxHealth)
+    {
+
+    }
 }

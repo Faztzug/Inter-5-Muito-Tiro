@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class EnemyBoss : EnemyGunner
 {
@@ -10,7 +11,12 @@ public class EnemyBoss : EnemyGunner
     protected int PatrollIndex;
     [SerializeField] protected float bossEndTimer = 5f;
     [SerializeField] protected string nextScene;
+    [SerializeField] protected Slider healthBar;
 
+    protected override void Start()
+    {
+        base.Start();
+    }
     protected override void GunnerBehavior()
     {
         ReadyFire();
@@ -81,5 +87,11 @@ public class EnemyBoss : EnemyGunner
         
         Debug.Log("Load Next Scene");
         SceneManager.LoadScene(nextScene);
+    }
+    public override void UpdateHealth(float health, float maxHealth)
+    {
+        base.UpdateHealth(health, maxHealth);
+        healthBar.maxValue = maxHealth;
+        healthBar.value = health;
     }
 }

@@ -28,7 +28,11 @@ public class Health : MonoBehaviour
         if(value < 0)
         {
             if(anim != null) anim.SetTrigger("Damage");
-            if(enemy != null) enemy.Taunt();
+            if(enemy != null)
+            {
+                enemy.Taunt();
+                enemy.UpdateHealth(health, maxHealth);
+            } 
         }
 
         //Debug.Log(name+" Health: " + value);
