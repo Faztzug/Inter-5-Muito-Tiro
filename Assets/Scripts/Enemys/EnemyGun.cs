@@ -7,7 +7,7 @@ public class EnemyGun : MonoBehaviour
     [SerializeField] private EnemyGunner enemy;
     public int loadedAmmo {get; private set;} = 6;
     public int maxLoadedAmmo = 6;
-    [SerializeField] [Range(0, 72)] private int extraAmmo = 12;
+    [SerializeField] [Range(0, 7200)] private int extraAmmo = 12;
     [SerializeField] private int maxExtraAmmo = 720;
     [SerializeField] private List<Bullet> enemyBullets;
     [SerializeField] private GameObject bulletPrefab;
@@ -27,13 +27,13 @@ public class EnemyGun : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(LateStart());
         loadedAmmo = maxLoadedAmmo;
+        StartCoroutine(LateStart());
     }
     IEnumerator LateStart()
     {
-        yield return new WaitForFixedUpdate();
-        state = enemy.player.GetComponent<GameState>();
+        yield return new WaitForEndOfFrame();
+        state = enemy.state;
         enemyBullets = state.enemyBullets.bullets;
     }
 

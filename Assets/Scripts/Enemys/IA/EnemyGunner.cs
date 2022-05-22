@@ -23,7 +23,7 @@ public class EnemyGunner : EnemyIA
         base.Update();
     }
 
-    void OnAnimatorIK()
+    protected virtual void OnAnimatorIK()
     {
         if(!IsPlayerAlive()) return;
 
@@ -59,7 +59,7 @@ public class EnemyGunner : EnemyIA
         ReadyFire();
     }
 
-    private void GoToPlayer()
+    protected void GoToPlayer()
     {
         if(IsPlayerAlive())
         {
@@ -94,11 +94,15 @@ public class EnemyGunner : EnemyIA
         
     }
 
-    protected void ReadyFire()
+    protected virtual void ReadyFire()
     {
+        Debug.Log("Ready Fire?");
+        Debug.Log(!IsPlayerAlive() || distance > shootingDistance);
         if(!IsPlayerAlive() || distance > shootingDistance) return;
+        
         if(reloading == false)
         {
+            Debug.Log("Ready Fire Valid");
             if(gun.trigger)
             {
                 Fire();
@@ -112,20 +116,24 @@ public class EnemyGunner : EnemyIA
         }
         if(gun.loadedAmmo < gun.maxLoadedAmmo)
         {
+            Debug.Log("Reloading");
             gun.Reload();
             reloading = true;
         }
         else
         {
+            Debug.Log("Reloading Done");
             reloading = false;
         }
     }
     protected void Fire()
     {
+        Debug.Log("Fire");
         gun.Fire();
     }
     protected void Trigger()
     {
+        Debug.Log("Trigger");
         gun.Trigger();
     }
 }

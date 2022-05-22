@@ -16,7 +16,7 @@ public class PauseMenuManager : MonoBehaviour
     }
     public void ResumeGame()
     {
-        Debug.Log("Continue");
+        //Debug.Log("Continue");
         menuPause.ResumeGame();
     }
 

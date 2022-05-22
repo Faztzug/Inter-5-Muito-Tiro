@@ -18,7 +18,7 @@ public class EnemyIA : MonoBehaviour
     [Range(0,1)] protected float updateRate;
     protected float distance;
     [SerializeField] float FocusGainOnDeath = 3f;
-    private GameState state;
+    [HideInInspector] public GameState state;
 
     protected virtual void Start() 
     {

@@ -16,7 +16,7 @@ public class AtivarCao : MonoBehaviour //Na verdade ta invertido com o AtivarGat
     {
         if (Input.GetButtonDown("Fire"))
         {
-            Debug.Log("Recarregou");
+            //Debug.Log("Recarregou");
             anim.SetBool("Engatilhar", true);
         }
         else
