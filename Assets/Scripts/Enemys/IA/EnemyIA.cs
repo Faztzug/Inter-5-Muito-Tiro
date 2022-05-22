@@ -20,7 +20,7 @@ public class EnemyIA : MonoBehaviour
     [SerializeField] float FocusGainOnDeath = 3f;
     [HideInInspector] public GameState state;
     protected Animator anim;
-    protected bool alive = true;
+    [HideInInspector] public bool alive = true;
     [SerializeField] protected int damageTauntAsync = 3;
     protected int tauntTimerAsync;
 

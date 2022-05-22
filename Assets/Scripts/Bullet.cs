@@ -59,7 +59,7 @@ public class Bullet : MonoBehaviour
         if(hit) return;
         hit = true;
 
-        Debug.Log("Bullet Hit: " + collision.name);
+        //Debug.Log("Bullet Hit: " + collision.name);
         
         if(collision.GetComponent<Health>())
         {

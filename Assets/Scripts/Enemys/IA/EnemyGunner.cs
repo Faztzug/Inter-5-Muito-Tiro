@@ -95,13 +95,13 @@ public class EnemyGunner : EnemyIA
 
     protected virtual void ReadyFire()
     {
-        Debug.Log("Ready Fire?");
-        Debug.Log(!IsPlayerAlive() || distance > shootingDistance);
+        //Debug.Log("Ready Fire?");
+        //Debug.Log(!IsPlayerAlive() || distance > shootingDistance);
         if(!IsPlayerAlive() || distance > shootingDistance) return;
         
         if(reloading == false)
         {
-            Debug.Log("Ready Fire Valid");
+            //Debug.Log("Ready Fire Valid");
             if(gun.trigger)
             {
                 Fire();
@@ -115,24 +115,24 @@ public class EnemyGunner : EnemyIA
         }
         if(gun.loadedAmmo < gun.maxLoadedAmmo)
         {
-            Debug.Log("Reloading");
+            //Debug.Log("Reloading");
             gun.Reload();
             reloading = true;
         }
         else
         {
-            Debug.Log("Reloading Done");
+            //Debug.Log("Reloading Done");
             reloading = false;
         }
     }
     protected void Fire()
     {
-        Debug.Log("Fire");
+        //Debug.Log("Fire");
         gun.Fire();
     }
     protected void Trigger()
     {
-        Debug.Log("Trigger");
+        //Debug.Log("Trigger");
         gun.Trigger();
     }
 }
