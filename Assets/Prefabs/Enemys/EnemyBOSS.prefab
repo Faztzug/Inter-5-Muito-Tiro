@@ -973,6 +973,7 @@ MonoBehaviour:
   minPlayerDistance: 10
   FocusGainOnDeath: 3
   state: {fileID: 0}
+  damageTauntAsync: 0
   gun: {fileID: 4045244561494325113}
   weightIKhand: 0.901
   goTo: {fileID: 0}

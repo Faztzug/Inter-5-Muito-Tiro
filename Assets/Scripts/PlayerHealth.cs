@@ -14,7 +14,6 @@ public class PlayerHealth : Health
     [SerializeField] float effectDownMultplier = 0.5f;
     private GameState state;
     public bool dead;
-    private Animator anim;
 
     public GameObject gameOver;
     
@@ -25,7 +24,6 @@ public class PlayerHealth : Health
         bar.maxValue = maxHealth;
         UpdateHealth();
         state = GetComponent<GameState>();
-        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -63,7 +61,6 @@ public class PlayerHealth : Health
         {
             damageEffect.weight += chgPorcentage * effectGainMultplier;
             damageTime += chgPorcentage * effectTimeMultplier;
-            anim.SetTrigger("Damage");
         }
         else if(value > 0)
         {

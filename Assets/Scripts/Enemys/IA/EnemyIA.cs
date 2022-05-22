@@ -21,6 +21,8 @@ public class EnemyIA : MonoBehaviour
     [HideInInspector] public GameState state;
     protected Animator anim;
     protected bool alive = true;
+    [SerializeField] protected int damageTauntAsync = 3;
+    protected int tauntTimerAsync;
 
     protected virtual void Start() 
     {
@@ -39,12 +41,14 @@ public class EnemyIA : MonoBehaviour
         rgbd = GetComponent<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
         distance = Mathf.Infinity;
+        tauntTimerAsync = damageTauntAsync;
+        anim = GetComponent<Animator>();
         StartCoroutine(CourotineAsyncUpdateIA());
     }
 
     protected virtual void Update() 
     {
-        
+
     }
 
     protected IEnumerator CourotineAsyncUpdateIA()
@@ -62,7 +66,11 @@ public class EnemyIA : MonoBehaviour
 
     protected virtual void AsyncUpdateIA()
     {
-
+        if(tauntTimerAsync > 0)
+        {
+            tauntTimerAsync--;
+            return;
+        }
     }
     protected bool IsPlayerAlive()
     {
@@ -96,5 +104,9 @@ public class EnemyIA : MonoBehaviour
         {
             slowMotion.GainFocusPoints(FocusGainOnDeath);
         }
+    }
+    public virtual void Taunt()
+    {
+        tauntTimerAsync = damageTauntAsync;
     }
 }
