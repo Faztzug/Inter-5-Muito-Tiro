@@ -29,8 +29,11 @@ public class Health : MonoBehaviour
         }
         if(TryGetComponent<EnemyIA>(out EnemyIA enemy))
         {
-            enemy.GivePlayerFocusOnDeath();
+            enemy.EnemyDeath();
         }
-        Destroy(this.gameObject);
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

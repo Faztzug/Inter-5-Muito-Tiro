@@ -7,7 +7,6 @@ public class EnemyMelle : EnemyIA
 {
     [SerializeField] private GameObject BonkBox;
     [SerializeField] private float attackCooldown;
-    protected Animator anim;
     protected bool atacking = false;
 
     protected override void Update() 

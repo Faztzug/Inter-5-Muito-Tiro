@@ -7,7 +7,6 @@ public class EnemyGunner : EnemyIA
 {
     
     [SerializeField] protected EnemyGun gun;
-    protected Animator anim;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     protected GameState pState;
     protected bool reloading;
@@ -35,7 +34,7 @@ public class EnemyGunner : EnemyIA
         anim.SetLookAtPosition(pState.bodyPartChest.position);
         anim.SetIKPosition(AvatarIKGoal.RightHand, pState.bodyPartChest.position);
     
-        if(distance < shootingDistance)
+        if(distance < shootingDistance && alive)
         {
             anim.SetLookAtWeight(1);
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weightIKhand);

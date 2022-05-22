@@ -19,6 +19,8 @@ public class EnemyIA : MonoBehaviour
     protected float distance;
     [SerializeField] float FocusGainOnDeath = 3f;
     [HideInInspector] public GameState state;
+    protected Animator anim;
+    protected bool alive = true;
 
     protected virtual void Start() 
     {
@@ -66,6 +68,26 @@ public class EnemyIA : MonoBehaviour
     {
         if(player != null && player.gameObject.activeSelf && state.playerDead == false) return true;
         else return false;
+    }
+    public virtual void EnemyDeath()
+    {
+        GivePlayerFocusOnDeath();
+        anim.SetTrigger("Die");
+
+        if(agent.isOnNavMesh) agent.SetDestination(transform.position);
+
+        alive = false;
+
+        foreach (var collider in GetComponentsInChildren<Collider>())
+        {
+            collider.enabled = false;
+        }
+        foreach (var script in GetComponentsInChildren<MonoBehaviour>())
+        {
+            if(script == this) continue;
+            script.enabled = false;
+        }
+        this.StopAllCoroutines();
     }
     public virtual void GivePlayerFocusOnDeath()
     {

@@ -28,6 +28,8 @@ public class Gun : MonoBehaviour
     public AudioClip reloadFailClip;
     [SerializeField] private SlowMotion slowMotion;
     private Animator anim;
+    [SerializeField] private float ReloadCoolDown = 0.2f;
+    private float reloadTimer = 0;
    
     void Start()
     {
@@ -48,6 +50,7 @@ public class Gun : MonoBehaviour
 
     void Update()
     {
+        reloadTimer -= Time.deltaTime;
         if (state.TimeS != SpeedState.Paused)
         {
             if (Input.GetButtonDown("Fire"))
@@ -59,7 +62,7 @@ public class Gun : MonoBehaviour
                 Fire();
             }
             if (Input.GetButtonDown("Trigger")) Trigger();
-            if (Input.GetButtonDown("Reload")) Reload();
+            if (Input.GetButtonDown("Reload") && reloadTimer < 0) Reload();
         }
     }
 
@@ -83,6 +86,7 @@ public class Gun : MonoBehaviour
             loadedAmmo++;
             extraAmmo--;
             UpdateAmmoText();
+            reloadTimer = ReloadCoolDown;
         }
     }
 

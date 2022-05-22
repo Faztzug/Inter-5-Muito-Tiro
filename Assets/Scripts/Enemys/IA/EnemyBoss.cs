@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyBoss : EnemyGunner
 {
     [SerializeField] protected Transform goTo;
     [SerializeField] protected Transform[] patroll;
     protected int PatrollIndex;
+    [SerializeField] protected float bossEndTimer = 5f;
+    [SerializeField] protected string nextScene;
 
     protected override void GunnerBehavior()
     {
@@ -65,5 +68,18 @@ public class EnemyBoss : EnemyGunner
 
         
         agent.SetDestination(patroll[PatrollIndex].position);
+    }
+    public override void EnemyDeath()
+    {
+        base.EnemyDeath();
+        StartCoroutine(BossEnd());
+    }
+    protected IEnumerator BossEnd()
+    {
+        Debug.Log("Boss End " + bossEndTimer);
+        yield return new WaitForSeconds(bossEndTimer);
+        
+        Debug.Log("Load Next Scene");
+        SceneManager.LoadScene(nextScene);
     }
 }
