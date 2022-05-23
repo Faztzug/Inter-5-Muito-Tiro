@@ -41,7 +41,7 @@ public class EnemyIA : MonoBehaviour
         rgbd = GetComponent<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
         distance = Mathf.Infinity;
-        tauntTimerAsync = damageTauntAsync;
+        tauntTimerAsync = damageTauntAsync * 3;
         anim = GetComponent<Animator>();
         StartCoroutine(CourotineAsyncUpdateIA());
     }
@@ -58,19 +58,20 @@ public class EnemyIA : MonoBehaviour
         yield return new WaitForSeconds(updateRate);
 
         rgbd.velocity = Vector3.zero;
-        
-        AsyncUpdateIA();
+
+        if(tauntTimerAsync >= 0)
+        {
+            tauntTimerAsync--;
+            Debug.Log("Current Taunt = " + tauntTimerAsync + name);
+        }
+        else  AsyncUpdateIA();
 
         StartCoroutine(CourotineAsyncUpdateIA());
     }
 
     protected virtual void AsyncUpdateIA()
     {
-        if(tauntTimerAsync > 0)
-        {
-            tauntTimerAsync--;
-            return;
-        }
+        
     }
     protected bool IsPlayerAlive()
     {

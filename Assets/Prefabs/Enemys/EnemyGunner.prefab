@@ -697,6 +697,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1852576806548013000, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 5756728472685775382}
   m_PrefabAsset: {fileID: 0}
+--- !u!135 &8880751040969268538
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2928284889044175218}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.15
+  m_Center: {x: 0, y: 0.06, z: 0}
 --- !u!54 &8861347060203260914
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -788,6 +801,9 @@ MonoBehaviour:
   findPlayerDistance: 30
   minPlayerDistance: 20
   FocusGainOnDeath: 3
+  state: {fileID: 0}
+  alive: 1
+  damageTauntAsync: 3
   gun: {fileID: 4045244561494325113}
   weightIKhand: 0.849
 --- !u!114 &3798086858874265061
@@ -817,6 +833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3670520878185922451}
+  loadedAmmo: 6
   maxLoadedAmmo: 6
   extraAmmo: 72
   maxExtraAmmo: 72
@@ -866,16 +883,3 @@ MonoBehaviour:
   dropChance:
   - 100
   - 10
---- !u!135 &8880751040969268538
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2928284889044175218}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.15
-  m_Center: {x: 0, y: 0.06, z: 0}

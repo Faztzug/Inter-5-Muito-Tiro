@@ -25,7 +25,7 @@ public class EnemySpawner : MonoBehaviour
 
         if(maxEnemys >= enemysList.Count)
         {
-            Debug.Log("SpawnEnemy!");
+            //Debug.Log("SpawnEnemy!");
             int iRngPrefab = Random.Range(0, enemysPrefabs.Length);
             int iRngPos = Random.Range(0, spawnPoints.Length);
 
@@ -34,7 +34,7 @@ public class EnemySpawner : MonoBehaviour
         }
 
         rngTimer = Random.Range(asyncRng[0], asyncRng[1]);
-        Debug.Log("Wait... " + rngTimer);
+        //Debug.Log("Wait... " + rngTimer);
 
         StartCoroutine(AsyncUpdate());
     }
@@ -43,7 +43,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Debug.Log("Trigger Spawner!");
+            //Debug.Log("Trigger Spawner!");
             StartCoroutine(AsyncUpdate());
             GetComponent<Collider>().enabled = false;
         }

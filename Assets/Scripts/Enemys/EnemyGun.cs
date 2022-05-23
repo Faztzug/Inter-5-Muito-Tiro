@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyGun : MonoBehaviour
 {
     [SerializeField] private EnemyGunner enemy;
-    public int loadedAmmo {get; private set;} = 6;
+    public int loadedAmmo = 6;
     public int maxLoadedAmmo = 6;
     [SerializeField] [Range(0, 7200)] private int extraAmmo = 12;
     [SerializeField] private int maxExtraAmmo = 720;
@@ -27,7 +27,7 @@ public class EnemyGun : MonoBehaviour
 
     void Start()
     {
-        loadedAmmo = maxLoadedAmmo;
+        //loadedAmmo = maxLoadedAmmo;
         StartCoroutine(LateStart());
     }
     IEnumerator LateStart()

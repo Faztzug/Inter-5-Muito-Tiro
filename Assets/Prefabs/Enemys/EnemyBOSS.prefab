@@ -1405,6 +1405,7 @@ MonoBehaviour:
   minPlayerDistance: 10
   FocusGainOnDeath: 3
   state: {fileID: 0}
+  alive: 1
   damageTauntAsync: 0
   gun: {fileID: 4045244561494325113}
   weightIKhand: 0.901
@@ -1445,6 +1446,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3577709025067803991}
+  loadedAmmo: 0
   maxLoadedAmmo: 6
   extraAmmo: 7200
   maxExtraAmmo: 7200
