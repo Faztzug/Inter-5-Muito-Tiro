@@ -34,6 +34,11 @@ public class MenuInicial : MonoBehaviour
         SceneManager.LoadScene(Fase2);
     }
 
+    public void PlayFase3()
+    {
+        SceneManager.LoadScene(Fase3);
+    }
+
     public void AjustarVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
