@@ -186,7 +186,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 842901241}
-  m_LocalRotation: {x: 0.061758496, y: 0.38629806, z: -0.025933452, w: 0.91993874}
+  m_LocalRotation: {x: 0.11803807, y: -0, z: -0, w: 0.9930091}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -260,7 +260,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 987461317}
-  m_LocalRotation: {x: 0.07848148, y: 0.3857624, z: -0.03295572, w: 0.9186631}
+  m_LocalRotation: {x: 0.13608086, y: 1e-45, z: -0, w: 0.99069774}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -586,7 +586,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1713292023}
-  m_LocalRotation: {x: 0.045059305, y: 0.38670498, z: -0.018921178, w: 0.9209077}
+  m_LocalRotation: {x: 0.100004025, y: 0.0000000042800314, z: -4.3017684e-10, w: 0.9949871}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -662,7 +662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137942403}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2036314, y: 1.8647133, z: -1.6708353}
+  m_LocalPosition: {x: 0.5, y: 2.2000003, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 987461319}
@@ -2130,6 +2130,48 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2072040086291044643, guid: 636b7b6d607c85145ae293015fad6a68, type: 3}
   m_PrefabInstance: {fileID: 5756728472685775382}
   m_PrefabAsset: {fileID: 0}
+--- !u!136 &195231342965466383
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881333381212694366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.45
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.2, z: -0.025}
+--- !u!136 &4543643223067748597
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3752358346350556649}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.4
+  m_Direction: 0
+  m_Center: {x: 0.15, y: 0, z: 0}
+--- !u!136 &4921252039626801424
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3871822833519230869}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.4
+  m_Direction: 0
+  m_Center: {x: -0.15, y: 0, z: 0}
 --- !u!54 &4988211799838551029
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2342,6 +2384,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11d377c53369d4549ae7136092256bc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mouseSensibility: 1
+  mouseAccelaration: 1
+  freeLook: {fileID: 2137942404}
   bodyPartHead: {fileID: 2162336408598511486}
   bodyPartChest: {fileID: 5400071502416337529}
   bodyPartPelvis: {fileID: 305938811519700329}
@@ -2353,6 +2398,7 @@ MonoBehaviour:
   enemyBullets: {fileID: 0}
   playerDead: 0
   GodMode: 0
+  gunTrigger: 0
 --- !u!114 &5756728473388942049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,62 +2478,7 @@ MonoBehaviour:
   reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
   reloadFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
   slowMotion: {fileID: 5756728473388942049}
---- !u!136 &8039667978180709300
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7330042919712753686}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.45
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.2, z: -0.025}
---- !u!136 &195231342965466383
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 881333381212694366}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.45
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.2, z: -0.025}
---- !u!136 &4921252039626801424
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3871822833519230869}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.4
-  m_Direction: 0
-  m_Center: {x: -0.15, y: 0, z: 0}
---- !u!136 &680915504369624090
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8730632319230435165}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.06
-  m_Height: 0.4
-  m_Direction: 0
-  m_Center: {x: -0.15, y: 0, z: 0}
+  ReloadCoolDown: 0.2
 --- !u!136 &2405978101579740847
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2502,20 +2493,34 @@ CapsuleCollider:
   m_Height: 0.4
   m_Direction: 0
   m_Center: {x: 0.15, y: 0, z: 0}
---- !u!136 &4543643223067748597
+--- !u!136 &8039667978180709300
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3752358346350556649}
+  m_GameObject: {fileID: 7330042919712753686}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.45
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.2, z: -0.025}
+--- !u!136 &680915504369624090
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8730632319230435165}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.06
   m_Height: 0.4
   m_Direction: 0
-  m_Center: {x: 0.15, y: 0, z: 0}
+  m_Center: {x: -0.15, y: 0, z: 0}
 --- !u!1001 &5756728472944799866
 PrefabInstance:
   m_ObjectHideFlags: 0
