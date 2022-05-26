@@ -5727,15 +5727,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 987461319, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.085120045
+      value: 0.08512007
       objectReference: {fileID: 0}
     - target: {fileID: 987461319, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017849223
+      value: -0.00000001731889
       objectReference: {fileID: 0}
     - target: {fileID: 987461319, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000015248606
+      value: 0.0000000014795546
       objectReference: {fileID: 0}
     - target: {fileID: 1713292025, guid: 321283957314dc147bdb58371804062c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6511,15 +6511,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1936808486, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_Value
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1936808486, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_MaxValue
-      value: 0
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1936808486, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_MinValue
-      value: -80
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2025699611, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_AnchorMax.x
@@ -7765,7 +7765,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 844024546}
   m_HandleRect: {fileID: 887810421}
   m_Direction: 0
-  m_MinValue: 0.1
+  m_MinValue: 0.5
   m_MaxValue: 2
   m_WholeNumbers: 0
   m_Value: 1
