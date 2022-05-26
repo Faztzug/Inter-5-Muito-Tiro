@@ -10,6 +10,8 @@ public class CutsceneSkip : MonoBehaviour
     public float cronomether = 0;
     void Start()
     {
+        Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.None;
         StartCoroutine(AutoLoad());
     }
     void Update()

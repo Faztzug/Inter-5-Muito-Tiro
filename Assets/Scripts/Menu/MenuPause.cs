@@ -9,13 +9,16 @@ public class MenuPause : MonoBehaviour
     public GameObject player;
     public GameObject pauseMenu;
     public AudioMixer audioMixer;
-    private GameState state;
+    public GameState state;
     private SpeedState timeState;
 
-    void Start()
+    void Awake()
     {
         if(player == null) Debug.LogError("COLOCAR PLAYER NO CANVAS PARA O PAUSE FUNCIONAR");
         state = player.GetComponent<GameState>();
+    }
+    void Start()
+    {
         pauseMenu.SetActive(false);
     }
 

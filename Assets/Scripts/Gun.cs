@@ -15,7 +15,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float bulletTimer = 3f;
     [SerializeField] private Transform shootPosition;
     private Camera cam;
-    protected bool trigger = false;
+    //protected bool trigger = false;
     [SerializeField] private TextMeshProUGUI ammoText;
     [SerializeField] private float damage = -1f;
     private Movimento moveScript;
@@ -68,9 +68,9 @@ public class Gun : MonoBehaviour
 
     public void Trigger()
     {
-        if(!trigger && loadedAmmo > 0)
+        if(!state.gunTrigger && loadedAmmo > 0)
         {
-            trigger = true;
+            state.gunTrigger = true;
             source.PlayOneShot(triggerClip);
         }
          
@@ -92,12 +92,12 @@ public class Gun : MonoBehaviour
 
     public void Fire()
     {
-        if(trigger)
+        if(state.gunTrigger)
         {
             source.PlayOneShot(fireClip);
             loadedAmmo --;
             UpdateAmmoText();
-            trigger = false;
+            state.gunTrigger = false;
 
 
             foreach (Bullet bullet in bullets)

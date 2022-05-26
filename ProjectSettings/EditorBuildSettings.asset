@@ -6,21 +6,36 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Introducao.unity
-    guid: b191bbc274aa3774297803f48453a0c2
+    path: Assets/Scenes/IntroducaoV2.unity
+    guid: 6a813d12b6a32c94caa42f932695a06b
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 3957754deabea1e43a9786269ab5a0ba
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/Transicao_1.unity
+    guid: 910b092076377364ba7016d064ed8de3
   - enabled: 1
     path: Assets/Scenes/Fase1.unity
     guid: d881cef3ef101764d896666d31569b3f
   - enabled: 1
+    path: Assets/Scenes/Transicao_2.unity
+    guid: 59f45b8daf44acf4cb4f6749efc9bfe5
+  - enabled: 1
     path: Assets/Scenes/Fase2.unity
     guid: 726f8e5e9b5300149b7f7ef15b6f1d66
   - enabled: 1
+    path: Assets/Scenes/Transicao_3.unity
+    guid: bfdd8ec62884f02479b7d13573ab139d
+  - enabled: 1
     path: Assets/Scenes/Fase3.unity
     guid: 5d282966517dc384f9c4571270599332
+  - enabled: 1
+    path: Assets/Scenes/Transicao_4.unity
+    guid: dcda17a645e1efc4ab0d5292683b9064
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Introducao.unity
+    guid: b191bbc274aa3774297803f48453a0c2
   m_configObjects: {}

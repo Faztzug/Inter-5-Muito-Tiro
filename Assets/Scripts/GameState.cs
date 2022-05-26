@@ -23,6 +23,7 @@ public class GameState : MonoBehaviour
     public EnemyBullets enemyBullets;
     public bool playerDead = false;
     public bool GodMode = false;
+    public bool gunTrigger;
 
     void Start()
     {
