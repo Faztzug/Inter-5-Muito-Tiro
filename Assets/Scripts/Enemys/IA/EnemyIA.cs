@@ -62,7 +62,7 @@ public class EnemyIA : MonoBehaviour
         if(tauntTimerAsync >= 0)
         {
             tauntTimerAsync--;
-            Debug.Log("Current Taunt = " + tauntTimerAsync + name);
+            //Debug.Log("Current Taunt = " + tauntTimerAsync + name);
         }
         else  AsyncUpdateIA();
 

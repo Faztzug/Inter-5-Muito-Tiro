@@ -22,13 +22,22 @@ public class GameState : MonoBehaviour
     public float MouseSensibility 
     { 
         get => mouseSensibility; 
-        set => mouseSensibility = value;
+        set 
+        {
+            mouseSensibility = value;
+            SetMouseSpeed();
+        } 
+        
     }
     [Range(0.1f, 5f)] [SerializeField] private float mouseAccelaration;
     public float MouseAccelaration 
     { 
         get => mouseAccelaration; 
-        set => mouseAccelaration = value;
+        set 
+        {
+            mouseAccelaration = value;
+            SetMouseSpeed();
+        } 
     }
 
     [Header("Game Data")]
@@ -84,7 +93,7 @@ public class GameState : MonoBehaviour
                 Debug.LogWarning("GOD MODE: " + GodMode);
             }
         }
-        SetMouseSpeed();
+        //SetMouseSpeed();
     }
 
 

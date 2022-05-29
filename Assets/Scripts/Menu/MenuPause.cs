@@ -7,8 +7,10 @@ using UnityEngine.Audio;
 public class MenuPause : MonoBehaviour
 {
     public GameObject player;
-    public GameObject pauseMenu;
+    public GameObject[] pauseMenu;
+    public GameObject[] pauseMenuOnlyDeactive;
     public AudioMixer audioMixer;
+    public AudioMixer musicMixer;
     public GameState state;
     private SpeedState timeState;
 
@@ -19,7 +21,7 @@ public class MenuPause : MonoBehaviour
     }
     void Start()
     {
-        pauseMenu.SetActive(false);
+        SetPauseGO(false);
     }
 
     // Update is called once per frame
@@ -29,8 +31,9 @@ public class MenuPause : MonoBehaviour
         {
             if (state.TimeS == SpeedState.Paused)
             {
-                ResumeGame();
+                Debug.Log("PAUSE RESUME");
                 Cursor.lockState = CursorLockMode.Locked;
+                ResumeGame();
             }
             else
             {
@@ -43,17 +46,41 @@ public class MenuPause : MonoBehaviour
     public void PauseGame()
     {
         state.TimeS = SpeedState.Paused;
-        pauseMenu.SetActive(true);
+        SetPauseGO(true);
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
     }
 
     public void ResumeGame()
     {
-        state.TimeS = SpeedState.Running;
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
+        Debug.Log("RESUME GAME");
+        StartCoroutine(MakeSureLockCursor());
         Cursor.lockState = CursorLockMode.Locked;
+        state.TimeS = SpeedState.Running;
+        SetPauseGO(false);
+        Time.timeScale = 1f;
+    }
+    IEnumerator MakeSureLockCursor()
+    {
+        yield return new WaitForSecondsRealtime(0.1f);
+        
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void SetPauseGO(bool value)
+    {
+        foreach (var item in pauseMenu)
+        {
+            item.SetActive(value);
+        }
+
+        if(value == false)
+        {
+            foreach (var item in pauseMenuOnlyDeactive)
+            {
+                item.SetActive(value);
+            }
+        }
     }
 
     public void LoadMenu()
@@ -64,7 +91,33 @@ public class MenuPause : MonoBehaviour
 
     public void AjustarVolume(float volume)
     {
+        var halfValue = -20f;
+        var multiplier = (volume / 40) * 2f;
+        if(multiplier < 0) multiplier = multiplier * -1f;
+        if(volume < halfValue) volume = volume * multiplier;
         audioMixer.SetFloat("volume", volume);
+    }
+    public void AjustarVolumeMusica(float volume)
+    {
+        var halfValue = -20f;
+        var multiplier = (volume / 40) * 2f;
+        if(multiplier < 0) multiplier = multiplier * -1f;
+        if(volume < halfValue) volume = volume * multiplier;
+        musicMixer.SetFloat("Volume", volume);
+    }
+    
+    public void AjustarSensibilidade(float value)
+    {
+        state.MouseSensibility = value;
+    }
+    public void AjustarAceleracao(float value)
+    {
+        var maxValue = 5f;
+        var minValue = 0.1f;
+        var reverseValue = maxValue - (value / 5f);
+        if(reverseValue < minValue) reverseValue = minValue;
+
+        state.MouseAccelaration = reverseValue;
     }
 
     public void AjustarQualidade(int numeroQualidade)
@@ -79,6 +132,6 @@ public class MenuPause : MonoBehaviour
 
     public void VoltarMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Menu");
     }
 }
