@@ -4733,7 +4733,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -333.87, y: -4}
+  m_AnchoredPosition: {x: -437, y: -56}
   m_SizeDelta: {x: 233.8745, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1005401698
@@ -5609,6 +5609,7 @@ MonoBehaviour:
   Fase2: Fase2
   Fase3: Fase3
   audioMixer: {fileID: 0}
+  musicMixer: {fileID: 0}
 --- !u!1001 &1121623025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6368,7 +6369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 333.87, y: -4}
+  m_AnchoredPosition: {x: 0, y: -56}
   m_SizeDelta: {x: 233.8745, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1317790222
@@ -7767,7 +7768,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -170}
+  m_AnchoredPosition: {x: 441, y: -56}
   m_SizeDelta: {x: 233.8745, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1708585858
@@ -8760,12 +8761,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dab039d5ef1e942986e9c557f69275, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Teste: 
-  Tutorial: 
-  Fase1: 
-  Fase2: 
-  Fase3: 
+  Teste: SampleScene
+  Tutorial: SampleScene
+  Fase1: Transicao_1
+  Fase2: Transicao_2
+  Fase3: Transicao_3
   audioMixer: {fileID: 24100000, guid: 2a25457167e94224ca3de9d3d53d6a7c, type: 2}
+  musicMixer: {fileID: 24100000, guid: dc26c81211fdb0d428afb7bdb008fa16, type: 2}
 --- !u!1 &1883576924
 GameObject:
   m_ObjectHideFlags: 0

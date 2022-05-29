@@ -11,9 +11,9 @@ public class MenuInicial : MonoBehaviour
     [SerializeField] private string Fase1;
     [SerializeField] private string Fase2;
     [SerializeField] private string Fase3;
-    
-
     public AudioMixer audioMixer;
+    public AudioMixer musicMixer;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.None;
@@ -42,6 +42,7 @@ public class MenuInicial : MonoBehaviour
     public void AjustarVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+        musicMixer.SetFloat("Volume", volume);
     }
 
     public void AjustarQualidade(int numeroQualidade)
