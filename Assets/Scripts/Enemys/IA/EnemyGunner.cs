@@ -8,6 +8,7 @@ public class EnemyGunner : EnemyIA
     
     [SerializeField] protected EnemyGun gun;
     [SerializeField] [Range(0,1)] private float weightIKhand;
+    [SerializeField] private bool rotateTowardsPlayer = true;
     protected GameState pState;
     protected bool reloading;
 
@@ -20,6 +21,7 @@ public class EnemyGunner : EnemyIA
     protected override void Update() 
     {
         base.Update();
+        if(rotateTowardsPlayer) transform.LookAt(player);
     }
 
     protected virtual void OnAnimatorIK()

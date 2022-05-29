@@ -5604,12 +5604,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Teste: SampleScene
-  Tutorial: Tutorial
-  Fase1: Fase1
-  Fase2: Fase2
-  Fase3: Fase3
-  audioMixer: {fileID: 0}
-  musicMixer: {fileID: 0}
+  Tutorial: SampleScene
+  Fase1: Transicao_1
+  Fase2: Transicao_2
+  Fase3: Transicao_3
+  audioMixer: {fileID: 24100000, guid: 2a25457167e94224ca3de9d3d53d6a7c, type: 2}
+  musicMixer: {fileID: 24100000, guid: dc26c81211fdb0d428afb7bdb008fa16, type: 2}
 --- !u!1001 &1121623025
 PrefabInstance:
   m_ObjectHideFlags: 0
