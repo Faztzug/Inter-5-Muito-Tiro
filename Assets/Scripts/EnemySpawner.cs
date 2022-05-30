@@ -8,7 +8,7 @@ public class EnemySpawner : MonoBehaviour
     [SerializeField] private List<EnemyIA> enemysList;
     [SerializeField] private Transform[] spawnPoints;
     [SerializeField] private int maxEnemys;
-    [SerializeField] [Range(0.1f,5f)] private float[] asyncRng = new float[2];
+    [SerializeField] [Range(1f,10f)] private float[] asyncRng = new float[2];
     private float rngTimer = 0;
 
     void Start()
