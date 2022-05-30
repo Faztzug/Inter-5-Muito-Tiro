@@ -893,6 +893,7 @@ MonoBehaviour:
   damageTauntAsync: 3
   gun: {fileID: 4045244559464259144}
   weightIKhand: 0.657
+  rotateTowardsPlayer: 1
 --- !u!114 &6559754803252607867
 MonoBehaviour:
   m_ObjectHideFlags: 0
