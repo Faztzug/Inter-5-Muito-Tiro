@@ -21,7 +21,7 @@ public class EnemyGunner : EnemyIA
     protected override void Update() 
     {
         base.Update();
-        if(rotateTowardsPlayer) transform.LookAt(player);
+        if(rotateTowardsPlayer && alive && IsPlayerAlive()) transform.LookAt(player);
     }
 
     protected virtual void OnAnimatorIK()
