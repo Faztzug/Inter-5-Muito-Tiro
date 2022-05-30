@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -580,7 +580,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 717bfd04f3ef889488b3d0ea5cc70385, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -596,63 +596,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220950480}
   m_CullTransparentMesh: 1
---- !u!1001 &1378856943
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 110.88469
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -239.60664
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 309.57257
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239736, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 547504871072239742, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
-      propertyPath: m_Name
-      value: AmbienteSFX
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e2087e0e1f26a9343855517cdaad47ec, type: 3}
 --- !u!1 &1650734527
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,12 +654,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center>silverado\nTrigger, target, shoot!\n\n<size=50>Ato I - A
-    emboscada</size></align>\n\nAp\xF3s Paden matar o xerife cobb e tomar seu posto,
-    Big Mike e sua gangue, na qual possuia uma rela\xE7\xE3o vantajosa com o antigo
-    chefe da cidade, que foi perdida, ficou muito bravo com tais mudan\xE7as.\n\nUm
-    dia, ele planejou criar uma emboscada contra paden para captur\xE1-lo e, de forma
-    \"pac\xEDfica\", invadir a cidade e tomar seu posto de comandante de Silverado..."
+  m_text: "<align=center> <size=35>Ato I - A emboscada</size></align>\n\nAp\xF3s
+    Paden matar o xerife cobb e tomar seu posto, Big Mike e sua gangue, na qual possuia
+    uma rela\xE7\xE3o vantajosa com o antigo chefe da cidade, que foi perdida, ficou
+    muito bravo com tais mudan\xE7as.\n\nUm dia, ele planejou criar uma emboscada
+    contra paden para captur\xE1-lo e, de forma \"pac\xEDfica\", invadir a cidade
+    e tomar seu posto de comandante de Silverado..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
   m_sharedMaterial: {fileID: 5869848878405443835, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
@@ -726,7 +669,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278255613
-  m_fontColor: {r: 0.993973, g: 1, b: 0, a: 1}
+  m_fontColor: {r: 0.99215686, g: 1, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -743,8 +686,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -888,13 +831,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874445137}
-  m_LocalRotation: {x: -0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: -150, z: -220}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 155, z: -390}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -50, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2145842892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,3 +972,60 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145842892}
   m_CullTransparentMesh: 1
+--- !u!1001 &2962114858344569294
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.667673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -160.3125
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -56.48963
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932897, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2962114858585932899, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
+      propertyPath: m_Name
+      value: Musica_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 455db759f9ed5724fa71a7c0a71d159f, type: 3}
