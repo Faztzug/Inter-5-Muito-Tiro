@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
+    [SerializeField] private bool needsTrigger = true;
     [SerializeField] private GameObject[] enemysPrefabs;
     [SerializeField] private List<EnemyIA> enemysList;
     [SerializeField] private Transform[] spawnPoints;
@@ -13,7 +14,11 @@ public class EnemySpawner : MonoBehaviour
 
     void Start()
     {
-        
+        if(!needsTrigger) 
+        {
+            if(TryGetComponent<Collider>(out Collider col)) col.enabled = false;
+            StartCoroutine(AsyncUpdate());
+        }
     }
 
     IEnumerator AsyncUpdate()
