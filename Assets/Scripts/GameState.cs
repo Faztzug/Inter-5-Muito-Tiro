@@ -16,6 +16,8 @@ public class GameState : MonoBehaviour
     public const float kDefaultMouseSpeedX = 200;
     public const float kDefaultMouseAccelarationY = 0.1f;
     public const float kDefaultMouseAccelarationX = 0.2f;
+    public const string kMouseSpeed = "Mouse Sensibility";
+    public const string kMouseAccelaration = "Mouse Accelaration";
 
     [Header("Save Data")]
     [Range(0.1f, 2f)] [SerializeField] private float mouseSensibility;
@@ -56,6 +58,10 @@ public class GameState : MonoBehaviour
     public bool GodMode = false;
     public bool gunTrigger;
 
+    void Awake()
+    {
+        LoadSave();
+    }
     void Start()
     {
         enemyBullets = FindObjectOfType<EnemyBullets>();
@@ -76,11 +82,14 @@ public class GameState : MonoBehaviour
     }
     private void SetMouseSpeed()
     {
-        freeLook.m_YAxis.m_MaxSpeed = kDefaultMouseSpeedY * mouseSensibility;
-        freeLook.m_XAxis.m_MaxSpeed = kDefaultMouseSpeedX * mouseSensibility;
+        freeLook.m_YAxis.m_MaxSpeed = kDefaultMouseSpeedY * MouseSensibility;
+        freeLook.m_XAxis.m_MaxSpeed = kDefaultMouseSpeedX * MouseSensibility;
+        PlayerPrefs.SetFloat(kMouseSpeed, MouseSensibility);
         
-        freeLook.m_YAxis.m_AccelTime = kDefaultMouseAccelarationY * mouseAccelaration;
-        freeLook.m_XAxis.m_AccelTime = kDefaultMouseAccelarationX * mouseAccelaration;
+        freeLook.m_YAxis.m_AccelTime = kDefaultMouseAccelarationY * MouseAccelaration;
+        freeLook.m_XAxis.m_AccelTime = kDefaultMouseAccelarationX * MouseAccelaration;
+        PlayerPrefs.SetFloat(kMouseAccelaration, MouseAccelaration);
+        //Debug.Log("Set Aceel: " + PlayerPrefs.GetFloat(kMouseAccelaration));
     }
 
     void Update()
@@ -94,6 +103,13 @@ public class GameState : MonoBehaviour
             }
         }
         //SetMouseSpeed();
+    }
+
+    void LoadSave()
+    {
+        if(PlayerPrefs.HasKey(kMouseSpeed)) mouseSensibility = PlayerPrefs.GetFloat(kMouseSpeed);
+        if(PlayerPrefs.HasKey(kMouseAccelaration)) mouseAccelaration = PlayerPrefs.GetFloat(kMouseAccelaration);
+        //Debug.Log("Load Aceel: " + PlayerPrefs.GetFloat(kMouseAccelaration));
     }
 
 

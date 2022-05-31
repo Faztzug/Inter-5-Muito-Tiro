@@ -114,10 +114,11 @@ public class MenuPause : MonoBehaviour
     {
         var maxValue = 5f;
         var minValue = 0.1f;
-        var reverseValue = maxValue - (value / 5f);
+        var reverseValue = maxValue - value;
         if(reverseValue < minValue) reverseValue = minValue;
 
         state.MouseAccelaration = reverseValue;
+        Debug.Log("AJUSTAR ACCEL " + reverseValue);
     }
 
     public void AjustarQualidade(int numeroQualidade)

@@ -634,6 +634,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 204864065}
+  - component: {fileID: 4771030169987098486}
   m_Layer: 5
   m_Name: "Configura\xE7\xF5es"
   m_TagString: Untagged
@@ -667,6 +668,25 @@ RectTransform:
   m_AnchoredPosition: {x: -63, y: 0}
   m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4771030169987098486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 204864064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39fae16927d74cf4ea564ea6e3858924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: {fileID: 4410191262373122599}
+  graphics: {fileID: 1365396808}
+  fullScreen: {fileID: 1189184488}
+  volume: {fileID: 1936808486}
+  music: {fileID: 858671393973735455}
+  sensibility: {fileID: 647079374892982345}
+  accelaration: {fileID: 6783754321870810626}
 --- !u!1 &219840616
 GameObject:
   m_ObjectHideFlags: 0
