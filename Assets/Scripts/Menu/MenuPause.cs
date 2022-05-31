@@ -22,6 +22,7 @@ public class MenuPause : MonoBehaviour
     void Start()
     {
         SetPauseGO(false);
+        LoadGameSettings();
     }
 
     // Update is called once per frame
@@ -88,9 +89,15 @@ public class MenuPause : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
+    private void LoadGameSettings()
+    {
+        if(PlayerPrefs.HasKey(state.save.sfx)) AjustarVolume(PlayerPrefs.GetFloat(state.save.sfx));
+        if(PlayerPrefs.HasKey(state.save.music)) AjustarVolumeMusica(PlayerPrefs.GetFloat(state.save.music));
+    }
 
     public void AjustarVolume(float volume)
     {
+        state.save.SaveSFX(volume);
         var halfValue = -20f;
         var multiplier = (volume / 40) * 2f;
         if(multiplier < 0) multiplier = multiplier * -1f;
@@ -99,6 +106,7 @@ public class MenuPause : MonoBehaviour
     }
     public void AjustarVolumeMusica(float volume)
     {
+        state.save.SaveMusic(volume);
         var halfValue = -20f;
         var multiplier = (volume / 40) * 2f;
         if(multiplier < 0) multiplier = multiplier * -1f;

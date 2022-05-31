@@ -19,6 +19,7 @@ public class Settings : MonoBehaviour
     {
         state = menu.state;
         LoadMouseSliders();
+        LoadVolumeSliders();
     }
 
     public void LoadMouseSliders()
@@ -28,6 +29,11 @@ public class Settings : MonoBehaviour
 
         //Debug.Log("accel " + state.MouseAccelaration);
         //Debug.Log("value " + accelaration.value);
+    }
+    public void LoadVolumeSliders()
+    {
+        volume.value = state.save.sfxVolume;
+        music.value = state.save.musicVolume;
     }
 
     

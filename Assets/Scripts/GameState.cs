@@ -12,6 +12,7 @@ public enum SpeedState
 
 public class GameState : MonoBehaviour
 {
+    [HideInInspector] public SaveGame save;
     public const float kDefaultMouseSpeedY = 2;
     public const float kDefaultMouseSpeedX = 200;
     public const float kDefaultMouseAccelarationY = 0.1f;
@@ -60,6 +61,7 @@ public class GameState : MonoBehaviour
 
     void Awake()
     {
+        save = new SaveGame();
         LoadSave();
     }
     void Start()
