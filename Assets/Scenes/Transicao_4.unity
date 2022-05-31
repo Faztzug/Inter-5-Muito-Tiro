@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: Menu
-  timeToAutoSkip: 60
+  timeToAutoSkip: 80
   cronomether: 0
 --- !u!1 &1195448987
 GameObject:
@@ -787,7 +787,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center> <size=35>Outro -Vit\xF3ria</size></align>\n\nFoi um desafio
+  m_text: "<align=center> <size=35>Outro - Vit\xF3ria</size></align>\n\nFoi um desafio
     e tanto, mas Paden finalmente derrotou Big Mike e interrompeu o plano dele de
     dominar a cidade de Silverado.\n\nO chefe da gangue foi colocado na pris\xE3o
     do vilarejo e no outro dia seria posto na forca para sua senten\xE7a final em
@@ -795,7 +795,16 @@ MonoBehaviour:
     em problemas e gangues pequenos que n\xE3o precisam de muito esfor\xE7o e habilidade,
     mas relaxar n\xE3o vai conseguir, pois a vida de um xerife n\xE3o \xE9 nada f\xE1cil,
     por\xE9m ainda tem tempo para tomar um bom whisky...\n\n<align=center> <size=35>Obrigado
-    por jogar!\n\nJogo desenvolvido por"
+    por jogar!</size>\n\nJogo desenvolvido por\n\n\n\n\n\n\n\nModelagem 3D \nGiovanni
+    Bendini Claudino\nGuilherme Camini Lunardi\nMichelle Dantas Marques\n\nPrograma\xE7\xE3o\nGuilherme
+    de Toledo Burgheri\nLuiz Fernando Alves de Souza\n\nLevel Design\nGuilherme de
+    Toledo Burgheri\nLuiz Fernando Alves de Souza\nVitor da Silva Lima\n\nConcept
+    Art\nMichelle Dantas Marques\nVitor da Silva Lima\n\nIlustra\xE7\xF5es\nVitor
+    da Silva Lima\n\nSFX\nLucas Cremonesi Vibiano\n\nVFX\nVitor da Silva Lima\n\nUI\nVitor
+    da Silva lima\n\nReda\xE7\xE3o\nGiovanni Bendini Claudino\nMichelle Dantas Marques\nVitor
+    da Silva lima\n\nProdu\xE7\xE3o\nLuiz Fernando Alves de Souza\nVitor da Silva
+    Lima\n\nQA\nGiovanni Bendini Claudino\nGuilherme de Toledo Burgheri\nVitor da
+    Silva Lima"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
   m_sharedMaterial: {fileID: 5869848878405443835, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
