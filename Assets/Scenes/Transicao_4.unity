@@ -290,6 +290,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &892678570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 892678571}
+  - component: {fileID: 892678573}
+  - component: {fileID: 892678572}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &892678571
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892678570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1.53272}
+  m_Children: []
+  m_Father: {fileID: 1650734528}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -652}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &892678572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892678570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6863fd9eeb695984080edc7ea06236eb, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 1
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &892678573
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892678570}
+  m_CullTransparentMesh: 1
 --- !u!1 &1185917915
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +757,8 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 892678571}
   m_Father: {fileID: 1195448991}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -711,12 +787,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center> <size=35>Outro -Vit\xF3ria</size></align>\n\nAp\xF3s Paden
-    matar o xerife cobb e tomar seu posto, Big Mike e sua gangue, na qual possuia
-    uma rela\xE7\xE3o vantajosa com o antigo chefe da cidade, que foi perdida, ficou
-    muito bravo com tais mudan\xE7as.\n\nUm dia, ele planejou criar uma emboscada
-    contra paden para captur\xE1-lo e, de forma \"pac\xEDfica\", invadir a cidade
-    e tomar seu posto de comandante de Silverado..."
+  m_text: "<align=center> <size=35>Outro -Vit\xF3ria</size></align>\n\nFoi um desafio
+    e tanto, mas Paden finalmente derrotou Big Mike e interrompeu o plano dele de
+    dominar a cidade de Silverado.\n\nO chefe da gangue foi colocado na pris\xE3o
+    do vilarejo e no outro dia seria posto na forca para sua senten\xE7a final em
+    frente ao cidad\xE3os do lugar. \n\nA partir de agora, Paden poder\xE1 focar
+    em problemas e gangues pequenos que n\xE3o precisam de muito esfor\xE7o e habilidade,
+    mas relaxar n\xE3o vai conseguir, pois a vida de um xerife n\xE3o \xE9 nada f\xE1cil,
+    por\xE9m ainda tem tempo para tomar um bom whisky...\n\n<align=center> <size=35>Obrigado
+    por jogar!\n\nJogo desenvolvido por"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
   m_sharedMaterial: {fileID: 5869848878405443835, guid: de858d9cee0007f4ebade8d99339c028, type: 2}

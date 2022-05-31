@@ -654,12 +654,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center> <size=35>Ato I - A emboscada</size></align>\n\nAp\xF3s
-    Paden matar o xerife cobb e tomar seu posto, Big Mike e sua gangue, na qual possuia
-    uma rela\xE7\xE3o vantajosa com o antigo chefe da cidade, que foi perdida, ficou
-    muito bravo com tais mudan\xE7as.\n\nUm dia, ele planejou criar uma emboscada
-    contra paden para captur\xE1-lo e, de forma \"pac\xEDfica\", invadir a cidade
-    e tomar seu posto de comandante de Silverado..."
+  m_text: "<align=center> <size=35>Ato I - A emboscada</size></align>\n\nNo dia anterior,
+    Paden foi atacado por dois bandidos, da gangue do seu arqui-inimigo Big Mike,
+    durante uma viagem para visitar seu amigo Emmett. Ap\xF3s um duelo arriscado
+    contra eles, percebeu o qu\xE3o estava enferrujado.\n\nMesmo vencendo, ele decidiu
+    treinar suas habilidades no deserto em frente \xE0 cidade no dia seguinte atirando
+    em garrafas vazias. Enquanto treinava, ele teve um pressentimento estranho, e
+    de repente uma gangue o encurralou para captur\xE1-lo..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
   m_sharedMaterial: {fileID: 5869848878405443835, guid: de858d9cee0007f4ebade8d99339c028, type: 2}

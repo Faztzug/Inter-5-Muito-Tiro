@@ -711,12 +711,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "<align=center> <size=35>Ato III - O duelo</size></align>\n\nAp\xF3s Paden
-    matar o xerife cobb e tomar seu posto, Big Mike e sua gangue, na qual possuia
-    uma rela\xE7\xE3o vantajosa com o antigo chefe da cidade, que foi perdida, ficou
-    muito bravo com tais mudan\xE7as.\n\nUm dia, ele planejou criar uma emboscada
-    contra paden para captur\xE1-lo e, de forma \"pac\xEDfica\", invadir a cidade
-    e tomar seu posto de comandante de Silverado..."
+  m_text: "<align=center> <size=35>Ato III - O duelo</size></align>\n\nBoa parte
+    dos bandidos j\xE1 tinham sidos derrotados por Paden, mas na outra parte da cidade
+    ainda existiam mais.\n\nPor\xE9m, algo maior estava planejado contra o xerife
+    ali mesmo. Big Mike junto com mais ajudantes, estavam o esperando para dar um
+    fim nessa hist\xF3ria, desta maneira Paden se encontrou encurralado, e assim
+    um desafio maior o aguardava..."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
   m_sharedMaterial: {fileID: 5869848878405443835, guid: de858d9cee0007f4ebade8d99339c028, type: 2}
