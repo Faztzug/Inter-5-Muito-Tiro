@@ -40,7 +40,7 @@ public class EnemyMelle : EnemyIA
             {
                 playerPos = player.position;
                 agent.SetDestination(playerPos);
-                anim.SetFloat("Movement", 1);
+                //anim.SetFloat("Movement", 1);
 
             }
             else if(distance <= minPlayerDistance && IsPlayerAlive())
@@ -51,12 +51,21 @@ public class EnemyMelle : EnemyIA
             {
                 pos = transform.position;
                 agent.SetDestination(pos);
-                anim.SetFloat("Movement", 0);
+                //anim.SetFloat("Movement", 0);
             }
         }
         else
         {
             Debug.LogError(gameObject.name + " MELLE AI OUT OF NAV MESH!");
+        }
+
+        if (agent.velocity != Vector3.zero)
+        {
+            anim.SetFloat("Movement", 1);
+        }
+        else
+        {
+            anim.SetFloat("Movement", 0);
         }
         
     }
