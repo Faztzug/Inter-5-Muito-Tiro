@@ -11,6 +11,7 @@ TagManager:
   - Melle
   - Bullet
   - EnemyHead
+  - Music
   layers:
   - Default
   - TransparentFX
