@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.4
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 595169445}
-  m_IndirectSpecularColor: {r: 0.589102, g: 0.6510328, b: 0.4898805, a: 0.4}
+  m_IndirectSpecularColor: {r: 0.5891021, g: 0.65103275, b: 0.4898805, a: 0.4}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4637,7 +4637,7 @@ GameObject:
   - component: {fileID: 994630116}
   - component: {fileID: 994630115}
   m_Layer: 5
-  m_Name: Iniciar
+  m_Name: Arena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4688,7 +4688,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.3019608, g: 0.1764706, b: 0.0627451, a: 0.6666667}
     m_PressedColor: {r: 0, g: 0, b: 0, a: 0.5882353}
     m_SelectedColor: {r: 0.29411766, g: 0.17254902, b: 0.0627451, a: 1}
-    m_DisabledColor: {r: 0.3019608, g: 0.1764706, b: 0.0627451, a: 0.6666667}
+    m_DisabledColor: {r: 0.5377358, g: 0.5377358, b: 0.5377358, a: 0}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -9165,6 +9165,10 @@ MonoBehaviour:
   Fase1: Transicao_1
   Fase2: Transicao_2
   Fase3: Transicao_3
+  buttonFase1: {fileID: 1005401698}
+  buttonFase2: {fileID: 1317790222}
+  buttonFase3: {fileID: 1708585858}
+  buttonArena: {fileID: 994630115}
   audioMixer: {fileID: 24100000, guid: 2a25457167e94224ca3de9d3d53d6a7c, type: 2}
   musicMixer: {fileID: 24100000, guid: dc26c81211fdb0d428afb7bdb008fa16, type: 2}
   configuracoes: {fileID: 1883576924}

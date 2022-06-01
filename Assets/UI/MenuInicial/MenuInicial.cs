@@ -13,6 +13,10 @@ public class MenuInicial : MonoBehaviour
     [SerializeField] private string Fase1;
     [SerializeField] private string Fase2;
     [SerializeField] private string Fase3;
+    [SerializeField] private Button buttonFase1;
+    [SerializeField] private Button buttonFase2;
+    [SerializeField] private Button buttonFase3;
+    [SerializeField] private Button buttonArena;
     public AudioMixer audioMixer;
     public AudioMixer musicMixer;
     [HideInInspector] public SaveGame save;
@@ -32,6 +36,26 @@ public class MenuInicial : MonoBehaviour
         
         LoadVolumeSliders();
         configuracoes?.SetActive(false);
+        LockLevels();
+    }
+
+    private void LockLevels()
+    {
+        var progress = save.playerProgress;
+
+        if(progress < 2) buttonFase2.interactable = false;
+        if(progress < 3) buttonFase3.interactable = false;
+        if(progress < 4)
+        {
+            buttonArena.interactable = false;
+            var text = buttonArena.GetComponentInChildren<TextMeshProUGUI>();
+            var cor = text.color;
+            cor.r = cor.r - 0.2f;
+            cor.g = cor.g - 0.2f;
+            cor.b = cor.b - 0.2f;
+            cor.a = 0.26f;
+            text.color = cor;
+        } 
     }
 
     public void PlayGame()

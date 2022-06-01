@@ -7,6 +7,7 @@ public class DontDestroyOnLoad : MonoBehaviour
 {
     [SerializeField] AudioSource thisMusic;
     [SerializeField] AudioMixer musicMixer;
+    [SerializeField] int currentProgress;
     SaveGame save;
     // Start is called before the first frame update
     void Start()
@@ -14,6 +15,8 @@ public class DontDestroyOnLoad : MonoBehaviour
         save = new SaveGame();
 
         AjustarVolumeMusica(save.musicVolume);
+
+        save.SaveProgress(currentProgress);
 
 
         foreach (var another in GameObject.FindGameObjectsWithTag("Music"))
