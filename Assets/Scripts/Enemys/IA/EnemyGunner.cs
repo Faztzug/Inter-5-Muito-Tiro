@@ -107,6 +107,7 @@ public class EnemyGunner : EnemyIA
             if(gun.trigger)
             {
                 Fire();
+                anim.SetTrigger("Atirando");
                 return;
             } 
             else if(gun.loadedAmmo > 0)

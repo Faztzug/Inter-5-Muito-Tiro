@@ -100,6 +100,9 @@ public class Gun : MonoBehaviour
             UpdateAmmoText();
             state.gunTrigger = false;
 
+            Debug.Log("Atirou");
+            anim.SetTrigger("Atirando");
+
 
             foreach (Bullet bullet in bullets)
             {
