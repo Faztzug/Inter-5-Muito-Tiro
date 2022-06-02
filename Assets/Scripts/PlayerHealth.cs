@@ -43,7 +43,11 @@ public class PlayerHealth : Health
             }
         }
 
-        if(state.playerDead) damageEffect.weight += Time.deltaTime;
+        if(state.playerDead)
+        {
+            damageEffect.weight += Time.deltaTime;
+            gameOver.SetActive(true);
+        } 
         
     }
 
@@ -71,9 +75,9 @@ public class PlayerHealth : Health
 
     public override void DestroyCharacter()
     {
+        Debug.Log("DESTROY PALYER");
         if(state.playerDead) return;
         anim.SetTrigger("Die");
-        state.playerDead = true;
         gameOver.SetActive(true);
         Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.None;
@@ -86,6 +90,7 @@ public class PlayerHealth : Health
             if(item == this) continue;
             item.enabled = false;
         }
+        state.playerDead = true;
         //this.gameObject.SetActive(false);
     }
 }
