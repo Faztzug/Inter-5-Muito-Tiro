@@ -16,8 +16,12 @@ public class MenuPause : MonoBehaviour
 
     void Awake()
     {
-        if(player == null) Debug.LogError("COLOCAR PLAYER NO CANVAS PARA O PAUSE FUNCIONAR");
-        state = player.GetComponent<GameState>();
+        if(player == null)
+        {
+            Debug.LogError("COLOCAR PLAYER NO CANVAS PARA O PAUSE FUNCIONAR");
+            player = GameObject.FindGameObjectWithTag("Player");
+        } 
+        if(state == null) state = player.GetComponent<GameState>();
     }
     void Start()
     {

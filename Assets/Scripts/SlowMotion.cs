@@ -25,6 +25,7 @@ public class SlowMotion : MonoBehaviour
     void Start()
     {
         state = GetComponent<GameState>();
+        Time.timeScale = 1f;
         startTimeScale = Time.timeScale;
         startFixedDeltaTime = Time.fixedDeltaTime;
         anim = PostProcess.GetComponent<Animator>();
@@ -48,7 +49,7 @@ public class SlowMotion : MonoBehaviour
 
             UpdateBar();
 
-            if (focusActive) StartSlowMotion();
+            if (focusActive && state.playerDead == false) StartSlowMotion();
             else StopSlowMotion();
         }
     }

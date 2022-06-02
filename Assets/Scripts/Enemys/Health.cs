@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] protected float maxHealth;
+    public float maxHealth;
     [SerializeField] protected float health;
     protected Animator anim;
     protected EnemyIA enemy;

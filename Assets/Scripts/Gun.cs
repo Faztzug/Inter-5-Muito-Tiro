@@ -42,6 +42,7 @@ public class Gun : MonoBehaviour
             bullet.slowMotion = slowMotion;
         }
 
+        if(ammoText == null) ammoText = GameObject.FindGameObjectWithTag("ammoText").GetComponent<TextMeshProUGUI>();
         UpdateAmmoText();
         Cursor.lockState = CursorLockMode.Locked;
         moveScript = GetComponent<Movimento>();

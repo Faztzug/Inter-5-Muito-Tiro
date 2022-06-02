@@ -9,7 +9,12 @@ public class HealthItem : Item
         base.CollectItem(info);
         if(info.gameObject.TryGetComponent<PlayerHealth>(out PlayerHealth hp))
         {
-            hp.UpdateHealth(ammount,this);
+            var porcent = ammount / 10f;
+            var value = hp.maxHealth * porcent;
+            Debug.Log("HP ammount: " + ammount);
+            Debug.Log("HP porcent: " + porcent);
+            Debug.Log("HP+: " + value);
+            hp.UpdateHealth(value,this);
         }
     }
 }

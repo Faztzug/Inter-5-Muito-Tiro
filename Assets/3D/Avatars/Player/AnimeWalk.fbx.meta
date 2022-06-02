@@ -1,0 +1,1702 @@
+fileFormatVersion: 2
+guid: 6215fc8a39e04114f9f194a322c0c324
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 2667949614841947897
+    second: Walk
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Walk' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'CoxaD' has translation animation that will be discarded.\n\t'CoxaE'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: Walk
+      internalID: 0
+      firstFrame: 130
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 129.84
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Principal
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CoxaD
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CoxaE
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JoelhoD
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: JoelhoE
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pe1_D
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pe1_E
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Cintura
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Barriga
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: BasePescoco
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: TopoPescoco
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ClaviculaD
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ClaviculaE
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OmbroD
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OmbroE
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CotoveloD
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: CotoveloE
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PulsoD
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: PulsoE
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pe3_D
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Pe3_E
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OlhoD
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: OlhoE
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Maxilar
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedaoD
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IndicadorD
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 3
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedoMeioD
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 2
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LadodedinD
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 4
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 4
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedinhoD
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 1
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 1
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedaoE
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 5
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 5
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: IndicadorE
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 8
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 8
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedoMeioE
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 7
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 7
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: LadodedinE
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 9
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 9
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: DedinhoE
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint2 6
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: joint3 6
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ClaviculaMeio
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: AnimeWalk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group8
+      parentName: AnimeWalk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olhos1
+      parentName: group8
+      position: {x: -0.03345246, y: 1.531486, z: 0.04795324}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.414276, y: 1.414276, z: 1.414276}
+    - name: polySurface1
+      parentName: Olhos1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface2
+      parentName: Olhos1
+      position: {x: -0.00002517212, y: 0.0000024657945, z: 2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Barba1
+      parentName: group8
+      position: {x: 4.4703483e-10, y: 1.4438957, z: 0.019058406}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 33.427933, y: 34.18401, z: 34.18401}
+    - name: Barba:polySurface1
+      parentName: Barba1
+      position: {x: -4.4703483e-10, y: -0.020297196, z: -0.0005041101}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 0.95529115, y: 1, z: 1}
+    - name: Bigode1
+      parentName: group8
+      position: {x: 3.72529e-10, y: 1.4498051, z: 0.071358606}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 28.366983, y: 28.366983, z: 28.366983}
+    - name: Bigode:polySurface1
+      parentName: Bigode1
+      position: {x: -3.72529e-10, y: -0.020294964, z: -0.0018209679}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sob1
+      parentName: group8
+      position: {x: 4.4703483e-10, y: 1.5464208, z: 0.05758361}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 25.436142, y: 25.436142, z: 25.436142}
+    - name: Sob:polySurface1
+      parentName: Sob1
+      position: {x: -4.4703483e-10, y: -0.023896644, z: -0.0015285813}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group
+      parentName: group8
+      position: {x: -0.07052214, y: 0.5572621, z: 0.0028766107}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: calcaA:polySurface1
+      parentName: group
+      position: {x: 0.07052214, y: -0.5572621, z: -0.0028766107}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group3
+      parentName: group8
+      position: {x: 0.000009536743, y: 1.1720009, z: -0.0021450233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Colete1:polySurface1
+      parentName: group3
+      position: {x: -0.000009536743, y: -1.1720009, z: 0.0021450233}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group4
+      parentName: group8
+      position: {x: 0.000009536743, y: 0.9469497, z: -0.0056060073}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: capalouca:polySurface1
+      parentName: group4
+      position: {x: -0.000009536743, y: -0.9469497, z: 0.0056060073}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group7
+      parentName: group8
+      position: {x: 0.0009919548, y: 1.6255324, z: -0.034143094}
+      rotation: {x: -0.049802322, y: 0, z: -0, w: 0.9987591}
+      scale: {x: 1, y: 1, z: 1}
+    - name: pepeu:polySurface1
+      parentName: group7
+      position: {x: -0.0009919548, y: -1.6084896, z: 0.024799125}
+      rotation: {x: -0.057853594, y: 0, z: -0, w: 0.9983251}
+      scale: {x: 1.0472238, y: 1.1385727, z: 1.0472238}
+    - name: group5
+      parentName: group8
+      position: {x: 2.9802322e-10, y: 0.022738986, z: -0.001794334}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CABELO:polySurface1
+      parentName: group5
+      position: {x: -0.00000024206517, y: -17.58858, z: 1.4574225}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 30.785883, y: 30.785883, z: 30.785883}
+    - name: Player
+      parentName: AnimeWalk(Clone)
+      position: {x: 0.00000952594, y: 2.842171e-16, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: root
+      parentName: AnimeWalk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cog
+      parentName: root
+      position: {x: -0, y: 0.92189366, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Principal
+      parentName: Cog
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1.000001, y: 1.000001, z: 1}
+    - name: Cintura
+      parentName: Principal
+      position: {x: -0.15402067, y: 0, z: 0.0055218046}
+      rotation: {x: 0.000000011641532, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000008, y: 1.000001, z: 1}
+    - name: Barriga
+      parentName: Cintura
+      position: {x: -0.09971834, y: 4.440892e-18, z: -0.0020897102}
+      rotation: {x: -0.000000013096724, y: 0.000000005820766, z: -6.776264e-17, w: 1}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1}
+    - name: ClaviculaMeio
+      parentName: Barriga
+      position: {x: -0.09772001, y: 6.994405e-17, z: -0.007624192}
+      rotation: {x: 0.000000012626428, y: -0.07974631, z: -1.1604612e-10, w: 0.99681526}
+      scale: {x: 1.0000014, y: 1.0000017, z: 0.9999998}
+    - name: ClaviculaD
+      parentName: ClaviculaMeio
+      position: {x: 0.023536503, y: -0.10311994, z: 0.0094791725}
+      rotation: {x: -0.033826206, y: 0.1456731, z: 0.7747156, w: 0.61437035}
+      scale: {x: 0.9981323, y: 0.99813235, z: 0.9981324}
+    - name: OmbroD
+      parentName: ClaviculaD
+      position: {x: -0.06146829, y: 0.0286841, z: -0.037487082}
+      rotation: {x: -0.0036423868, y: -0.13954872, z: -0.092126094, w: 0.9859137}
+      scale: {x: 0.99999976, y: 1, z: 0.9999999}
+    - name: CotoveloD
+      parentName: OmbroD
+      position: {x: -0.27761078, y: -8.5265126e-16, z: 0.005034243}
+      rotation: {x: 0.0069568767, y: 0.03804579, z: 0.005972536, w: 0.9992339}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000006}
+    - name: PulsoD
+      parentName: CotoveloD
+      position: {x: -0.1917134, y: 1.4210854e-16, z: 7.105427e-17}
+      rotation: {x: 0.004425356, y: -0.0044253035, z: -0.75482184, w: 0.65590006}
+      scale: {x: 0.99999964, y: 0.9999999, z: 1.0000001}
+    - name: IndicadorD
+      parentName: PulsoD
+      position: {x: 0.034515943, y: -0.11257149, z: 0.03313892}
+      rotation: {x: 0.84506965, y: -0.53079003, z: 0.04765519, w: -0.042992197}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999994}
+    - name: joint2 3
+      parentName: IndicadorD
+      position: {x: 0.03748997, y: -0.0000014254937, z: 0.00000032036365}
+      rotation: {x: 0.00000006705521, y: -0.000000016763803, z: -0.0000785589, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+    - name: joint3 3
+      parentName: joint2 3
+      position: {x: 0.026489267, y: 0.000047287547, z: 0.00000020563483}
+      rotation: {x: -0.00000025739732, y: -0.0000029511252, z: -0.037696034, w: 0.9992893}
+      scale: {x: 0.99999994, y: 1.0000004, z: 1.0000001}
+    - name: joint4 3
+      parentName: joint3 3
+      position: {x: 0.02601513, y: 0.0000004046957, z: -0.00000003481537}
+      rotation: {x: 0.000000049487653, y: -0.000000008143619, z: 0.00000007450577, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1.0000001}
+    - name: DedoMeioD
+      parentName: PulsoD
+      position: {x: 0.034581684, y: -0.1140376, z: 0.009499104}
+      rotation: {x: 0.84102887, y: -0.53713655, z: 0.037298337, w: -0.052570984}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000002}
+    - name: joint2 2
+      parentName: DedoMeioD
+      position: {x: 0.035836294, y: 0.0000003316138, z: 0.00000065312895}
+      rotation: {x: -0.00000046938635, y: -0.0000032745286, z: -0.039890092, w: 0.9992041}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000001}
+    - name: joint3 2
+      parentName: joint2 2
+      position: {x: 0.032357857, y: -0.00000011940124, z: 0.00000013192697}
+      rotation: {x: 7.1054257e-15, y: -1.7763564e-15, z: 1.9428894e-15, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000004}
+    - name: joint4 2
+      parentName: joint3 2
+      position: {x: 0.029805178, y: -0.0000004926783, z: -0.00000071956}
+      rotation: {x: -0, y: -0, z: 1.26217685e-29, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: LadodedinD
+      parentName: PulsoD
+      position: {x: 0.03942781, y: -0.10817642, z: -0.015727656}
+      rotation: {x: 0.8323032, y: -0.5495757, z: 0.04661295, w: -0.055365387}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000004}
+    - name: joint2 4
+      parentName: LadodedinD
+      position: {x: 0.034053296, y: -0.0010873798, z: 0.00000014637511}
+      rotation: {x: -0.000000014901158, y: 0.000000093132236, z: -0.03707757, w: 0.9993124}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000004}
+    - name: joint3 4
+      parentName: joint2 4
+      position: {x: 0.030030033, y: 0.00000037308942, z: 0.00000031691616}
+      rotation: {x: 0.00000027971868, y: -0.000008544372, z: -0.03985546, w: 0.99920547}
+      scale: {x: 1.0000004, y: 1.0000015, z: 1.0000029}
+    - name: joint4 4
+      parentName: joint3 4
+      position: {x: 0.030648552, y: -0.00000016854776, z: -0.00000075221004}
+      rotation: {x: -1.7763564e-15, y: -0, z: 6.8409446e-16, w: 1}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1.0000007}
+    - name: DedinhoD
+      parentName: PulsoD
+      position: {x: 0.041473556, y: -0.100069456, z: -0.036299728}
+      rotation: {x: 0.8381, y: -0.54004854, z: 0.045533657, w: -0.06215053}
+      scale: {x: 0.99999976, y: 0.99999976, z: 0.99999994}
+    - name: joint2 1
+      parentName: DedinhoD
+      position: {x: 0.03188607, y: 0.00000061817633, z: 0.000000058373086}
+      rotation: {x: -0, y: -0.000000052154046, z: -0.047149878, w: 0.9988879}
+      scale: {x: 1.0000006, y: 1.0000017, z: 1.000002}
+    - name: joint3 1
+      parentName: joint2 1
+      position: {x: 0.024122799, y: 0.00042369618, z: 0.00000002653325}
+      rotation: {x: 0.00000013930203, y: -0.000003379777, z: -0.030342788, w: 0.99953955}
+      scale: {x: 1.0000001, y: 0.9999998, z: 1.0000007}
+    - name: joint4 1
+      parentName: joint3 1
+      position: {x: 0.025857612, y: 0.00000010467232, z: -0.00000017181249}
+      rotation: {x: 3.5527124e-15, y: -3.5527124e-15, z: 2.1932218e-15, w: 1}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000014}
+    - name: DedaoD
+      parentName: PulsoD
+      position: {x: 0.0037009537, y: -0.04385536, z: 0.045553904}
+      rotation: {x: 0.79868704, y: -0.5490234, z: 0.23223358, w: 0.08209734}
+      scale: {x: 1.0000013, y: 1.0000002, z: 0.99999976}
+    - name: joint2
+      parentName: DedaoD
+      position: {x: 0.02989178, y: 0.00044899998, z: -0.007121208}
+      rotation: {x: 0.014830627, y: 0.09553489, z: -0.00007459518, w: 0.9953157}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: joint3
+      parentName: joint2
+      position: {x: 0.028890334, y: -0.0010263639, z: 0.00042643337}
+      rotation: {x: -0.010798907, y: -0.020555815, z: -0.051005717, w: 0.9984284}
+      scale: {x: 0.99999976, y: 1.0000011, z: 1.0000014}
+    - name: joint4
+      parentName: joint3
+      position: {x: 0.030317402, y: -0.000000018629887, z: 0.00000029877214}
+      rotation: {x: -0, y: -0, z: 0.000000009313224, w: 1}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999998}
+    - name: ClaviculaE
+      parentName: ClaviculaMeio
+      position: {x: 0.02353583, y: 0.10312, z: 0.0094792815}
+      rotation: {x: 0.7742318, y: 0.6158029, z: 0.032067075, w: -0.14256147}
+      scale: {x: 0.9981322, y: 0.9981327, z: 0.9981329}
+    - name: OmbroE
+      parentName: ClaviculaE
+      position: {x: 0.061467998, y: -0.0286791, z: 0.037487097}
+      rotation: {x: -0.0031120651, y: -0.14038225, z: -0.09065978, w: 0.98593307}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000005}
+    - name: CotoveloE
+      parentName: OmbroE
+      position: {x: 0.27760935, y: -0.00000070503626, z: -0.0050344584}
+      rotation: {x: 0.0069527775, y: 0.038000435, z: 0.005930164, w: 0.9992359}
+      scale: {x: 1.000001, y: 1.0000015, z: 1.0000024}
+    - name: PulsoE
+      parentName: CotoveloE
+      position: {x: 0.19171105, y: -0.0000013491331, z: -0.0000009729021}
+      rotation: {x: 0.0044279564, y: -0.004428546, z: -0.7548251, w: 0.6558962}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000008}
+    - name: IndicadorE
+      parentName: PulsoE
+      position: {x: -0.03451551, y: 0.112571694, z: -0.03313859}
+      rotation: {x: -0.84506845, y: 0.5307918, z: -0.0476539, w: 0.042993534}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999964}
+    - name: joint2 8
+      parentName: IndicadorE
+      position: {x: -0.03749057, y: 0.0000015195728, z: -8.8817837e-17}
+      rotation: {x: -0.000000003725289, y: -0.000000027939667, z: -0.00007826087, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: joint3 8
+      parentName: joint2 8
+      position: {x: -0.02648901, y: -0.000047465528, z: -7.105427e-17}
+      rotation: {x: -0.00000007930089, y: 0.00000018265345, z: -0.037684713, w: 0.99928975}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1}
+    - name: joint4 8
+      parentName: joint3 8
+      position: {x: -0.026015328, y: -2.1316282e-16, z: 2.4868996e-16}
+      rotation: {x: -0, y: -3.552712e-15, z: 1.4044627e-15, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+    - name: DedoMeioE
+      parentName: PulsoE
+      position: {x: -0.034581345, y: 0.11403734, z: -0.009498697}
+      rotation: {x: -0.84102905, y: 0.53713614, z: -0.037293587, w: 0.05257528}
+      scale: {x: 1.0000002, y: 0.9999998, z: 0.99999976}
+    - name: joint2 7
+      parentName: DedoMeioE
+      position: {x: -0.035836447, y: 1.7763567e-16, z: 7.105427e-17}
+      rotation: {x: -0.00000004097818, y: 0.00000018067651, z: -0.039898172, w: 0.9992038}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: joint3 7
+      parentName: joint2 7
+      position: {x: -0.03235811, y: 2.1316282e-16, z: -1.4210854e-16}
+      rotation: {x: 1.7763562e-15, y: -1.7763562e-15, z: 5.828667e-16, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: joint4 7
+      parentName: joint3 7
+      position: {x: -0.029804641, y: 3.5527136e-17, z: 0}
+      rotation: {x: -0, y: -0, z: 3.1554414e-30, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: LadodedinE
+      parentName: PulsoE
+      position: {x: -0.039427653, y: 0.108177, z: 0.015727907}
+      rotation: {x: -0.832301, y: 0.54957885, z: -0.046611372, w: 0.055367235}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: joint2 9
+      parentName: LadodedinE
+      position: {x: -0.034052666, y: 0.0010876775, z: 0}
+      rotation: {x: 0.000000014901159, y: -0.00000003352761, z: -0.03707763, w: 0.99931246}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: joint3 9
+      parentName: joint2 9
+      position: {x: -0.030030068, y: -2.842171e-16, z: -2.842171e-16}
+      rotation: {x: -0.000000007884327, y: -0.00000052654065, z: -0.039865863, w: 0.99920505}
+      scale: {x: 0.99999994, y: 1, z: 1.0000002}
+    - name: joint4 9
+      parentName: joint3 9
+      position: {x: -0.030649122, y: 1.0658141e-16, z: 1.0658141e-16}
+      rotation: {x: -0, y: -0, z: 4.0510406e-17, w: 1}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1}
+    - name: DedinhoE
+      parentName: PulsoE
+      position: {x: -0.04147322, y: 0.100069776, z: 0.03629984}
+      rotation: {x: -0.8380944, y: 0.54005706, z: -0.045534186, w: 0.062151995}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: joint2 6
+      parentName: DedinhoE
+      position: {x: -0.03188604, y: 3.1974422e-16, z: 0}
+      rotation: {x: -0.000000014901158, y: -0.000000029802315, z: -0.047149885, w: 0.9988879}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: joint3 6
+      parentName: joint2 6
+      position: {x: -0.024122382, y: -0.00042438164, z: 0}
+      rotation: {x: 0.000000019549265, y: 0.00000067265995, z: -0.030327331, w: 0.99954003}
+      scale: {x: 0.9999998, y: 1, z: 1.0000002}
+    - name: joint4 6
+      parentName: joint3 6
+      position: {x: -0.025858538, y: 0, z: -1.4210854e-16}
+      rotation: {x: -0, y: -0, z: -3.0896866e-16, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: DedaoE
+      parentName: PulsoE
+      position: {x: -0.003700479, y: 0.043855388, z: -0.04555428}
+      rotation: {x: -0.7986819, y: 0.5490286, z: -0.23223883, w: -0.08209787}
+      scale: {x: 1.0000008, y: 0.99999994, z: 0.99999905}
+    - name: joint2 5
+      parentName: DedaoE
+      position: {x: -0.029891994, y: -0.00044913637, z: 0.007120983}
+      rotation: {x: 0.01483149, y: 0.09553783, z: -0.000066101515, w: 0.9953153}
+      scale: {x: 0.9999997, y: 0.9999999, z: 0.99999994}
+    - name: joint3 5
+      parentName: joint2 5
+      position: {x: -0.02889034, y: 0.0010266572, z: -0.00042684723}
+      rotation: {x: -0.010799026, y: -0.020563921, z: -0.051013626, w: 0.99842787}
+      scale: {x: 1.0000004, y: 1.0000008, z: 1.0000001}
+    - name: joint4 5
+      parentName: joint3 5
+      position: {x: -0.030317249, y: 2.1316282e-16, z: -1.7763568e-17}
+      rotation: {x: -0, y: -0, z: 0.0000000025029283, w: 1}
+      scale: {x: 1.0000002, y: 0.9999998, z: 0.9999999}
+    - name: BasePescoco
+      parentName: ClaviculaMeio
+      position: {x: -0.11069099, y: -1.4210854e-16, z: -0.022939827}
+      rotation: {x: -0.00000002007567, y: 0.0000000037252899, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 0.9999997, z: 0.9999998}
+    - name: TopoPescoco
+      parentName: BasePescoco
+      position: {x: 3.5527136e-17, y: 0.097138114, z: 0.011621316}
+      rotation: {x: 0.1368573, y: 0.13685729, z: -0.6937364, w: 0.6937364}
+      scale: {x: 1, y: 1.0000011, z: 1.0000013}
+    - name: Orelha
+      parentName: TopoPescoco
+      position: {x: -0.07545043, y: 2.4517993e-18, z: -0.007103582}
+      rotation: {x: -0.000000010244546, y: 0.9532272, z: -0.000000014901158, w: 0.30225486}
+      scale: {x: 0.9999998, y: 1.000003, z: 1.0000073}
+    - name: Maxilar
+      parentName: Orelha
+      position: {x: -0.07279725, y: -1.4860685e-18, z: -0.008923544}
+      rotation: {x: 0.0000000011888575, y: -0.17054802, z: -0.0000000027534641, w: 0.98534936}
+      scale: {x: 1.0000014, y: 1.0000014, z: 1.0000027}
+    - name: Queixo
+      parentName: Maxilar
+      position: {x: -0.09728177, y: 1.2325951e-34, z: 3.330669e-18}
+      rotation: {x: -0.000000013987512, y: -0.000000029802315, z: 0.70710677, w: 0.70710677}
+      scale: {x: 1.0000001, y: 1.0000011, z: 1.0000007}
+    - name: OlhoD
+      parentName: Orelha
+      position: {x: -0.05501702, y: -0.033532068, z: -0.08022208}
+      rotation: {x: -0.69409806, y: -0.69409806, z: 0.13501084, w: 0.13501082}
+      scale: {x: 0.99999994, y: 0.9999972, z: 1.0000038}
+    - name: PupilaD1
+      parentName: OlhoD
+      position: {x: -0, y: 0, z: 0.013883703}
+      rotation: {x: -0, y: -0, z: -0.000000029802312, w: 1}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: OlhoE
+      parentName: Orelha
+      position: {x: -0.055013146, y: 0.03340526, z: -0.080223694}
+      rotation: {x: 0.13501082, y: 0.13501084, z: 0.69409806, w: 0.69409806}
+      scale: {x: 0.9999996, y: 0.9999967, z: 1.0000033}
+    - name: PupilaE1
+      parentName: OlhoE
+      position: {x: -0, y: 0, z: -0.013886447}
+      rotation: {x: -0, y: -0, z: -0.000000026077023, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: CoxaD
+      parentName: Principal
+      position: {x: 0.031997044, y: -0.07797254, z: 0.0029920274}
+      rotation: {x: -0.010459802, y: -0.0007720593, z: 0.9972321, w: 0.073607825}
+      scale: {x: 1.0000005, y: 1.0000007, z: 1}
+    - name: JoelhoD
+      parentName: CoxaD
+      position: {x: -0.39417705, y: 0.0028831526, z: -0.013132925}
+      rotation: {x: 0.02626456, y: -0.103965074, z: 0.037041903, w: 0.99354386}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: Pe1_D
+      parentName: JoelhoD
+      position: {x: -0.3771839, y: -0.0004174823, z: -0.007303979}
+      rotation: {x: -0.06534381, y: 0.74658316, z: -0.10338494, w: 0.6539537}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: Pe2_D
+      parentName: Pe1_D
+      position: {x: -0.098320946, y: 0.00018614523, z: -0.077765435}
+      rotation: {x: 0.009397205, y: -0.047138274, z: 0.0068040565, w: 0.9988211}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.0000006}
+    - name: Pe3_D
+      parentName: Pe2_D
+      position: {x: -0.11552811, y: 1.4210854e-16, z: -9.325873e-17}
+      rotation: {x: -0.000000018160787, y: -0.00000005960463, z: -0.7071068, w: 0.7071067}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: CoxaE
+      parentName: Principal
+      position: {x: 0.049874075, y: 0.07797682, z: 0.0029969704}
+      rotation: {x: 0.9972321, y: 0.073607795, z: 0.010459772, w: 0.0007720612}
+      scale: {x: 0.99999994, y: 1.0000015, z: 1.0000013}
+    - name: JoelhoE
+      parentName: CoxaE
+      position: {x: 0.3941765, y: -0.0028829311, z: 0.013132881}
+      rotation: {x: 0.02626455, y: -0.103965, z: 0.037041843, w: 0.99354386}
+      scale: {x: 1.0000005, y: 0.9999998, z: 1.0000004}
+    - name: Pe1_E
+      parentName: JoelhoE
+      position: {x: 0.37718418, y: 0.00041690597, z: 0.0073039364}
+      rotation: {x: -0.06534385, y: 0.7465831, z: -0.103384875, w: 0.65395373}
+      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000006}
+    - name: Pe2_E
+      parentName: Pe1_E
+      position: {x: 0.0983209, y: -0.00018616562, z: 0.07776552}
+      rotation: {x: 0.0093972245, y: -0.047138218, z: 0.006804072, w: 0.998821}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Pe3_E
+      parentName: Pe2_E
+      position: {x: 0.115528025, y: 0.00000049802435, z: -0.00000006705815}
+      rotation: {x: -0.000000028405335, y: -0.000000111758695, z: -0.70710677, w: 0.7071068}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: ctroot
+      parentName: AnimeWalk(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle76
+      parentName: ctroot
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ctpelvis
+      parentName: nurbsCircle76
+      position: {x: -0, y: 0.92189366, z: 0}
+      rotation: {x: 0, y: -0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle7
+      parentName: Ctpelvis
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCintura
+      parentName: nurbsCircle7
+      position: {x: -0.15402067, y: 0, z: -0.0032718806}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle8
+      parentName: CTCintura
+      position: {x: -0, y: 0, z: 0.008793686}
+      rotation: {x: -0.06956134, y: 0.07456279, z: 0.005213938, w: 0.99477357}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPeitoral
+      parentName: nurbsCircle8
+      position: {x: -0.09971834, y: 1.110223e-18, z: -0.0020897102}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle9
+      parentName: CTPeitoral
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.087155744, y: -0, z: -0, w: 0.9961947}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTMeio
+      parentName: nurbsCircle9
+      position: {x: -0.09772001, y: 7.105427e-17, z: -0.007624192}
+      rotation: {x: 0, y: -0.079746306, z: -0, w: 0.9968152}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle10
+      parentName: CTMeio
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.052335955, w: 0.9986295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTClaviculaD
+      parentName: nurbsCircle10
+      position: {x: 0.023536503, y: -0.10311994, z: 0.0094791725}
+      rotation: {x: 0.056389153, y: 0.056389153, z: 0.7048548, w: 0.7048548}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle11
+      parentName: CTClaviculaD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.087155744, w: 0.9961947}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTombroD
+      parentName: nurbsCircle11
+      position: {x: -0.061353464, y: 0.028630516, z: -0.037417054}
+      rotation: {x: -0.06038046, y: 0.02055405, z: 0.49203, w: 0.86823857}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle12
+      parentName: CTombroD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.087155744, z: -0, w: 0.9961947}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCotoveloD
+      parentName: nurbsCircle12
+      position: {x: -0.27761078, y: -7.105427e-16, z: 0.005034243}
+      rotation: {x: 0.008353755, y: 0.13726556, z: 0.06016881, w: 0.9886699}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle13
+      parentName: CTCotoveloD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.17101008, y: 0.17101008, z: -0.03015369, w: 0.9698463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPulsoD
+      parentName: nurbsCircle13
+      position: {x: -0.1917134, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle14
+      parentName: CTPulsoD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.0043633096, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDAD
+      parentName: nurbsCircle14
+      position: {x: 0.0037009537, y: -0.04385536, z: 0.045553904}
+      rotation: {x: 0.81480306, y: -0.5479718, z: 0.18238626, w: 0.050578665}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle15
+      parentName: DDAD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDBD
+      parentName: nurbsCircle15
+      position: {x: 0.02989178, y: 0.00044899998, z: -0.007121208}
+      rotation: {x: 0.0072129304, y: 0.021015974, z: -0.06110002, w: 0.99788433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle20
+      parentName: DDBD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDCD
+      parentName: nurbsCircle20
+      position: {x: 0.028890334, y: -0.0010263639, z: 0.00042643337}
+      rotation: {x: -0.010650336, y: -0.06502199, z: -0.16129065, w: 0.98470503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle21
+      parentName: DDCD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDDD
+      parentName: nurbsCircle21
+      position: {x: 0.030317402, y: -0.000000018629887, z: 0.00000029877214}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle22
+      parentName: DDDD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIAD
+      parentName: nurbsCircle14
+      position: {x: 0.034515943, y: -0.11257149, z: 0.03313892}
+      rotation: {x: 0.8821825, y: -0.46693268, z: 0.023970941, w: -0.05615463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle16
+      parentName: DIAD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIBD
+      parentName: nurbsCircle16
+      position: {x: 0.03748997, y: -0.0000014254937, z: 0.00000032036365}
+      rotation: {x: 0.00000001490116, y: -1.166839e-12, z: -0.000078305246, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle23
+      parentName: DIBD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DICD
+      parentName: nurbsCircle23
+      position: {x: 0.026489267, y: 0.000047287547, z: 0.0000002056347}
+      rotation: {x: 0.00000001779814, y: -0.0000000017825237, z: -0.0996537, w: 0.9950222}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle24
+      parentName: DICD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIDD
+      parentName: nurbsCircle24
+      position: {x: 0.02601513, y: 0.0000004046957, z: -0.0000000350038}
+      rotation: {x: 0.00000003494632, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle25
+      parentName: DIDD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMAD
+      parentName: nurbsCircle14
+      position: {x: 0.034581684, y: -0.1140376, z: 0.009499104}
+      rotation: {x: 0.8806228, y: -0.46721095, z: -0.0046144067, w: -0.078715146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle17
+      parentName: DMAD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMBD
+      parentName: nurbsCircle17
+      position: {x: 0.035836294, y: 0.0000003316138, z: 0.00000065312895}
+      rotation: {x: 0, y: -0, z: -0.07442615, w: 0.99722654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle26
+      parentName: DMBD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMCD
+      parentName: nurbsCircle26
+      position: {x: 0.032357857, y: -0.00000011940124, z: 0.00000013192697}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle27
+      parentName: DMCD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMDD
+      parentName: nurbsCircle27
+      position: {x: 0.029805178, y: -0.0000004926783, z: -0.00000071956}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle28
+      parentName: DMDD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLAD
+      parentName: nurbsCircle14
+      position: {x: 0.03942781, y: -0.10817642, z: -0.015727656}
+      rotation: {x: 0.89923155, y: -0.42778203, z: -0.014667991, w: -0.09038796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle18
+      parentName: DLAD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLBD
+      parentName: nurbsCircle18
+      position: {x: 0.034053296, y: -0.0010873798, z: 0.00000014637511}
+      rotation: {x: 0, y: -0, z: -0.03707756, w: 0.9993124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle29
+      parentName: DLBD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLCD
+      parentName: nurbsCircle29
+      position: {x: 0.030030033, y: 0.00000037308942, z: 0.00000031691616}
+      rotation: {x: 0, y: -0, z: -0.07510355, w: 0.99717575}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle30
+      parentName: DLCD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLDD
+      parentName: nurbsCircle30
+      position: {x: 0.030648552, y: -0.00000016854776, z: -0.00000075221004}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle31
+      parentName: DLDD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPAD
+      parentName: nurbsCircle14
+      position: {x: 0.041473556, y: -0.100069456, z: -0.036299728}
+      rotation: {x: 0.9071399, y: -0.4033465, z: -0.03819492, w: -0.113798335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle19
+      parentName: DPAD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPBD
+      parentName: nurbsCircle19
+      position: {x: 0.03188607, y: 0.00000061817633, z: 0.000000058373086}
+      rotation: {x: 0, y: -0, z: -0.047149956, w: 0.99888784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle32
+      parentName: DPBD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPCD
+      parentName: nurbsCircle32
+      position: {x: 0.024122799, y: 0.00042369618, z: 0.00000002653325}
+      rotation: {x: 0, y: -0, z: -0.08120109, w: 0.9966977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle33
+      parentName: DPCD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPDD
+      parentName: nurbsCircle33
+      position: {x: 0.025857612, y: 0.00000010467232, z: -0.00000017181249}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle34
+      parentName: DPDD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPescoco
+      parentName: nurbsCircle10
+      position: {x: -0.11069099, y: -1.4210854e-16, z: -0.022939827}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle35
+      parentName: CTPescoco
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.043577872, y: 0.043577872, z: 0.0019026509, w: 0.99809736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCabeca
+      parentName: nurbsCircle35
+      position: {x: 7.105427e-17, y: 0.097138114, z: 0.011621316}
+      rotation: {x: 0.13685727, y: 0.13685727, z: -0.6937363, w: 0.6937363}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle36
+      parentName: CTCabeca
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.026176948, w: 0.99965733}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTClaviculaE
+      parentName: nurbsCircle10
+      position: {x: 0.02353583, y: 0.10312, z: 0.0094792815}
+      rotation: {x: 0.7048548, y: 0.7048548, z: -0.056389153, w: -0.056389153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle37
+      parentName: CTClaviculaE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.087155744, w: 0.9961947}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTOmbroE
+      parentName: nurbsCircle37
+      position: {x: 0.061353173, y: -0.028625526, z: 0.03741707}
+      rotation: {x: -0.06038046, y: 0.02055405, z: 0.49203, w: 0.86823857}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle39
+      parentName: CTOmbroE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0.104528464, z: -0, w: 0.9945219}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCotoveloE
+      parentName: nurbsCircle39
+      position: {x: 0.27760935, y: -0.00000070503626, z: -0.0050344584}
+      rotation: {x: 0.008353755, y: 0.13726556, z: 0.06016881, w: 0.9886699}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle41
+      parentName: CTCotoveloE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.1736482, y: -0, z: -0, w: 0.9848078}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPULSOE
+      parentName: nurbsCircle41
+      position: {x: 0.19171105, y: -0.0000013491331, z: -0.0000009729021}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle38
+      parentName: CTPULSOE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.0043633096, w: 0.9999905}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDAE
+      parentName: nurbsCircle38
+      position: {x: -0.003700479, y: 0.043855388, z: -0.04555428}
+      rotation: {x: 0.81480306, y: -0.5479718, z: 0.18238626, w: 0.050578665}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle42
+      parentName: DDAE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDBE
+      parentName: nurbsCircle42
+      position: {x: -0.029891994, y: -0.00044913637, z: 0.007120983}
+      rotation: {x: 0.0072129304, y: 0.021015974, z: -0.06110002, w: 0.99788433}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle43
+      parentName: DDBE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDCE
+      parentName: nurbsCircle43
+      position: {x: -0.02889034, y: 0.0010266572, z: -0.00042684723}
+      rotation: {x: -0.010650336, y: -0.06502199, z: -0.16129065, w: 0.98470503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle44
+      parentName: DDCE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DDDE
+      parentName: nurbsCircle44
+      position: {x: -0.030317249, y: 8.8817837e-17, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle45
+      parentName: DDDE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIAE
+      parentName: nurbsCircle38
+      position: {x: -0.03451551, y: 0.112571694, z: -0.03313859}
+      rotation: {x: 0.8821825, y: -0.46693268, z: 0.023970941, w: -0.05615463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle46
+      parentName: DIAE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIBE
+      parentName: nurbsCircle46
+      position: {x: -0.03749057, y: 0.0000015195728, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0.000078305246, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle49
+      parentName: DIBE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DICE
+      parentName: nurbsCircle49
+      position: {x: -0.02648901, y: -0.000047465528, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0.0996537, w: 0.9950222}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle48
+      parentName: DICE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DIDE
+      parentName: nurbsCircle48
+      position: {x: -0.026015328, y: -2.1316282e-16, z: 2.1316282e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle47
+      parentName: DIDE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMAE
+      parentName: nurbsCircle38
+      position: {x: -0.034581345, y: 0.11403734, z: -0.009498697}
+      rotation: {x: 0.8806228, y: -0.46721095, z: -0.0046144067, w: -0.078715146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle50
+      parentName: DMAE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMBE
+      parentName: nurbsCircle50
+      position: {x: -0.035836447, y: 2.4868996e-16, z: 7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0.07442615, w: 0.99722654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle51
+      parentName: DMBE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMCE
+      parentName: nurbsCircle51
+      position: {x: -0.03235811, y: 2.3092638e-16, z: -1.4210854e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle52
+      parentName: DMCE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DMDE
+      parentName: nurbsCircle52
+      position: {x: -0.029804641, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle53
+      parentName: DMDE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLAE
+      parentName: nurbsCircle38
+      position: {x: -0.039427653, y: 0.108177, z: 0.015727907}
+      rotation: {x: 0.89923155, y: -0.42778203, z: -0.014667991, w: -0.09038796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle54
+      parentName: DLAE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLBE
+      parentName: nurbsCircle54
+      position: {x: -0.034052666, y: 0.0010876775, z: -3.5527136e-17}
+      rotation: {x: 0, y: -0, z: -0.03707756, w: 0.9993124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle57
+      parentName: DLBE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLCE
+      parentName: nurbsCircle57
+      position: {x: -0.030030068, y: -3.5527135e-16, z: -3.1974422e-16}
+      rotation: {x: 0, y: -0, z: -0.07510355, w: 0.99717575}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle56
+      parentName: DLCE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DLDE
+      parentName: nurbsCircle56
+      position: {x: -0.030649122, y: 9.992007e-17, z: 1.0658141e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle55
+      parentName: DLDE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPAE
+      parentName: nurbsCircle38
+      position: {x: -0.04147322, y: 0.100069776, z: 0.03629984}
+      rotation: {x: 0.9071399, y: -0.4033465, z: -0.03819492, w: -0.113798335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle58
+      parentName: DPAE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPBE
+      parentName: nurbsCircle58
+      position: {x: -0.03188604, y: 4.0856205e-16, z: -3.5527136e-17}
+      rotation: {x: 0, y: -0, z: -0.047149956, w: 0.99888784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle61
+      parentName: DPBE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPCE
+      parentName: nurbsCircle61
+      position: {x: -0.024122382, y: -0.00042438164, z: -1.0658141e-16}
+      rotation: {x: 0, y: -0, z: -0.08120109, w: 0.9966977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle60
+      parentName: DPCE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: DPDE
+      parentName: nurbsCircle60
+      position: {x: -0.025858538, y: 3.5527136e-17, z: -7.105427e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle59
+      parentName: DPDE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPernaD
+      parentName: nurbsCircle7
+      position: {x: 0.043918833, y: -0.07797256, z: 0.0029920915}
+      rotation: {x: -0.010459804, y: -0.00077206054, z: 0.99723214, w: 0.07360784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle74
+      parentName: CTPernaD
+      position: {x: 0.01179, y: 0.0017499999, z: 0.00025}
+      rotation: {x: 0.033770945, y: -0.053554814, z: 0.025342247, w: 0.9976719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTJoelhoD
+      parentName: nurbsCircle74
+      position: {x: -0.39417705, y: 0.0028831526, z: -0.013132925}
+      rotation: {x: 0.026264556, y: -0.10396506, z: 0.037041903, w: 0.99354386}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle69
+      parentName: CTJoelhoD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.0037888074, y: -0.07229476, z: 0.052198637, w: 0.9960093}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCalcanharD
+      parentName: nurbsCircle69
+      position: {x: -0.3771839, y: -0.0004174823, z: -0.007303979}
+      rotation: {x: -0.0653438, y: 0.7465831, z: -0.10338491, w: 0.6539537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle6
+      parentName: CTCalcanharD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.06799787, z: -0, w: 0.9976855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTmeiopeD
+      parentName: nurbsCircle6
+      position: {x: -0.098320946, y: 0.00018614523, z: -0.077765435}
+      rotation: {x: 0.009397169, y: -0.047138274, z: 0.0068040793, w: 0.998821}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle68
+      parentName: CTmeiopeD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: PontaPeD
+      parentName: nurbsCircle68
+      position: {x: -0.11552811, y: 1.4210854e-16, z: -1.110223e-16}
+      rotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle5
+      parentName: PontaPeD
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPernaE
+      parentName: nurbsCircle7
+      position: {x: 0.043918967, y: 0.0779726, z: 0.0029920586}
+      rotation: {x: 0.99723214, y: 0.07360784, z: 0.010459804, w: 0.00077206054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle75
+      parentName: CTPernaE
+      position: {x: 0.0058899997, y: 0.00086999993, z: 0.00012}
+      rotation: {x: 0.027946748, y: 0.19141819, z: 0.016866269, w: 0.9809657}
+      scale: {x: 1.2823882, y: 1.2823882, z: 1.2823882}
+    - name: CTJoelhoE
+      parentName: nurbsCircle75
+      position: {x: 0.3073769, y: -0.0022480953, z: 0.010240956}
+      rotation: {x: 0.026264556, y: -0.10396506, z: 0.037041903, w: 0.99354386}
+      scale: {x: 0.77979505, y: 0.77979505, z: 0.77979505}
+    - name: nurbsCircle73
+      parentName: CTJoelhoE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.004106232, y: -0.07835157, z: 0.05217462, w: 0.9955511}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTCalcanharE
+      parentName: nurbsCircle73
+      position: {x: 0.37718418, y: 0.00041690597, z: 0.0073039364}
+      rotation: {x: -0.06534379, y: 0.7465831, z: -0.103384905, w: 0.6539537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle72
+      parentName: CTCalcanharE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0.050017715, z: -0, w: 0.99874836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTMeioPeE
+      parentName: nurbsCircle72
+      position: {x: 0.0983209, y: -0.00018616562, z: 0.07776552}
+      rotation: {x: 0.00939719, y: -0.047138277, z: 0.006804078, w: 0.998821}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle71
+      parentName: CTMeioPeE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: CTPontaPeE
+      parentName: nurbsCircle71
+      position: {x: 0.115528025, y: 0.00000049802435, z: -0.00000006705815}
+      rotation: {x: 0.00000001580507, y: -0.000000044711054, z: -0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: nurbsCircle70
+      parentName: CTPontaPeE
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

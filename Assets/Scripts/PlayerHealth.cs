@@ -75,6 +75,7 @@ public class PlayerHealth : Health
         anim.SetTrigger("Die");
         state.playerDead = true;
         gameOver.SetActive(true);
+        Time.timeScale = 1f;
         Cursor.lockState = CursorLockMode.None;
         foreach (var item in GetComponentsInChildren<Collider>())
         {
