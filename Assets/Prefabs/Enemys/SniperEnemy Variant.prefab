@@ -775,7 +775,7 @@ MonoBehaviour:
   extraAmmo: 72
   maxExtraAmmo: 72
   enemyBullets: []
-  bulletPrefab: {fileID: 8630929994482422934, guid: a2c93b39e189175459a9fad8bebee6ad, type: 3}
+  bulletPrefab: {fileID: 3587302025753882300, guid: 15c486b0dbb950849b0f6e90653b70f3, type: 3}
   bulletTimer: 3
   shootPosition: {fileID: 5846353876204601162}
   trigger: 0
