@@ -23,7 +23,6 @@ GameObject:
   - component: {fileID: 3844401196063461845}
   - component: {fileID: 3844401196063461843}
   - component: {fileID: 3844401196063461846}
-  - component: {fileID: 6712723296931104413}
   m_Layer: 0
   m_Name: 'CasitaA '
   m_TagString: Untagged
@@ -110,8 +109,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.41, y: 8.92, z: 7.499827}
-  m_Center: {x: 1.2500002, y: 0, z: -0.022638083}
+  m_Size: {x: 4.41, y: 8.92, z: 6.5784187}
+  m_Center: {x: 1.250007, y: 0, z: 0.006465435}
 --- !u!65 &3844401196063461836
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -255,16 +254,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.6, y: 0.27, z: 7.59}
   m_Center: {x: 0.000030517578, y: -4.29, z: 0}
---- !u!65 &6712723296931104413
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4151025097529892879}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.602071, y: 7.466995, z: 8.415791}
-  m_Center: {x: 1.5842233, y: 0.6384356, z: 0}
