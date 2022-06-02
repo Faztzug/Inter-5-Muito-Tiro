@@ -100,7 +100,10 @@ MonoBehaviour:
   moveVector: {x: 0, y: -3, z: 200}
   rgbd: {fileID: 1249908958281552529}
   damage: -1
-  sangue: {fileID: 0}
+  slowMotion: {fileID: 0}
+  headShootMultiplier: 5
+  hit: 0
+  headShootSound: {fileID: 8300000, guid: 0c62352016e89074c82fce80e1899d22, type: 3}
 --- !u!136 &1827840143159621393
 CapsuleCollider:
   m_ObjectHideFlags: 0

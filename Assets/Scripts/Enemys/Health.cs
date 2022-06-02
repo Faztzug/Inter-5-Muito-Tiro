@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Health : MonoBehaviour
 {
     public float maxHealth;
     [SerializeField] protected float health;
+    [SerializeField] protected AudioSource source;
+    [SerializeField] protected AudioClip damageSound;
     protected Animator anim;
     protected EnemyIA enemy;
     public virtual void Start()
@@ -33,6 +36,8 @@ public class Health : MonoBehaviour
                 enemy.Taunt();
                 enemy.UpdateHealth(health, maxHealth);
             } 
+            if(source != null) source.PlayOneShot(damageSound);
+            else Debug.LogError("NO AUDIO SOURCE FOR DAMAGE");
         }
 
         //Debug.Log(name+" Health: " + value);

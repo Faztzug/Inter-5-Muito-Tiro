@@ -901,6 +901,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 3
   health: 30
+  source: {fileID: 504621520076689812}
+  damageSound: {fileID: 8300000, guid: 7e447b439cda6c747a26dadaa53d0566, type: 3}
 --- !u!114 &3621823804168669654
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,6 +14,7 @@ public class Bullet : MonoBehaviour
     [HideInInspector] public SlowMotion slowMotion;
     public float headShootMultiplier = 5f;
     [HideInInspector] public bool hit = false;
+    [SerializeField] private AudioClip headShootSound;
 
     void Start()
     {
@@ -44,18 +45,20 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("HEADSHOT!" + collisionInfo.collider.gameObject);
             damage = damage * headShootMultiplier;
+            var source = collisionInfo.gameObject.GetComponentInChildren<AudioSource>();
+            if(source != null) source.PlayOneShot(headShootSound);
         }
         if(collisionInfo.rigidbody?.gameObject != null) BulletHit(collisionInfo.rigidbody.gameObject);
         else BulletHit(collisionInfo.gameObject);
     }
     void OnTriggerEnter(Collider other)
     {
-        if(other.attachedRigidbody?.gameObject != null) BulletHit(other.attachedRigidbody.gameObject);
-        else BulletHit(other.gameObject);
+        if(other.attachedRigidbody?.gameObject != null) BulletHit(other.attachedRigidbody.gameObject, true);
+        else BulletHit(other.gameObject, true);
     }
-    public void BulletHit(GameObject collision)
+    public void BulletHit(GameObject collision, bool isTrigger = false)
     {
-        gameObject.SetActive(false);
+        if(!isTrigger) gameObject.SetActive(false);
         if(hit) return;
         hit = true;
 

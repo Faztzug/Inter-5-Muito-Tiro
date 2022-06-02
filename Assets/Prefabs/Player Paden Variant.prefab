@@ -56,7 +56,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226996172013243189}
-  m_LocalRotation: {x: 0.061125092, y: 1e-45, z: -0, w: 0.99813014}
+  m_LocalRotation: {x: -0.007827123, y: 0.98991317, z: -0.060621887, w: -0.12781146}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -323,7 +323,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3981411025225818608}
-  m_LocalRotation: {x: 0.042959504, y: -0, z: -0, w: 0.99907684}
+  m_LocalRotation: {x: -0.0055010025, y: 0.990852, z: -0.042605843, w: -0.12793267}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -429,7 +429,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5859068635225497735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4999936, y: 1.8647133, z: -3.3407087}
+  m_LocalPosition: {x: 1.3485249, y: 1.8647133, z: 3.2311566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2760656347056382115}
@@ -1098,7 +1098,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7588746475431176085}
-  m_LocalRotation: {x: 0.024827728, y: 0.0000000021501347, z: -5.3399413e-11, w: 0.9996918}
+  m_LocalRotation: {x: -0.0031792123, y: 0.9914619, z: -0.024623334, w: -0.1280114}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3037,6 +3037,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   health: 10
+  source: {fileID: 2445336592785727002}
+  damageSound: {fileID: 8300000, guid: 7441b9fccdc2f544d86a1d6ace9870b4, type: 3}
   bar: {fileID: 0}
   damageEffect: {fileID: 0}
   effectTimeMultplier: 10
@@ -3080,7 +3082,7 @@ MonoBehaviour:
   reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
   reloadFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
   slowMotion: {fileID: 2188288563581736130}
-  ReloadCoolDown: 0.2
+  ReloadCoolDown: 0.25
 --- !u!114 &7406875405982641948
 MonoBehaviour:
   m_ObjectHideFlags: 0

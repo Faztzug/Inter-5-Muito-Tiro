@@ -895,6 +895,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 5
   health: 30
+  source: {fileID: 1996663416848626438}
+  damageSound: {fileID: 8300000, guid: 7e447b439cda6c747a26dadaa53d0566, type: 3}
 --- !u!114 &9148763569416994620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -909,13 +911,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodParticle: {fileID: 8784286392827441716, guid: f52a1345f912e674f970e4a6e5711060, type: 3}
   timeToDestroy: 3
---- !u!136 &6782687586894892725
+--- !u!136 &1943388153134618467
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3762414954676785433}
+  m_GameObject: {fileID: 7403480242188908479}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -950,13 +952,13 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.18
   m_Center: {x: 0, y: 0.12, z: 0.04}
---- !u!136 &5645230113397965708
+--- !u!136 &6782687586894892725
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6240155091043090210}
+  m_GameObject: {fileID: 3762414954676785433}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -964,13 +966,13 @@ CapsuleCollider:
   m_Height: 0.6
   m_Direction: 1
   m_Center: {x: 0, y: 0.18, z: 0}
---- !u!136 &1943388153134618467
+--- !u!136 &5645230113397965708
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7403480242188908479}
+  m_GameObject: {fileID: 6240155091043090210}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -1043,3 +1045,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+--- !u!82 &1996663416848626438 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6568550722293914986, guid: e5a9ff71384e0ea4980d78115efc82ab, type: 3}
+  m_PrefabInstance: {fileID: 4656085225840930412}
+  m_PrefabAsset: {fileID: 0}
