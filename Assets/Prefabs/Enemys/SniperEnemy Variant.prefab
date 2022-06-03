@@ -775,7 +775,7 @@ MonoBehaviour:
   extraAmmo: 72
   maxExtraAmmo: 72
   enemyBullets: []
-  bulletPrefab: {fileID: 3587302025753882300, guid: 15c486b0dbb950849b0f6e90653b70f3, type: 3}
+  bulletPrefab: {fileID: 8630929994482422934, guid: a2c93b39e189175459a9fad8bebee6ad, type: 3}
   bulletTimer: 3
   shootPosition: {fileID: 5846353876204601162}
   trigger: 0
@@ -787,6 +787,24 @@ MonoBehaviour:
   triggerFailClip: {fileID: 8300000, guid: 723a914b01aeb7b4f80ddefa550ed870, type: 3}
   reloadClip: {fileID: 8300000, guid: eed06f20e08c5c6409cb4001bf9f0d9f, type: 3}
   reloadFullClip: {fileID: 8300000, guid: 913149e0176892c498a5cd60a2460ede, type: 3}
+--- !u!114 &941436285487889656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5784648018078622091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0.8207547, g: 0.13557239, b: 0.13557239, a: 1}
+  outlineWidth: 2.55
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!114 &3932226221157502837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -886,24 +904,6 @@ NavMeshAgent:
   m_BaseOffset: -0.11
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 2
---- !u!114 &941436285487889656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5784648018078622091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 0.8207547, g: 0.13557239, b: 0.13557239, a: 1}
-  outlineWidth: 2.55
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!136 &8152253171008452003
 CapsuleCollider:
   m_ObjectHideFlags: 0
