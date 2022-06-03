@@ -23,6 +23,8 @@ public class EnemyIA : MonoBehaviour
     [HideInInspector] public bool alive = true;
     [SerializeField] protected int damageTauntAsync = 3;
     protected int tauntTimerAsync;
+    protected Outline outline;
+    protected float outlineMaxThickness;
 
     protected virtual void Start() 
     {
@@ -43,12 +45,22 @@ public class EnemyIA : MonoBehaviour
         distance = Mathf.Infinity;
         tauntTimerAsync = damageTauntAsync * 3;
         anim = GetComponent<Animator>();
+        outline = GetComponent<Outline>();
+        if(outline != null)
+        {
+            outlineMaxThickness = outline.OutlineWidth;
+            outline.OutlineWidth = 0f;
+        } 
         StartCoroutine(CourotineAsyncUpdateIA());
     }
 
     protected virtual void Update() 
     {
-
+        if(outline != null)
+        {
+            if(state.TimeS == SpeedState.Slowed && outline.OutlineWidth < outlineMaxThickness) outline.OutlineWidth += Time.unscaledDeltaTime;
+            else if(state.TimeS == SpeedState.Running && outline.OutlineWidth > 0) outline.OutlineWidth -= Time.unscaledDeltaTime;
+        } 
     }
 
     protected IEnumerator CourotineAsyncUpdateIA()
