@@ -57,11 +57,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4982435889281767943, guid: 98b1ecbff3a985848b30222195a12618, type: 3}
       propertyPath: shootingDistance
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4982435889281767943, guid: 98b1ecbff3a985848b30222195a12618, type: 3}
       propertyPath: findPlayerDistance
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98b1ecbff3a985848b30222195a12618, type: 3}
