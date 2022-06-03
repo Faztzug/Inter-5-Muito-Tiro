@@ -29,6 +29,10 @@ public class SaveGame //: MonoBehaviour
         if(GetInt(kProgress) >= value) return;
         PlayerPrefs.SetInt(kProgress, value);
     }
+    public void CleanProgress()
+    {
+        PlayerPrefs.SetInt(kProgress, 0);
+    }
 
     public void SaveSFX(float value)
     {
