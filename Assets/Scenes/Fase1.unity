@@ -3354,7 +3354,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh400648
+  m_Name: pb_Mesh567706
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -18074,7 +18074,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411749045}
-  m_LocalRotation: {x: 0.08042035, y: 0.0000000043307953, z: -3.4244685e-10, w: 0.996761}
+  m_LocalRotation: {x: 0.08042035, y: -0.0000000043307957, z: 3.4244704e-10, w: 0.996761}
   m_LocalPosition: {x: 160.3, y: 2.239, z: 19.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -29789,7 +29789,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh400344
+  m_Name: pb_Mesh565386
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -70503,11 +70503,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 756674417805483789, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000004287662
+      value: -0.0000000042876627
       objectReference: {fileID: 0}
     - target: {fileID: 756674417805483789, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.4593578e-10
+      value: 3.4593586e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1032433825720409518, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: enemyBullets
@@ -70571,11 +70571,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6109681788614306274, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000004293233
+      value: 0.0000000042932324
       objectReference: {fileID: 0}
     - target: {fileID: 6109681788614306274, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 2.6809446e-10
+      value: -2.6809444e-10
       objectReference: {fileID: 0}
     - target: {fileID: 6911960691316889691, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: ammoText
@@ -77612,7 +77612,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh401068
+  m_Name: pb_Mesh570380
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -80451,7 +80451,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh400444
+  m_Name: pb_Mesh565902
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
