@@ -25,6 +25,7 @@ public class MenuInicial : MonoBehaviour
     [SerializeField] private Toggle fullScreen;
     [SerializeField] private Slider volume;
     [SerializeField] private Slider music;
+    [SerializeField] private bool cleanProgress = false;
 
     void Awake()
     {
@@ -36,6 +37,7 @@ public class MenuInicial : MonoBehaviour
         
         LoadVolumeSliders();
         configuracoes?.SetActive(false);
+        if(cleanProgress) save.CleanProgress();
         LockLevels();
     }
 
@@ -43,19 +45,21 @@ public class MenuInicial : MonoBehaviour
     {
         var progress = save.playerProgress;
 
-        if(progress < 2) buttonFase2.interactable = false;
-        if(progress < 3) buttonFase3.interactable = false;
-        if(progress < 4)
-        {
-            buttonArena.interactable = false;
-            var text = buttonArena.GetComponentInChildren<TextMeshProUGUI>();
-            var cor = text.color;
-            cor.r = cor.r - 0.2f;
-            cor.g = cor.g - 0.2f;
-            cor.b = cor.b - 0.2f;
-            cor.a = 0.26f;
-            text.color = cor;
-        } 
+        if(progress < 2) UnlightButton(buttonFase2);
+        if(progress < 3) UnlightButton(buttonFase3);
+        if(progress < 4) UnlightButton(buttonArena);
+    }
+
+    public void UnlightButton(Button botao)
+    {
+        botao.interactable = false;
+        var text = botao.GetComponentInChildren<TextMeshProUGUI>();
+        var cor = text.color;
+        cor.r = cor.r - 0.2f;
+        cor.g = cor.g - 0.2f;
+        cor.b = cor.b - 0.2f;
+        cor.a = 0.26f;
+        text.color = cor;
     }
 
     public void PlayGame()
