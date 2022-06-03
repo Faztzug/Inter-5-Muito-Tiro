@@ -41,6 +41,18 @@ public class MenuInicial : MonoBehaviour
         LockLevels();
     }
 
+    void Update()
+    {
+        if (Input.GetButtonDown("Cheat"))
+            {
+                buttonFase1.interactable = true;
+                buttonFase2.interactable = true;
+                buttonFase3.interactable = true;
+                buttonArena.interactable = true;
+                Debug.LogWarning("UNLOCK ALL WITH CHEAT!");
+            }
+    }
+
     private void LockLevels()
     {
         var progress = save.playerProgress;
