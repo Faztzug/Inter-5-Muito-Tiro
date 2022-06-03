@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-[RequireComponent(typeof(Rigidbody), typeof(NavMeshAgent))] 
+//[RequireComponent(typeof(Rigidbody), typeof(NavMeshAgent))] 
 public class EnemyIA : MonoBehaviour
 {
     [SerializeField] [Range(0,1)] protected float[] updateRateRNG = new float[2];
@@ -40,6 +40,7 @@ public class EnemyIA : MonoBehaviour
         }
         state = player.GetComponent<GameState>();
         agent = GetComponent<NavMeshAgent>();
+        if(agent == null) agent = transform.parent.GetComponent<NavMeshAgent>();
         rgbd = GetComponent<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
         distance = Mathf.Infinity;

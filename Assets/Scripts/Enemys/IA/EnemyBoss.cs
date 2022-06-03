@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class EnemyBoss : EnemyGunner
 {
+    [Header("BOSS")]
     [SerializeField] protected Transform goTo;
     [SerializeField] protected Transform[] patroll;
     protected int PatrollIndex;

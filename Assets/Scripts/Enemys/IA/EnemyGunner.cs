@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Animations;
 
 public class EnemyGunner : EnemyIA
 {
-    
+    [Header("Gunner")]
     [SerializeField] protected EnemyGun gun;
     [SerializeField] [Range(0,1)] private float weightIKhand;
     [SerializeField] private bool rotateTowardsPlayer = true;
     protected GameState pState;
     protected bool reloading;
+    [SerializeField] protected Transform playerLookAt;
 
     protected override void Start()
     {
@@ -21,7 +23,17 @@ public class EnemyGunner : EnemyIA
     protected override void Update() 
     {
         base.Update();
-        if(rotateTowardsPlayer && alive && IsPlayerAlive()) transform.LookAt(player);
+        if(rotateTowardsPlayer && alive && IsPlayerAlive())
+        {
+            if(playerLookAt != null) 
+            {
+                playerLookAt.position = pState.bodyPartChest.position;
+            }
+            else
+            {
+                transform.LookAt(player);
+            }
+        } 
     }
 
     protected virtual void OnAnimatorIK()
@@ -75,6 +87,7 @@ public class EnemyGunner : EnemyIA
 
         if(agent.isOnNavMesh)
         {
+            Debug.Log("GUNNER GOING TO PLAYER");
             if(distance > minPlayerDistance && distance < findPlayerDistance && IsPlayerAlive())
             {
                 playerPos = player.position;
