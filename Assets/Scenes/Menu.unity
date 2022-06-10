@@ -2605,6 +2605,10 @@ PrefabInstance:
       value: Directional Light
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439756, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 601418873310439756, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_Shadows.m_NormalBias
       value: 0
       objectReference: {fileID: 0}

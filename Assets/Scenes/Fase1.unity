@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0.5019608, g: 0.37254903, b: 0.27450982, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.7
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.46736118, g: 0.3137255, b: 0.5647059, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 6abe918ee1229b34f8557fc2a5a39825, type: 2}
   m_HaloStrength: 0.5
@@ -33,12 +33,12 @@ RenderSettings:
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
   m_DefaultReflectionMode: 0
-  m_DefaultReflectionResolution: 128
+  m_DefaultReflectionResolution: 1024
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 0.1
+  m_ReflectionIntensity: 0.6
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1463415608}
-  m_IndirectSpecularColor: {r: 0.30649, g: 0.3412475, b: 0.2508038, a: 0.1}
+  m_IndirectSpecularColor: {r: 0.448065, g: 0.5518858, b: 0.29676154, a: 0.6}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -70,7 +70,7 @@ LightmapSettings:
     m_FinalGather: 0
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
-    m_ReflectionCompression: 2
+    m_ReflectionCompression: 1
     m_MixedBakeMode: 2
     m_BakeBackend: 1
     m_PVRSampling: 1
@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 822ab865948b34d4d8c471667ac236ba, type: 2}
-  m_LightingSettings: {fileID: 1443328044}
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: bce982d4df203a24fabe37c808fdb807, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -177,6 +177,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -1210,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -1544,6 +1548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_1 1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
 --- !u!4 &33082584 stripped
@@ -1808,6 +1816,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -2286,6 +2298,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -2862,6 +2878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
 --- !u!4 &66002201 stripped
@@ -3024,6 +3044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 46
@@ -3163,6 +3187,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -3534,7 +3562,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1794444
+  m_Name: pb_Mesh162760
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3902,6 +3930,10 @@ PrefabInstance:
     - target: {fileID: 2887425977191684344, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
       propertyPath: m_Name
       value: Camp2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887425977191684344, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
@@ -5475,6 +5507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camp1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
 --- !u!4 &131481441 stripped
@@ -5828,6 +5864,10 @@ PrefabInstance:
     - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
       propertyPath: m_Name
       value: Pedrinha_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
@@ -7703,6 +7743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto3 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -9283,7 +9327,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &198852981
 Transform:
@@ -9503,6 +9547,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -9905,6 +9953,10 @@ PrefabInstance:
     - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
       propertyPath: m_Name
       value: Pedrinha_2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
@@ -11347,6 +11399,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_1 1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
 --- !u!4 &243758061 stripped
@@ -11383,6 +11439,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -11804,6 +11864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -12072,7 +12136,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &262776216
 Transform:
@@ -14181,6 +14245,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -14364,6 +14432,10 @@ PrefabInstance:
     - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
       propertyPath: m_Name
       value: Cacto2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
@@ -14566,6 +14638,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -16544,6 +16620,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_1 1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
 --- !u!4 &361845248 stripped
@@ -17606,6 +17686,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 48
@@ -18190,6 +18274,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 51
@@ -18539,6 +18627,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -19226,7 +19318,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 411749045}
-  m_LocalRotation: {x: 0.08042035, y: 0.000000004330796, z: -3.424557e-10, w: 0.996761}
+  m_LocalRotation: {x: 0.08042035, y: -0.000000004330796, z: 3.4245576e-10, w: 0.996761}
   m_LocalPosition: {x: 160.3, y: 2.239, z: 19.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -20021,6 +20113,10 @@ PrefabInstance:
     - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
       propertyPath: m_Name
       value: ConjuntoPedrinhas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
@@ -21492,6 +21588,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 53
@@ -21755,6 +21855,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -23088,6 +23192,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
 --- !u!4 &511639546 stripped
@@ -23433,6 +23541,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -25110,6 +25222,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 41
@@ -25216,6 +25332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &574298622 stripped
@@ -25233,6 +25353,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -26081,6 +26205,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -29642,6 +29770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &674603445 stripped
@@ -31646,6 +31778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &711477583 stripped
@@ -31881,7 +32017,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1792116
+  m_Name: pb_Mesh160432
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -36365,6 +36501,10 @@ PrefabInstance:
     - target: {fileID: 9115828669201904498, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115828669201904498, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bf88391fb6c6f044a28501dbfd62fa4, type: 3}
@@ -43180,6 +43320,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -45818,6 +45962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alvo (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
 --- !u!4 &1001719067 stripped
@@ -45880,6 +46028,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camp1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
 --- !u!4 &1005012549 stripped
@@ -45941,6 +46093,10 @@ PrefabInstance:
     - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
       propertyPath: m_Name
       value: Cacto2 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
@@ -47997,6 +48153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConjuntoPedrinhas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
 --- !u!4 &1035052027 stripped
@@ -48299,6 +48459,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -48471,6 +48635,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
 --- !u!4 &1049912096 stripped
@@ -48488,6 +48656,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -48933,7 +49105,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1066910265
 Transform:
@@ -49762,6 +49934,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -50743,6 +50919,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_1 1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
 --- !u!4 &1109217027 stripped
@@ -50823,6 +51003,10 @@ PrefabInstance:
     - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
       propertyPath: m_Name
       value: Camp1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
@@ -51231,6 +51415,10 @@ PrefabInstance:
     - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
       propertyPath: m_Name
       value: Camp1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
@@ -52836,6 +53024,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alvo
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
 --- !u!1001 &1160917307
@@ -54356,6 +54548,10 @@ PrefabInstance:
     - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
       propertyPath: m_Name
       value: ConjuntoPedrinhas (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
@@ -56155,6 +56351,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &1229455215 stripped
@@ -57007,6 +57207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camp1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
 --- !u!4 &1254279061 stripped
@@ -57176,6 +57380,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -58485,6 +58693,10 @@ PrefabInstance:
     - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
       propertyPath: m_Name
       value: Cacto2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
@@ -60723,6 +60935,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &1329223931 stripped
@@ -61590,6 +61806,10 @@ PrefabInstance:
     - target: {fileID: 2887425977191684344, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
       propertyPath: m_Name
       value: Camp2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2887425977191684344, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eda016a43aa2804ea841230dece9d22, type: 3}
@@ -62839,6 +63059,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camp1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
 --- !u!4 &1377737896 stripped
@@ -63901,6 +64125,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 29
@@ -64080,6 +64308,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
       propertyPath: m_Name
       value: Alvo (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
@@ -65365,6 +65597,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: dd43cb412cd0dc847b9f7910261c1ff1, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd43cb412cd0dc847b9f7910261c1ff1, type: 3}
 --- !u!4 &1433098702 stripped
@@ -65936,67 +66172,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4511774168589241664, guid: f79d8822a14605842bafe95af4eb4f87, type: 3}
   m_PrefabInstance: {fileID: 1442950278}
   m_PrefabAsset: {fileID: 0}
---- !u!850595691 &1443328044
-LightingSettings:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  serializedVersion: 3
-  m_GIWorkflowMode: 1
-  m_EnableBakedLightmaps: 1
-  m_EnableRealtimeLightmaps: 0
-  m_RealtimeEnvironmentLighting: 1
-  m_BounceScale: 1
-  m_AlbedoBoost: 1
-  m_IndirectOutputScale: 1
-  m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 40
-  m_Padding: 2
-  m_TextureCompression: 1
-  m_AO: 1
-  m_AOMaxDistance: 3
-  m_CompAOExponent: 1
-  m_CompAOExponentDirect: 0
-  m_ExtractAO: 0
-  m_MixedBakeMode: 2
-  m_LightmapsBakeMode: 1
-  m_FilterMode: 1
-  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
-  m_ExportTrainingData: 0
-  m_TrainingDataDestination: TrainingData
-  m_RealtimeResolution: 2
-  m_ForceWhiteAlbedo: 0
-  m_ForceUpdates: 0
-  m_FinalGather: 0
-  m_FinalGatherRayCount: 256
-  m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
-  m_PVRSampling: 1
-  m_PVRDirectSampleCount: 32
-  m_PVRSampleCount: 512
-  m_PVREnvironmentSampleCount: 256
-  m_PVREnvironmentReferencePointCount: 2048
-  m_LightProbeSampleCountMultiplier: 4
-  m_PVRBounces: 2
-  m_PVRMinBounces: 1
-  m_PVREnvironmentMIS: 1
-  m_PVRFilteringMode: 1
-  m_PVRDenoiserTypeDirect: 1
-  m_PVRDenoiserTypeIndirect: 1
-  m_PVRDenoiserTypeAO: 1
-  m_PVRFilterTypeDirect: 0
-  m_PVRFilterTypeIndirect: 0
-  m_PVRFilterTypeAO: 0
-  m_PVRFilteringGaussRadiusDirect: 1
-  m_PVRFilteringGaussRadiusIndirect: 5
-  m_PVRFilteringGaussRadiusAO: 2
-  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
-  m_PVRFilteringAtrousPositionSigmaIndirect: 2
-  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1001 &1444880098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68199,6 +68374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 49
@@ -69495,6 +69674,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 50
@@ -70598,7 +70781,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1543662009
 Transform:
@@ -70722,6 +70905,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -71251,6 +71438,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
       propertyPath: m_Name
       value: Alvo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
@@ -72644,6 +72835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -72775,6 +72970,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -75624,11 +75823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 756674417805483789, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000004287662
+      value: -0.0000000042876627
       objectReference: {fileID: 0}
     - target: {fileID: 756674417805483789, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -3.4593578e-10
+      value: 3.4593586e-10
       objectReference: {fileID: 0}
     - target: {fileID: 1032433825720409518, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: enemyBullets
@@ -75664,7 +75863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2760656347056382115, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 1e-45
       objectReference: {fileID: 0}
     - target: {fileID: 2760656347056382115, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -75692,11 +75891,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6109681788614306274, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0000000042932324
+      value: -0.0000000042932324
       objectReference: {fileID: 0}
     - target: {fileID: 6109681788614306274, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -2.6809444e-10
+      value: 2.6809444e-10
       objectReference: {fileID: 0}
     - target: {fileID: 6911960691316889691, guid: bcf595426c4945a4e89e73ab093b93e4, type: 3}
       propertyPath: ammoText
@@ -76839,6 +77038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
 --- !u!4 &1725167827 stripped
@@ -77410,6 +77613,10 @@ PrefabInstance:
     - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
       propertyPath: m_Name
       value: Cacto2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
@@ -78304,6 +78511,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -79532,6 +79743,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &1787787029 stripped
@@ -80261,6 +80476,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -82056,6 +82275,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 621169444796367782, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da34d2a09a57774483a8ffd2f2e899d, type: 3}
 --- !u!4 &1854497491 stripped
@@ -83221,7 +83444,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1797118
+  m_Name: pb_Mesh165434
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -83538,6 +83761,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -83599,6 +83826,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -84565,6 +84796,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -86252,7 +86487,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh1792632
+  m_Name: pb_Mesh160948
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -86571,6 +86806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ConjuntoPedrinhas (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8788137746765975427, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52f1be4710adc04c94df77507f8962d, type: 3}
 --- !u!4 &1975510997 stripped
@@ -86861,6 +87100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 52
@@ -86967,6 +87210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cacto2 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
 --- !u!4 &1979067824 stripped
@@ -87041,6 +87288,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -87850,6 +88101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -88310,6 +88565,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Alvo (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1600705638ce8bc48b8fcd70794b75b7, type: 3}
 --- !u!4 &2016377929 stripped
@@ -88371,6 +88630,10 @@ PrefabInstance:
     - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
       propertyPath: m_Name
       value: Cacto2 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8725212438132069737, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99483d7ce64f57943b2e39a8192fc951, type: 3}
@@ -89040,6 +89303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 43
@@ -89175,6 +89442,10 @@ PrefabInstance:
     - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_Name
       value: Cacto3 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1153185217323923102, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 1966735433960434724, guid: e8df0aa80f81415459354f428c289f8f, type: 3}
       propertyPath: m_RootOrder
@@ -89355,6 +89626,10 @@ PrefabInstance:
     - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
       propertyPath: m_Name
       value: Camp1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405865162474783448, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78d3a3914507c884cbbf5a62bda5ab57, type: 3}
@@ -89788,6 +90063,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_1 1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
 --- !u!4 &2042934994 stripped
@@ -90116,6 +90395,10 @@ PrefabInstance:
     - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_Name
       value: Pedrinha_3 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
@@ -92150,6 +92433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pedrinha_3 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7393798786975265135, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7915037303933742037, guid: edffbdf8c3ebe9948bd9849600a75f3e, type: 3}
       propertyPath: m_RootOrder
       value: 44
@@ -93630,6 +93917,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
       propertyPath: m_Name
       value: Pedrinha_1 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60e3e029981c45543b424a712b2e4a38, type: 3}
@@ -95325,6 +95616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Directional Light
       objectReference: {fileID: 0}
+    - target: {fileID: 601418873310439756, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -95343,27 +95638,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7825627
+      value: 0.3412328
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.61462057
+      value: 0.38114953
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.098435335
+      value: 0.46237156
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0121573815
+      value: -0.7242222
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 105.345
+      value: -291.59
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -148.283
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 601418873310439757, guid: b3f827fab71e1c54aa95f32169b7f8f9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
