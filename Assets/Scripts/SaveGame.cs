@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveGame //: MonoBehaviour
+public class SaveGame
 {
     public float sfxVolume => GetFloat(kSfx);
-    public float musicVolume => GetFloat(kMusic);
+    public float musicVolume => GetFloat(kMusic, -10f);
     public int playerProgress => GetInt(kProgress);
     public const string kSfx = "SFX Volume";
     public const string kMusic = "Music Volume";
@@ -13,10 +13,10 @@ public class SaveGame //: MonoBehaviour
     public string sfx => kSfx;
     public string music => kMusic;
 
-    private float GetFloat(string key)
+    private float GetFloat(string key, float deafault = 0f)
     {
         if(PlayerPrefs.HasKey(key)) return PlayerPrefs.GetFloat(key);
-        else return 0f;
+        else return deafault;
     }
     private int GetInt(string key)
     {
@@ -28,6 +28,10 @@ public class SaveGame //: MonoBehaviour
     {
         if(GetInt(kProgress) >= value) return;
         PlayerPrefs.SetInt(kProgress, value);
+    }
+    public void CleanProgress()
+    {
+        PlayerPrefs.SetInt(kProgress, 0);
     }
 
     public void SaveSFX(float value)
