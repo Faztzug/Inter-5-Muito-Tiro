@@ -58,8 +58,16 @@ public class EnemyIA : MonoBehaviour
     {
         if(outline != null)
         {
-            if(state.TimeS == SpeedState.Slowed && outline.OutlineWidth < outlineMaxThickness) outline.OutlineWidth += Time.unscaledDeltaTime;
-            else if(state.TimeS == SpeedState.Running && outline.OutlineWidth > 0) outline.OutlineWidth -= Time.unscaledDeltaTime;
+            if(state.TimeS == SpeedState.Slowed && outline.OutlineWidth < outlineMaxThickness)
+            {
+                //Debug.Log("Increase Outline");
+                outline.OutlineWidth += Time.unscaledDeltaTime;
+            }
+            else if(state.TimeS == SpeedState.Running && outline.OutlineWidth > 0)
+            {
+                //Debug.Log("MINUS Outline");
+                outline.OutlineWidth -= Time.unscaledDeltaTime;
+            }
         } 
     }
 

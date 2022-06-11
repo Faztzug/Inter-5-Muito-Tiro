@@ -61,7 +61,11 @@ public class SlowMotion : MonoBehaviour
         if (focusActive) currentFocusBar -= Time.unscaledDeltaTime;
         
         if(currentFocusBar > maxFocusBar) currentFocusBar = maxFocusBar;
-        if(currentFocusBar <= 0) focusActive = false;
+        if(currentFocusBar <= 0)
+        {
+            focusActive = false;
+            state.TimeS = SpeedState.Running;
+        }
 
         Barra.value = currentFocusBar;
     }
@@ -86,8 +90,8 @@ public class SlowMotion : MonoBehaviour
             if(currentTime > slowMotionTimeScale) currentTime -= lerpTimeChange * Time.unscaledDeltaTime;
             if(currentTime < slowMotionTimeScale) currentTime = slowMotionTimeScale;
 
-        Time.timeScale = currentTime;
-        Time.fixedDeltaTime = startFixedDeltaTime * currentTime;
+            Time.timeScale = currentTime;
+            Time.fixedDeltaTime = startFixedDeltaTime * currentTime;
         }
 
     }
