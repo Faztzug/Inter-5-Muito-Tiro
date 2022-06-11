@@ -8,7 +8,7 @@ public class EnemyGunner : EnemyIA
 {
     [Header("Gunner")]
     [SerializeField] protected EnemyGun gun;
-    [SerializeField] [Range(0,1)] private float weightIKhand;
+    [Range(0,1)] public float weightIKhand;
     [SerializeField] private bool rotateTowardsPlayer = true;
     protected GameState pState;
     protected bool reloading;
@@ -17,7 +17,7 @@ public class EnemyGunner : EnemyIA
     protected override void Start()
     {
         base.Start();
-        anim = GetComponent<Animator>();
+        //anim = GetComponentInChildren<Animator>();
         pState = player.GetComponent<GameState>();
     }
     protected override void Update() 

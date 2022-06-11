@@ -31,8 +31,10 @@ public class EnemyBoss : EnemyGunner
     }
     protected override void OnAnimatorIK()
     {
+        Debug.Log("anim IK");
         //Debug.Log("PlayerHealth alive? " + IsPlayerAlive());
-        //Debug.Log("target chest is null? " + pState?.bodyPartChest?.position == null);
+        Debug.Log("anim is null? " + anim == null);
+        Debug.Log("target chest is null? " + pState?.bodyPartChest?.position == null);
         base.OnAnimatorIK();
     }
 

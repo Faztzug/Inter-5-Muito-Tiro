@@ -12,11 +12,11 @@ public class EnemyIA : MonoBehaviour
     protected Vector3 playerPos;
     protected NavMeshAgent agent;
     protected Rigidbody rgbd;
-    [SerializeField] protected float shootingDistance = 100f;
+    public float shootingDistance = 100f;
     [SerializeField] protected float findPlayerDistance = 100f;
     [SerializeField] protected float minPlayerDistance = 10f;
     [Range(0,1)] protected float updateRate;
-    protected float distance;
+    [HideInInspector] public float distance;
     [SerializeField] float FocusGainOnDeath = 3f;
     [HideInInspector] public GameState state;
     protected Animator anim;
@@ -26,9 +26,8 @@ public class EnemyIA : MonoBehaviour
     protected Outline outline;
     protected float outlineMaxThickness;
 
-    protected virtual void Start() 
+    protected virtual void Awake() 
     {
-        updateRate = Random.Range(updateRateRNG[0], updateRateRNG[1]);
         var players = GameObject.FindGameObjectsWithTag("Player");
         foreach (var p in players)
         {
@@ -38,15 +37,20 @@ public class EnemyIA : MonoBehaviour
                 break;
             }
         }
+    }
+
+    protected virtual void Start() 
+    {
+        updateRate = Random.Range(updateRateRNG[0], updateRateRNG[1]);
         state = player.GetComponent<GameState>();
         agent = GetComponent<NavMeshAgent>();
         if(agent == null) agent = transform.parent.GetComponent<NavMeshAgent>();
-        rgbd = GetComponent<Rigidbody>();
+        rgbd = GetComponentInChildren<Rigidbody>();
         rgbd.maxAngularVelocity = 0;
         distance = Mathf.Infinity;
         tauntTimerAsync = damageTauntAsync * 3;
-        anim = GetComponent<Animator>();
-        outline = GetComponent<Outline>();
+        anim = GetComponentInChildren<Animator>();
+        outline = GetComponentInChildren<Outline>();
         if(outline != null)
         {
             outlineMaxThickness = outline.OutlineWidth;
@@ -94,7 +98,7 @@ public class EnemyIA : MonoBehaviour
     {
         
     }
-    protected bool IsPlayerAlive()
+    public bool IsPlayerAlive()
     {
         if(player != null && player.gameObject.activeSelf && state.playerDead == false) return true;
         else return false;
