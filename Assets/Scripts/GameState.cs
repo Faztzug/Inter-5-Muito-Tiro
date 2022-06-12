@@ -63,6 +63,7 @@ public class GameState : MonoBehaviour
     {
         save = new SaveGame();
         LoadSave();
+        SetMouseSpeed();
     }
     void Start()
     {
