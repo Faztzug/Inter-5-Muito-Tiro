@@ -18,7 +18,6 @@ GameObject:
   - component: {fileID: 7726074946579037842}
   - component: {fileID: 7726074946579037843}
   - component: {fileID: 7726074946579037840}
-  - component: {fileID: 6509293196686145174}
   m_Layer: 0
   m_Name: 'CasitaB '
   m_TagString: Untagged
@@ -36,7 +35,8 @@ Transform:
   m_LocalRotation: {x: -0, y: 0.006031412, z: -0, w: 0.9999819}
   m_LocalPosition: {x: 38.071003, y: 2.91714, z: 33.19336}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 8556979171833805446}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0.691, z: 0}
@@ -185,16 +185,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 3.18, z: 0.2}
   m_Center: {x: -2.84, y: -3.08, z: 2.22}
---- !u!65 &6509293196686145174
+--- !u!1 &9162191446236235130
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8556979171833805446}
+  - component: {fileID: 4566519246489241134}
+  m_Layer: 0
+  m_Name: rampa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8556979171833805446
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162191446236235130}
+  m_LocalRotation: {x: 0.17382003, y: 0, z: 0, w: 0.98477745}
+  m_LocalPosition: {x: -0, y: -0.76, z: 0.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7832376885236646926}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 20.02, y: 0, z: 0}
+--- !u!65 &4566519246489241134
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7492267855030951604}
+  m_GameObject: {fileID: 9162191446236235130}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.75, y: 6.6981654, z: 1.3399999}
-  m_Center: {x: -0.01999998, y: 1.8690827, z: 1.7000237}
+  m_Size: {x: 6, y: 0.3, z: 3.74}
+  m_Center: {x: 0, y: 0, z: 0}
