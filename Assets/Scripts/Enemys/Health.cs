@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     public virtual void Start()
     {
         health = maxHealth;
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         if(TryGetComponent<EnemyIA>(out EnemyIA enemy))
         {
             this.enemy = enemy;

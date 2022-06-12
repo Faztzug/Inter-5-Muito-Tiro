@@ -46,7 +46,7 @@ public class Gun : MonoBehaviour
         UpdateAmmoText();
         Cursor.lockState = CursorLockMode.Locked;
         moveScript = GetComponent<Movimento>();
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     void Update()

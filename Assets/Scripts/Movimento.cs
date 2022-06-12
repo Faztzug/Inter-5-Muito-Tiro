@@ -26,6 +26,7 @@ public class Movimento : MonoBehaviour
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip passosClip;
     [HideInInspector] public ReticulaFeedback reticula;
+    private PlayerIK ik;
 
 
     private void Start()
@@ -33,8 +34,18 @@ public class Movimento : MonoBehaviour
         state = GetComponent<GameState>();
         controller = GetComponent<CharacterController>();
         cam = Camera.main;
-        anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         lookAtObj = cam.transform.GetChild(0);
+        ik = GetComponentInChildren<PlayerIK>();
+        UpdateIK();
+    }
+
+    private void UpdateIK()
+    {
+        if(ik == null) return;
+        ik.lookAtObj = lookAtObj;
+        ik.weightIKhand = weightIKhand;
+        ik.LookAtRayHit = LookAtRayHit;
     }
 
     private void Update()
@@ -44,6 +55,7 @@ public class Movimento : MonoBehaviour
             Movement();
             Animations();
             LookAtRayHit = GetRayCastMiddle();
+            UpdateIK();
         }
     }
 
