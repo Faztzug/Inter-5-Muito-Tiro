@@ -13,6 +13,7 @@ TagManager:
   - EnemyHead
   - Music
   - ammoText
+  - Canvas
   layers:
   - Default
   - TransparentFX

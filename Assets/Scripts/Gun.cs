@@ -28,6 +28,7 @@ public class Gun : MonoBehaviour
     public AudioClip reloadFailClip;
     [SerializeField] private SlowMotion slowMotion;
     private Animator anim;
+    [SerializeField] private Tambor tambor;
     [SerializeField] private float ReloadCoolDown = 0.2f;
     private float reloadTimer = 0;
    
@@ -47,6 +48,7 @@ public class Gun : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         moveScript = GetComponent<Movimento>();
         anim = GetComponentInChildren<Animator>();
+        if(tambor == null) tambor = GameObject.FindGameObjectWithTag("Canvas").GetComponentInChildren<Tambor>();
     }
 
     void Update()
@@ -73,6 +75,7 @@ public class Gun : MonoBehaviour
         {
             state.gunTrigger = true;
             source.PlayOneShot(triggerClip);
+            tambor.TriggerRotate();
         }
          
     }
@@ -84,6 +87,7 @@ public class Gun : MonoBehaviour
         {
             anim.SetTrigger("Reload");
             source.PlayOneShot(reloadClip);
+            tambor.ReloadBullet();
             loadedAmmo++;
             extraAmmo--;
             UpdateAmmoText();
@@ -102,6 +106,7 @@ public class Gun : MonoBehaviour
 
             Debug.Log("Atirou");
             anim.SetTrigger("Atirando");
+            tambor.FireBullet();
 
 
             foreach (Bullet bullet in bullets)
@@ -151,7 +156,8 @@ public class Gun : MonoBehaviour
 
     public void UpdateAmmoText()
     {
-        ammoText.text = loadedAmmo + " / " + extraAmmo;
+        //ammoText.text = loadedAmmo + " / " + extraAmmo;
+        ammoText.text = extraAmmo.ToString();
     }
 
     public void GainAmmo(int ammount, Item item)
